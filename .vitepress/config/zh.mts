@@ -8,9 +8,6 @@ export const zh = defineConfig({
   lang: 'zh-Hans',
   title: "HINATA 使用文档",
   description: "泛用多功能街机游戏读卡器",
-  head: [
-    ['link', { rel: 'icon', href: 'favicon.ico'}],
-  ],
 
   themeConfig: {
     nav: [

@@ -4,6 +4,9 @@ import { en } from './en.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.ico'}],
+  ],
   themeConfig: {
     search: {
       provider: 'local',

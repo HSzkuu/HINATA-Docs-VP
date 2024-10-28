@@ -8,9 +8,6 @@ export const en = defineConfig({
   lang: 'en-US',
   title: "HINATA Manual",
   description: "General-purpose Multifunctional Arcade Game Card Reader",
-  head: [
-    ['link', { rel: 'icon', href: '../favicon.ico'}],
-  ],
 
   themeConfig: {
     nav: [
