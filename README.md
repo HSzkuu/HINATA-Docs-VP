@@ -1,3 +1,5 @@
+*HINATA 使用文档*
+
 <https://hinata.shizk.moe/>
 
 Thanks to:
