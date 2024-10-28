@@ -17,31 +17,31 @@ export const zh = defineConfig({
       {
         text: '快速开始',
         items: [
-          { text: '介绍 & 初次使用', link: '/zh/quickstart' },
+          { text: '介绍 & 初次使用', link: '/quickstart' },
           {
             text: '配置游戏',
             items: [
               {
                 text: 'SEGA 游戏',
                 items: [
-                  { text: '配置说明', link: '/zh/SEGA/' },
-                  { text: '串口方式连接', link: '/zh/SEGA/serial' },
-                  { text: 'AimeIO 连接', link: '/zh/SEGA/aimeio' },
-                  { text: '游戏内测试读卡器', link: '/zh/SEGA/in_game_test' },
-                  { text: '常见问题', link: '/zh/SEGA/qa' }
+                  { text: '配置说明', link: '/SEGA/' },
+                  { text: '串口方式连接', link: '/SEGA/serial' },
+                  { text: 'AimeIO 连接', link: '/SEGA/aimeio' },
+                  { text: '游戏内测试读卡器', link: '/SEGA/in_game_test' },
+                  { text: '常见问题', link: '/SEGA/qa' }
                 ]
                 
               },
-              { text: 'KONAMI 游戏', link: '/zh/KONAMI/' },
-              { text: 'HINATA 控制中心', link: '/zh/HCP/' },
-              { text: '固件更新说明', link: '/zh/Update/' }
+              { text: 'KONAMI 游戏', link: '/KONAMI/' },
+              { text: 'HINATA 控制中心', link: '/HCP/' },
+              { text: '固件更新说明', link: '/Update/' }
             ]
             
           }
         ]
         
       },
-      { text: '购买 & 售后', link: '/zh/purchase_contact' }
+      { text: '购买 & 售后', link: '/purchase_contact' }
     ],
 
     docFooter: {

@@ -7,12 +7,15 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico'}],
   ],
+  rewrites: {
+    'zh/:rest*': ':rest*'
+  },
   themeConfig: {
     search: {
       provider: 'local',
       options: {
         locales: {
-          zh: {
+          root: {
             translations: {
               button: {
                 buttonText: '搜索文档',
@@ -33,7 +36,7 @@ export default defineConfig({
     }
   },
   locales: {
-    zh: { label: '简体中文', ...zh },
+    root: { label: '简体中文', ...zh },
     en: { label: 'English', ...en },
   }
 })
