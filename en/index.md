@@ -14,7 +14,7 @@ hero:
       link: /en/comingsoon
 
 features:
-  - title: SEGA/KONAMI Game Support
+  - title: SEGA / KONAMI Game Support
     details: 'Supports: Taiko no Tatsujin<br>All arcade and handheld games by SEGA<br>All KONAMI games using SpiceTools'
   - title: GUI Control Panel & Firmware Updates
     details: Visual adjustment for lighting, CardIO settings<br>Card reading and writing, PN532 passthrough mode<br>Firmware updates for new features

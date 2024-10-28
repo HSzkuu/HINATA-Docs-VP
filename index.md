@@ -21,7 +21,7 @@ hero:
       link: /purchase_contact
 
 features:
-  - title: SEGA/KONAMI 游戏支持
+  - title: SEGA / KONAMI 游戏支持
     details: 支持 太鼓之达人<br>SEGA 系所有街机游戏及手台<br>所有使用 SpiceTools 的 KONAMI 游戏
   - title: GUI 控制面板 & 固件更新
     details: 可视化调整灯光、CardIO 设置<br>使用卡片读写、PN532 直通模式功能<br>不定时更新固件以支持新功能
