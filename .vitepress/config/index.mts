@@ -12,7 +12,7 @@ export default defineConfig({
       provider: 'local',
       options: {
         locales: {
-          root: {
+          zh: {
             translations: {
               button: {
                 buttonText: '搜索文档',
@@ -33,7 +33,7 @@ export default defineConfig({
     }
   },
   locales: {
-    root: { label: '简体中文', ...zh },
+    zh: { label: '简体中文', ...zh },
     en: { label: 'English', ...en },
   }
 })

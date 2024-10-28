@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: "Quick Start"
-      link: /en/comingsoon
+      link: ./comingsoon
     - theme: alt
       text: "Purchase & Support"
-      link: /en/comingsoon
+      link: ./comingsoon
 
 features:
   - title: SEGA / KONAMI Game Support
