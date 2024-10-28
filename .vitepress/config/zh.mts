@@ -16,10 +16,6 @@ export const zh = defineConfig({
     nav: [
     ],
 
-    search: {
-      provider: 'local'
-    },
-
     sidebar: [
       {
         text: '快速开始',
