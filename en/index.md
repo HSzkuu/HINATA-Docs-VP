@@ -10,9 +10,6 @@ hero:
       text: "Quick Start"
       link: /en/comingsoon
     - theme: alt
-      text: "Introduction Video"
-      link: https://www.bilibili.com/video/BV1Gi421i7ej/
-    - theme: alt
       text: "Purchase & Support"
       link: /en/comingsoon
 
