@@ -5,7 +5,6 @@
 Thanks to:
 
 [nerimoe](https://github.com/nerimoe):
-    
     <https://github.com/nerimoe/HINATA-Docs-rs>
 
 Powered by [VitePress](https://github.com/vuejs/vitepress)
