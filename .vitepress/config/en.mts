@@ -16,10 +16,6 @@ export const en = defineConfig({
     nav: [
     ],
 
-    search: {
-      provider: 'local'
-    },
-
     sidebar: [
       {
         text: 'Quick Start',
