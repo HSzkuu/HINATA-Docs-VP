@@ -4,7 +4,7 @@
 
 1. Some older firmware versions require binding the HID light for card reading to function properly.
 2. Open *spicecfg*, select **Advanced** at the top, find `CardIO HID Reader Support (-cardio)`, and check the box.  
-   ![spicecardio](assets/spicecardio.png)
+   ![spicecardio](/assets/spicecardio.png)
 
 3. If the card reader does not work after checking `CardIO HID Reader Support (-cardio)` (this may occur in older versions of Spice or non-Windows 10 and above versions), try checking `HID SmartCard`. Please confirm that it is not working before checking this option; do not check it unless necessary.
 4. If you find that the card swiping slot is incorrect (for example, in games like IIDX that have 1P and 2P), check the `xxx Order Flip` option below.
@@ -26,11 +26,11 @@ When SDVX is in Valkyrie cabinet mode or IIDX is in Thunder cabinet mode, the ga
 
 1. Open *spicecfg*, select **Lights** at the top, and find `IC Card Reader *`.
 2. Bind it as shown in the image below:  
-   ![spicelight](assets/spicelight.png)
+   ![spicelight](/assets/spicelight.png)
 
 3. Games like IIDX that have 2P positions will be divided into 1P and 2P, totaling six channels. Bind the channel corresponding to the player position you are using, or bind both if using two card readers.
 4. Adjust light brightness: In *spicecfg* > **Advanced** > `Light Brightness Adjustment`, you can make adjustments.  
-   ![spicebrightness](assets/spicebrightness.png)
+   ![spicebrightness](/assets/spicebrightness.png)
 
 ## Other Resources
 * [Adjusting CardIO Reading Limits](../HCP/index.md#cardio-settings)

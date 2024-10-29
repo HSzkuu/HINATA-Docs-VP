@@ -21,11 +21,11 @@ When using SEGA's official serial card reader protocol, you need to disable the 
    ![devmgr3](assets/devmgr3.png)
 
    4. If you do not see the `Ports` dropdown menu, you can proceed to the next step. If it is present, check whether any devices are occupying the target port.
-   5. If a device is using the port, right-click on that device and select `Properties → Port Settings → Advanced`.
+   5. If a device is using the port, right-click on that device and select `Properties → Port Settings → Advanced...`.
 
    ![devmgr2](assets/devmgr2.png)
 
-   6. Change the COM port number to **another port** (e.g., COM255).
+   6. Change the `COM Port Number` to **another port number** (e.g., COM255).
 3. **Plug in the card reader** and navigate to the following menu (**Devices by Container**).
 
    ![devmgr0](<../assets/devmgr0.png>)
@@ -34,7 +34,7 @@ When using SEGA's official serial card reader protocol, you need to disable the 
 
    ![devmgr1](<../assets/devmgr1.png>)
 
-5. Right-click on `USB Serial Device`, and select `Properties → Port Settings → Advanced`.
+5. Right-click on `USB Serial Device`, and select `Properties → Port Settings → Advanced...`.
 6. Change the `COM Port Number` to the required port number for your game. Since the card reader uses *USB CDC* class for serial communication, there is usually no need to modify the baud rate settings.
 7. After making the changes, you need to unplug and replug the card reader.
 

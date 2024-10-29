@@ -6,7 +6,7 @@
 1. 部分较旧的固件版本需要绑定 HID 灯光才能进行读卡
 2. 打开 *spicecfg* ，在顶部选择 **Advanced** ，找到 `CardIO HID Reader Support (-cardio)` 并勾选<br>如图所示：
    
-   ![spicecardio](assets/spicecardio.png)
+   ![spicecardio](/assets/spicecardio.png)
 
 3. 如果勾选 `CardIO HID Reader Support (-cardio)` 后读卡器不工作（可能会出现在远古版本的 Spice 或非 Windows10 及以上的版本上）请尝试勾选 `HID SmartCard`，请确认不工作时再勾选，非必要情况请勿勾选
 4. 如果发现刷卡的槽位不对（例如 IIDX 这种有 1P 和 2P 的游戏）<br>请勾选下面的 `xxx Order Flip`
@@ -29,11 +29,11 @@
 1. 打开 *spicecfg* ，在顶部选择 **Lights**，找到 `IC Card Reader *`
 2. 按下图方式绑定:
    
-   ![spicelight](assets/spicelight.png)
+   ![spicelight](/assets/spicelight.png)
 
 3. IIDX 之类的有 2P 位的游戏会分为 1P、2P 共六个通道，绑定你有玩的 P 位，或者使用两个读卡器的时候可以都绑定
 4. 调整灯光亮度：在 *spicecfg* > **Advanced** > `Light Brightness Adjustment`内可以调整
-![spicebrightness](assets/spicebrightness.png)
+![spicebrightness](/assets/spicebrightness.png)
 
 
 ## 其他页面

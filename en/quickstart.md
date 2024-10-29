@@ -10,6 +10,8 @@ By default, users will receive:
 ### 1. Connect to the Computer
 Connect HINATA to the computer using a USB Type-C Cable.<br>When HINATA is powered on, a yellow light will turn on, and once successfully connected to the computer, it will gradually turn blue.
 
+![connection](</assets/connection.jpg>)
+
 At this point, the HINATA device should appear in Windows `Device Manager`.
 
 ### 2. Write Aime Access Code to the Provided Card
