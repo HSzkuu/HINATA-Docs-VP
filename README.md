@@ -1,4 +1,4 @@
-# HINATA 使用文档
+# HINATA 使用文档 VitePress Version
 
 <https://hinata.shizk.moe/>
 
