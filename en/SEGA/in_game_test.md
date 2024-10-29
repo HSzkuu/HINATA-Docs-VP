@@ -1,10 +1,15 @@
-# 游戏内测试读卡器
+# In-Game Card Reader Test
 
-1. 进入对应游戏的 *测试模式 ( TEST )* ![test0](assets/test0.png)
-2. 通过不同游戏的操作方式选择到 `Aimeカードリーダーテスト` ![test1](assets/test1.png)
-3. 在里面可以进行**读卡测试**以及 **LED 测试**<br>Segatools 关闭 Aime 的 hook 后如果游戏里上面两行软硬件版本号没有显示任何东西的话代表游戏并没有成功连接到读卡器
+1. Enter the corresponding game’s *Test Mode*.  
+   ![test0](assets/test0.png)
 
-## 其他页面
-* [串口方式连接游戏](serial.md)
-* [AimeIO 方式连接游戏](aimeio.md)
-* [KONAMI 游戏设置](../KONAMI/index.md)
+2. Use the control method specific to the game to select `Aimeカードリーダーテスト`.  
+   ![test1](assets/test1.png)
+
+3. In this menu, you can perform **card reading tests** and **LED tests**.  
+   If Segatools has disabled Aime's hook and the top two lines showing the hardware and software version numbers do not display anything, it indicates that the game has not successfully connected to the card reader.
+
+## Other Resources
+* [Connecting to Games via Serial Protocol](serial.md)
+* [Connecting to Games via AimeIO](aimeio.md)
+* [KONAMI Game Configuration Instructions](../KONAMI/index.md)

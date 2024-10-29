@@ -25,7 +25,7 @@
 
 
 ## HID 灯光绑定
-当 SDVX 处于女武神框体模式时，IIDX 处于雷霆框体模式时，游戏就会向读卡器输出灯光。以下是绑定方式：
+当 SDVX 处于女武神框体模式 或 IIDX 处于雷霆框体模式时，游戏就会向读卡器输出灯光。以下是绑定方式：
 1. 打开 *spicecfg* ，在顶部选择 **Lights**，找到 `IC Card Reader *`
 2. 按下图方式绑定:
    
@@ -37,5 +37,5 @@
 
 
 ## 其他页面
-* [调整 CardIO 读卡限制](../HCP/index.md#cardio设置)
+* [调整 CardIO 读卡限制](../HCP/index.md#cardio-设置)
 * [SEGA 游戏设置](../SEGA/index.md)

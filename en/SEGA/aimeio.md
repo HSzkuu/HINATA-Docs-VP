@@ -1,38 +1,38 @@
-# AimeIO 方式连接游戏
+# Connecting to Games via AimeIO
 
-## 食用须知
-AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器热插拔<br>但是受限于 Segatools，有以下缺点：
-* 使用`Amusement IC`卡片时**无法登录 SEGA 官服**；
-* 目前无法读取卡号**非 510 开头**的版本的`Banapass`：
-  * 日本发行的旧版（非`Amusement IC`版本的）
-  * 在海外发行的所有版本，包括国行
-* 部分 Segatools 无法使用包括`Amusement IC`在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果发生了请更换一份 Segatools
+## Important Notes
+AimeIO relies on Segatools to hook into the card reader, allowing for hot-swapping of the reader in-game. However, due to limitations of Segatools, there are the following drawbacks:
+* When using `Amusement IC` cards, you **cannot log into SEGA's official servers**.
+* Currently, it cannot read `Banapass` cards that do not start with the number **510**:
+  * Old versions issued in Japan (non `Amusement IC` versions).
+  * All versions issued overseas, including those in China.
+* Some Segatools may not be able to use any [Felica](https://zh.wikipedia.org/wiki/FeliCa) cards, including `Amusement IC`. If this occurs, please replace your Segatools.
 
-**标准版需求固件版本号 ≥ `2024083100` （2024 年 8 月 31 日后发货的可以直接用**
+**Standard version requires firmware version ≥ `2024083100`** (devices shipped after August 31, 2024, can be used directly).
 
-**Lite 版需求固件版本 ≥ `2024090500`（2024 年 9 月 5 日后发货的可以直接用**
+**Lite version requires firmware version ≥ `2024090500`** (devices shipped after September 5, 2024, can be used directly).
 
-## 游戏配置
-1. 首先请确保你的游戏是**已经联网**的，进入游戏后能够显示一个**绿色地球图标**，否则请先把游戏的联网设置好，不在本文讨论范围内
-2. 把本文提供的`hinata.dll`放入游戏目录下<br>[点我下载](https://github.com/nerimoe/HINATA-release/releases/download/HINATA-2024090500/hinata.dll)（如果下载慢的话可以在售后群下载）
-3. 打开`segatools.ini`，并按照如下方式修改：
+## Game Configuration
+1. First, ensure that your game is **connected to the internet** and shows a **green globe icon** after entering the game. If not, you need to set up the game's internet connection, which is not covered in this document.
+2. Place the provided `hinata.dll` file into the game directory.  
+   [Click here to download](https://github.com/nerimoe/HINATA-release/releases/download/HINATA-2024090500/hinata.dll)
+3. Open `segatools.ini` and modify it as follows:
    ```ini
-   ;如果没有[aime]条目则请手动添加该条目和条目下内容
+   ; If there is no [aime] entry, please manually add this entry and its content
    [aime]
    enable=1
-   ;enable=1的用途是启用segatools的读卡器hook，也可以什么都不加，如果什么都不加的话默认是启用的
+   ; enable=1 is used to enable Segatools' reader hook. You can also leave it blank, as it is enabled by default.
 
-   ;如果没有[aimeio]条目的话需要自己添加
+   ; If there is no [aimeio] entry, you need to add it yourself
    [aimeio]
    path=hinata.dll
    brightness=128
-   ;path用于指定dll路径
-   ;brightness控制读卡器亮度 0 ~ 255可选，如果不加的话默认为128
+   ; path specifies the path to the DLL
+   ; brightness controls the reader's brightness, selectable from 0 to 255. If not specified, the default is 128.
    ```
-4. 启动游戏
+4. Start the game.
 
-
-## 其他页面
-* [串口方式连接 SEGA 游戏](serial.md)
-* [游戏内测试读卡器](in_game_test.md)
-* [KONAMI 游戏设置](../KONAMI/index.md)
+## Other Resources
+* [Connecting to SEGA Games via Serial Protocol](serial.md)
+* [In-Game Card Reader Test](in_game_test.md)
+* [KONAMI Game Configuration Instructions](../KONAMI/index.md)

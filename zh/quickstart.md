@@ -15,7 +15,7 @@ Lite 版用户可以收到：
 
 ![connection](<assets/connection.jpg>)
 
-此时在 Windows 的```设备管理器```中应该可以看到 HINATA 设备
+此时在 Windows 的 ```设备管理器``` 中应该可以看到 HINATA 设备
 
 ![devmgr0](<assets/devmgr0.png>)
 
@@ -23,14 +23,13 @@ Lite 版用户可以收到：
 
 
 ### 2. 为赠送的卡片写入 Aime 卡号
-仅标准版赠送卡片
-白卡需要写入卡号后方可在SEGA游戏中使用
-如果你有自己的`Aime`卡片，`Banapass`卡片或 `Amusement IC`（四社通）卡片，并且不想使用赠送的白卡，可以**跳过**该步骤
+仅标准版赠送卡片  
+白卡需要写入卡号后方可在SEGA游戏中使用  
+如果你有自己的 `Aime` 卡片，`Banapass` 卡片或 `Amusement IC`（四社通）卡片，并且不想使用赠送的白卡，可以**跳过**该步骤
 
 写入方式请见：[卡片读写](HCP/index.md#卡片读写)
 
 ### 3. 开始配置游戏
-[SEGA 游戏](SEGA/index.md)
-
-[KONAMI 游戏](KONAMI/index.md)
+* [SEGA 游戏](SEGA/index.md)
+* [KONAMI 游戏](KONAMI/index.md)
 

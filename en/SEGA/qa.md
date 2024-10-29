@@ -1,20 +1,23 @@
-# 常见问题 ( SEGA )
----
-Q: 为什么我在使用读卡器之前游戏能联网，但使用后就无法联网
-
-A: 在关闭了 Segatools 的模拟读卡器以后，游戏如果没有检测到读卡器时就会直接断网，所以请检查一下读卡器的连接与配置是否正确
+# Q & A (SEGA)
 
 ---
-Q: 我确认读卡器已连接（灯光正常被控），但是无法刷卡
 
-A: 是不是贴在 ADX 的表面上了，或者读卡器底部有金属，是的话请用非金属材料垫高或者放到别处
-
----
-Q: 官方卡在游戏里刷出来的卡号（0008 开头）和背面印的不一样
-
-A: 刷 `Amusement IC` 卡片时刷到的卡号取决于服务器，如果 AimeDB 服务器正确实现了就可以刷得出（rin 服，官服 AimeDB）
+**Q: Why can my game connect to the internet before using the card reader, but loses connection after?**  
+**A:** When Segatools disables its simulated card reader, the game will disconnect from the internet if it does not detect a card reader. Please check that the card reader is connected properly and that its configuration is correct.
 
 ---
-Q: 读卡器功能太少 / 有 Bug 怎么办
 
-A: 功能性建议或者出现 Bug 请直接在售后群或者私聊我提出，软件 Bug 会在核实后尽快修复
+**Q: I confirmed that the card reader is connected (the light is functioning), but I cannot swipe the card.**  
+**A:** Is the card placed on the surface of the ADX Controller? Or is there metal underneath the card reader? If so, please use a non-metallic material to elevate it or place it elsewhere.
+
+---
+
+**Q: The card number (starting with 0008) that appears when I swipe the official card in the game is different from what is printed on the back.**  
+**A:** The card number obtained when swiping an `Amusement IC` card depends on the server. If the AimeDB server is implemented correctly, you should be able to retrieve the correct number (Rinnet, official AimeDB).
+
+---
+
+**Q: What should I do if the card reader has limited functionality or bugs?**  
+**A:** For functional suggestions or if you encounter bugs, please report them directly in the support group or message me privately. Software bugs will be addressed and fixed as soon as they are verified.
+
+---

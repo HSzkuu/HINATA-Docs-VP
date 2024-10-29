@@ -1,36 +1,25 @@
-# 快速开始
+# Quick Start
 
-## 开箱
-默认情况下标准版用户可以收到：
+## Unboxing
+By default, users will receive:
 * **HINATA** * 1
-* USB Type-C 数据线 * 1
-* Mifare Classic 1k sak:0x08 空白卡片 * 1
+* USB Type-C Cable * 1
+* Mifare Classic 1k sak:0x08 Blank Card * 1
 
-Lite 版用户可以收到：
-* **HINATA Lite** * 1
+## What Needs to Do
+### 1. Connect to the Computer
+Connect HINATA to the computer using a USB Type-C Cable.<br>When HINATA is powered on, a yellow light will turn on, and once successfully connected to the computer, it will gradually turn blue.
 
-## 应该做什么
-### 1. 连接到电脑
-使用 USB Type-C 数据线将 HINATA 与电脑相连<br>HINATA 通电时会亮起黄色灯光，与电脑 USB 握手成功后会渐变为蓝色<br>HINATA Lite 通电时背面会有常亮的红色灯光，请不要在意
+At this point, the HINATA device should appear in Windows `Device Manager`.
 
-![connection](<assets/connection.jpg>)
+### 2. Write Aime Access Code to the Provided Card
+Only the Standard Edition includes the card.
+The blank card requires a Access Code to be written on it for use in SEGA games.
+If you already have an `Aime` card, `Banapass` card, or `Amusement IC` card and do not wish to use the provided blank card, you may **skip** this step.
 
-此时在 Windows 的```设备管理器```中应该可以看到 HINATA 设备
+For writing instructions, see: [Card Reading and Writing](HCP/index.md#card-reading-and-writing).
 
-![devmgr0](<assets/devmgr0.png>)
+### 3. Start Configuring Games
+[SEGA Games](SEGA/index.md)
 
-![devmgr1](<assets/devmgr1.png>)
-
-
-### 2. 为赠送的卡片写入 Aime 卡号
-仅标准版赠送卡片
-白卡需要写入卡号后方可在SEGA游戏中使用
-如果你有自己的`Aime`卡片，`Banapass`卡片或 `Amusement IC`（四社通）卡片，并且不想使用赠送的白卡，可以**跳过**该步骤
-
-写入方式请见：[卡片读写](HCP/index.md#卡片读写)
-
-### 3. 开始配置游戏
-[SEGA 游戏](SEGA/index.md)
-
-[KONAMI 游戏](KONAMI/index.md)
-
+[KONAMI Games](KONAMI/index.md)

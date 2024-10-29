@@ -1,41 +1,37 @@
-# KONAMI 游戏配置说明
-**该功能仅限标准版**
+# KONAMI Game Configuration Instructions
 
-## CardIO 读卡设置
+## CardIO Card Reading Settings
 
-1. 部分较旧的固件版本需要绑定 HID 灯光才能进行读卡
-2. 打开 *spicecfg* ，在顶部选择 **Advanced** ，找到 `CardIO HID Reader Support (-cardio)` 并勾选<br>如图所示：
-   
+1. Some older firmware versions require binding the HID light for card reading to function properly.
+2. Open *spicecfg*, select **Advanced** at the top, find `CardIO HID Reader Support (-cardio)`, and check the box.  
    ![spicecardio](assets/spicecardio.png)
 
-3. 如果勾选 `CardIO HID Reader Support (-cardio)` 后读卡器不工作（可能会出现在远古版本的 Spice 或非 Windows10 及以上的版本上）请尝试勾选 `HID SmartCard`，请确认不工作时再勾选，非必要情况请勿勾选
-4. 如果发现刷卡的槽位不对（例如 IIDX 这种有 1P 和 2P 的游戏）<br>请勾选下面的 `xxx Order Flip`
+3. If the card reader does not work after checking `CardIO HID Reader Support (-cardio)` (this may occur in older versions of Spice or non-Windows 10 and above versions), try checking `HID SmartCard`. Please confirm that it is not working before checking this option; do not check it unless necessary.
+4. If you find that the card swiping slot is incorrect (for example, in games like IIDX that have 1P and 2P), check the `xxx Order Flip` option below.
 
-默认情况下 CardIO 偏向最高兼容性，能刷入的卡包括:
+By default, CardIO is set for maximum compatibility, and the following card types can be read:
 
-| 卡类型 | 能否刷卡 |
-| :---: | :---: |
-| Amusement IC (四社通)| ✅ |
-| 任何 ISO14443-A | ✅ |
-| 任何 Felica 卡(Suica, AIC, Osaifu-Keitai) | ✅ |
-| 任何 Aime 卡 | ✅ |
-| ISO15693 (旧版 epass) | ❌ |
+| Card Type                          | Can Read Cards |
+| :--------------------------------- | :------------- |
+| Amusement IC             | ✅             |
+| Any ISO14443-A                    | ✅             |
+| Any Felica card (Suica, AIC, Osaifu-Keitai) | ✅       |
+| Any Aime card                     | ✅             |
+| ISO15693 (old version epass)     | ❌             |
 
-可以在 [HINATA 控制中心](../HCP/index.md) 中控制可以读取的卡范围 （ISO14443A，Aime）
+You can control the range of readable cards (ISO14443A, Aime) in the [HINATA Control Panel](../HCP/index.md).
 
+## HID Light Binding
+When SDVX is in Valkyrie cabinet mode or IIDX is in Thunder cabinet mode, the game will output light signals to the card reader. Here’s how to bind it:
 
-## HID 灯光绑定
-当 SDVX 处于女武神框体模式时，IIDX 处于雷霆框体模式时，游戏就会向读卡器输出灯光。以下是绑定方式：
-1. 打开 *spicecfg* ，在顶部选择 **Lights**，找到 `IC Card Reader *`
-2. 按下图方式绑定:
-   
+1. Open *spicecfg*, select **Lights** at the top, and find `IC Card Reader *`.
+2. Bind it as shown in the image below:  
    ![spicelight](assets/spicelight.png)
 
-3. IIDX 之类的有 2P 位的游戏会分为 1P、2P 共六个通道，绑定你有玩的 P 位，或者使用两个读卡器的时候可以都绑定
-4. 调整灯光亮度：在 *spicecfg* > **Advanced** > `Light Brightness Adjustment`内可以调整
-![spicebrightness](assets/spicebrightness.png)
+3. Games like IIDX that have 2P positions will be divided into 1P and 2P, totaling six channels. Bind the channel corresponding to the player position you are using, or bind both if using two card readers.
+4. Adjust light brightness: In *spicecfg* > **Advanced** > `Light Brightness Adjustment`, you can make adjustments.  
+   ![spicebrightness](assets/spicebrightness.png)
 
-
-## 其他页面
-* [调整 CardIO 读卡限制](../HCP/index.md#cardio设置)
-* [SEGA 游戏设置](../SEGA/index.md)
+## Other Resources
+* [Adjusting CardIO Reading Limits](../HCP/index.md#cardio-settings)
+* [SEGA Game Configuration Instructions](../SEGA/index.md)

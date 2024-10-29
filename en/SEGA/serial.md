@@ -1,64 +1,63 @@
-# SEGA 官方串口协议连接游戏
+# Connecting to SEGA Games via Official Serial Protocol
 
-## 食用须知
-使用 SEGA 官方的串口读卡器协议需要关闭 Segatools 的读卡器 hook<br>如果关闭 hook 以后游戏未成功连接到读卡器（比如某些地方设置错误），游戏便会断网，需要修好后重启游戏
+## Important Notes
+When using SEGA's official serial card reader protocol, you need to disable the reader hook in Segatools. If the game fails to connect to the reader after disabling the hook (for example, due to incorrect settings), the game will lose its internet connection. You will need to fix the issue and restart the game.
 
-## 读卡器端口配置
+## Card Reader Port Configuration
 
-   | 游戏 | 端口号 |
-   | :---: | :---: |
-   |maimai DX | COM1 |
-   |ONGEKI | COM1 |
-   |CHUNITHM | COM4 |
+| Game       | Port Number |
+|------------|-------------|
+| maimai DX  | COM1        |
+| ONGEKI     | COM1        |
+| CHUNITHM   | COM4        |
 
-1. 首先确认你游玩的游戏的**端口号**并记下。以上是常用游戏的默认端口号，其他游戏如果使用 amdaemon 的话可以在`config_common.json`中查看
+1. First, confirm the **port number** for the game you are playing and make a note of it. The above are the default port numbers for commonly used games. For other games using amdaemon, you can check in `config_common.json`.
 
 2. 
-   1. 打开 Windows 的 `设备管理器` ，默认情况下的排列方式是 按类型列出设备
-   2. 我们首先要确保对应游戏连接读卡器的端口号是否被其他设备占用
-   3. **拔掉读卡器**，寻找 `端口` 下拉菜单
+   1. Open Windows `Device Manager`. By default, devices are listed by type.
+   2. Ensure that the port number corresponding to the game’s connection to the reader is not occupied by other devices.
+   3. **Unplug the card reader** and look for the `Ports` dropdown menu.
 
    ![devmgr3](assets/devmgr3.png)
 
-   4. 如果没有看到 `端口` 下拉菜单，可以直接进入下一步<br>如果有的话，下拉并检查是否有设备占用了目标端口
-   5. 如果有设备占用了端口，需要右键该设备，并依次选择 `属性 → 端口设置 → 高级`
-   
+   4. If you do not see the `Ports` dropdown menu, you can proceed to the next step. If it is present, check whether any devices are occupying the target port.
+   5. If a device is using the port, right-click on that device and select `Properties → Port Settings → Advanced`.
+
    ![devmgr2](assets/devmgr2.png)
-   
-   6. 将 COM 端口号 **修改为其他的端口**（比如 COM255）
-3. **插上读卡器**，进入下图的选单（**按容器列出设备**）
-   
+
+   6. Change the COM port number to **another port** (e.g., COM255).
+3. **Plug in the card reader** and navigate to the following menu (**Devices by Container**).
+
    ![devmgr0](<../assets/devmgr0.png>)
 
-4. 找到 **HINATA** 
-   
+4. Find **HINATA**.
+
    ![devmgr1](<../assets/devmgr1.png>)
 
-5. 右键点击 `USB 串行设备`，并依次选择 并依次选择 `属性 → 端口设置 → 高级`
-6. 将 `COM 端口号` 修改为对应游戏所需要的端口号。因为读卡器使用了 *USB CDC* 类来进行串口通信，正常情况下无需修改波特率设置
-7. 修改完成后需要重新插拔一次读卡器
+5. Right-click on `USB Serial Device`, and select `Properties → Port Settings → Advanced`.
+6. Change the `COM Port Number` to the required port number for your game. Since the card reader uses *USB CDC* class for serial communication, there is usually no need to modify the baud rate settings.
+7. After making the changes, you need to unplug and replug the card reader.
 
-
-## 游戏本体配置
-1. 首先请确保你的游戏是**已经联网**的，进入游戏后能够显示一个**绿色地球图标**，否则请先把游戏的联网设置好，不在本文讨论范围内
-2. 打开`segatools.ini`，并按照如下方式修改：
+## Game Configuration
+1. First, ensure that your game is **connected to the internet** and shows a **green globe icon** after entering the game. If not, you need to set up the game's internet connection, which is not covered in this document.
+2. Open `segatools.ini` and modify it as follows:
    ```ini
-   ;如果没有[aime]条目则请手动添加该条目和条目下内容
+   ; If there is no [aime] entry, please manually add this entry and its content
    [aime]
    enable=0
-   ;enable=0的用途是关闭掉segatools的读卡器hook，使用官方串口IO，请务必这样设置**
+   ; Setting enable=0 disables Segatools' reader hook, allowing the use of the official serial IO. Please make sure to set this.
 
-   ;如果有[aimeio]条目(比如使用了hinata的aimeio模式，以及mageki或nageki)
-   ;在前面添加";"来注释掉，或者直接整段删掉
+   ; If there is an [aimeio] entry (e.g., if using HINATA's AimeIO mode, or Mageki or Nageki)
+   ; comment it out by adding ";" in front, or delete the entire section
    [aimeio]
    ;path=hinata.dll
-   ;如果有以上条目的话请务必删除
+   ; If the above entries exist, please make sure to delete them.
    ```
-3. 因为读卡器使用了 *USB CDC* 类来进行串口通信，正常情况下无需修改波特率设置
-4. 启动游戏
+3. Since the card reader uses *USB CDC* class for serial communication, there is usually no need to modify the baud rate settings.
+4. Start the game.
 
-## 其他页面
-* [调整串口模式下灯光亮度](../HCP/index.md)
-* [AimeIO 方式连接 SEGA 游戏](aimeio.md)
-* [游戏内测试读卡器](in_game_test.md)
-* [KONAMI 游戏设置](../KONAMI/index.md)
+## Other Resources
+* [Adjusting Light Brightness in Serial Mode](../HCP/index.md)
+* [Connecting SEGA Games via AimeIO](aimeio.md)
+* [In-Game Card Reader Test](in_game_test.md)
+* [KONAMI Game Configuration Instructions](../KONAMI/index.md)

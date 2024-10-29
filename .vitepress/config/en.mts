@@ -14,7 +14,34 @@ export const en = defineConfig({
     ],
 
     sidebar: [
-      { text: 'Coming Soon...', link: '/en/comingsoon/' },
+      {
+        text: 'Quick Start',
+        items: [
+          { text: 'Introduction & First Use', link: '/quickstart' },
+          {
+            text: 'Configuring the Game',
+            items: [
+              {
+                text: 'SEGA Games',
+                items: [
+                  { text: 'Configuration Instructions', link: '/SEGA/' },
+                  { text: 'Official Serial Protocol', link: '/SEGA/serial' },
+                  { text: 'AimeIO', link: '/SEGA/aimeio' },
+                  { text: 'In-Game Card Reader Test', link: '/SEGA/in_game_test' },
+                  { text: 'Q & A', link: '/SEGA/qa' }
+                ]
+                
+              },
+              { text: 'KONAMI Games', link: '/KONAMI/' },
+              { text: 'HINATA Control Panel', link: '/HCP/' },
+              { text: 'Firmware Update', link: '/Update/' }
+            ]
+            
+          }
+        ]
+        
+      },
+      { text: 'Purchase & Support', link: '/purchase_contact' }
     ]
   }
 })
