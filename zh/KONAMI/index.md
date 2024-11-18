@@ -4,7 +4,8 @@
 ## CardIO 读卡设置
 
 1. 部分较旧的固件版本需要绑定 HID 灯光才能进行读卡
-2. 打开 *spicecfg* ，在顶部选择 **Advanced** ，找到 `CardIO HID Reader Support (-cardio)` 并勾选<br>如图所示：
+2. 打开 *spicecfg* ，在顶部选择 **Advanced**（Spice版本太旧的话在 **Options** 里，并且需要显示隐藏选项） ，找到 `CardIO HID Reader Support (-cardio)` 并勾选  
+如图所示：
    
    ![spicecardio](/assets/spicecardio.png)
 

@@ -6,7 +6,7 @@ AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器
 * 目前无法读取卡号**非 510 开头**的版本的 `Banapass`：
   * 日本发行的旧版（非 `Amusement IC` 版本的）
   * 在海外发行的所有版本，包括国行
-* 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果发生了请更换一份 Segatools
+* 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC` 、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools ，或者更换为**串口协议**连接
 
 **标准版需求固件版本号 ≥ `2024083100` （2024 年 8 月 31 日后发货的可以直接用**
 
@@ -30,6 +30,7 @@ AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器
    ;brightness控制读卡器亮度 0 ~ 255可选，如果不加的话默认为128
    ```
 4. 启动游戏
+5. 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC` 、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools ，或者更换为**串口协议**连接
 
 
 ## 其他页面

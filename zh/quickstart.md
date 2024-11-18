@@ -30,6 +30,8 @@ Lite 版用户可以收到：
 写入方式请见：[卡片读写](HCP/index.md#卡片读写)
 
 ### 3. 开始配置游戏
+SEGA 游戏的配置与 KONAMI 游戏的配置可以共存  
+（在调整 KONAMI 游戏的配置时不需要在意 SEGA 游戏端口号配置与否，读卡器状态会自动切换）
 * [SEGA 游戏](SEGA/index.md)
 * [KONAMI 游戏](KONAMI/index.md)
 

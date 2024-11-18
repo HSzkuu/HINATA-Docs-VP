@@ -14,7 +14,8 @@ HINATA 控制中心用于控制 HINATA 的各项设置以及写卡用，调整�
 
 
 ## 主页开关
-1. PN532 直通模式，可以将串口直通为 PN532 设备，在第三方的 NFC 工具中使用（默认关闭）
+1. PN532 直通模式，开启后可以将串口直通为 PN532 设备，在第三方的 NFC 工具中使用（默认关闭）  
+第三方工具推荐：[Mifare One Tool](https://github.com/xcicode/MifareOneTool)，[NFCToolsGUI](https://github.com/GSWXXN/NFCToolsGUI)
 2. 深色主题与亮色主题切换，在右上角
 3. 底部的滑块用于调整 SEGA 串口模式时的亮度（AimeIO 方式下亮度可以在 `segatools.ini` 内调整），旁边的按钮进入设置闲置时灯光的页面
 4. **控制中心内暂未实现固件更新，目前那个按钮没啥用，请使用该文档内的方法更新**
