@@ -11,7 +11,9 @@ Lite 版用户可以收到：
 
 ## 应该做什么
 ### 1. 连接到电脑
-使用 USB Type-C 数据线将 HINATA 与电脑相连<br>HINATA 通电时会亮起黄色灯光，与电脑 USB 握手成功后会渐变为蓝色<br>HINATA Lite 通电时背面会有常亮的红色灯光，请不要在意
+使用 USB Type-C 数据线将 HINATA 与电脑相连  
+HINATA 通电时会亮起黄色灯光，与电脑 USB 握手成功后会渐变为蓝色  
+HINATA Lite 通电时背面会有常亮的红色灯光，请不要在意
 
 ![connection](</assets/connection.jpg>)
 

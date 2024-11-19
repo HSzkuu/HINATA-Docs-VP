@@ -7,7 +7,8 @@ HINATA 控制中心用于控制 HINATA 的各项设置以及写卡用，调整�
 
 以后会重构控制中心以及让读卡器可以持久化设置。
   
-[点我下载 HINATA 控制中心](https://github.com/nerimoe/HINATA-release/releases/download/HINATA-2024090300/HINATA-Control-Panel-2024050400.7z)<br>（中国大陆用户如果下载比较慢的话可以在售后群群文件下载）
+[点我下载 HINATA 控制中心](https://github.com/nerimoe/HINATA-release/releases/download/HINATA-2024090300/HINATA-Control-Panel-2024050400.7z)  
+（中国大陆用户如果下载比较慢的话可以在售后群群文件下载）
 
 
 ![hcp0](assets/hcp0.png)

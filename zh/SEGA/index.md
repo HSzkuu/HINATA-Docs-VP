@@ -16,8 +16,9 @@
 ### AimeIO
 使用 **AimeIO** 时支持游戏内热插拔读卡器，读卡速度相比串口协议会稍快，但是部分行为受 Segatools 限制无法正确实现：
 
-* 使用 `Amusement IC` 卡片时**无法登录 SEGA 官服**（SDGA，SDGS 等）<br>本地服以及私服不受影响
+* 使用 `Amusement IC` 卡片时**无法登录 SEGA 官服**（SDGA，SDGS 等）  
+本地服以及私服不受影响
 * 目前无法读取卡号**非 510 开头**的版本的 `Banapass` ：
   * 日本发行的旧版（非 `Amusement IC` 版本的）
   * 在海外发行的所有版本，包括国行
-* 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC` 、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools ，或者更换为**串口协议**连接
+* 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools，或者更换为**串口协议**连接
