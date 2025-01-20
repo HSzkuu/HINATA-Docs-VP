@@ -42,23 +42,10 @@
 
 以下是常见游戏的 官方使用的端口号（排除读卡器）：
 
-#### maimai DX
-* COM2: VFD屏幕
-* COM3 & COM4: 1P & 2P 触摸屏
-* COM21 & COM23: 灯板
-
-#### Chunithm SP模式
-* COM1: 触摸板
-* COM2: VFD屏幕
-* COM20 & COM21: 灯板
-
-#### Chunithm CVT模式
-* COM1: 触摸板
-* COM2 & COM3: 灯板
-
-#### Ongeki
-* COM2: VFD屏幕
-* COM3: 灯板
+* maimai DX : `COM2: VFD屏幕`, `COM3 & COM4: 1P & 2P 触摸屏`, `COM21 & COM23: 灯板`
+* chunithm SP模式: `COM1: 触摸板`, `COM2: VFD屏幕`, `COM20 & COM21: 灯板`
+* chunithm CVT模式: `COM1: 触摸板`, `COM2 & COM3: 灯板`
+* ongeki: `COM2: VFD屏幕`, `COM3: 灯板`
 
 以上端口号均无法用于读卡器端口。
 
