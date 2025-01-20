@@ -26,6 +26,7 @@ export const zh = defineConfig({
                 items: [
                   { text: '配置说明', link: '/SEGA/' },
                   { text: '串口方式连接', link: '/SEGA/serial' },
+                  { text: '修改游戏所需的端口号', link: '/SEGA/com_port'},
                   { text: 'AimeIO 连接', link: '/SEGA/aimeio' },
                   { text: '游戏内测试读卡器', link: '/SEGA/in_game_test' },
                   { text: '常见问题', link: '/SEGA/qa' }
