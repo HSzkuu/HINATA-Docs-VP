@@ -38,14 +38,16 @@
 
 ### 何为 "官方使用的其他端口号" ？
 
-例如 **Chunithm** 中，SEGA官方使用了 `COM1` 来连接 *Ground Slider*（地键触摸板），那么修改读卡器端口号时就不可以使用 `COM1`
+例如 **CHUNITHM** 中，SEGA官方使用了 `COM1` 来连接 *Ground Slider*（地键触摸板），那么修改读卡器端口号时就不可以使用 `COM1`
 
 以下是常见游戏的 官方使用的端口号（排除读卡器）：
 
-* maimai DX : `COM2: VFD屏幕`, `COM3 & COM4: 1P & 2P 触摸屏`, `COM21 & COM23: 灯板`
-* chunithm SP模式: `COM1: 触摸板`, `COM2: VFD屏幕`, `COM20 & COM21: 灯板`
-* chunithm CVT模式: `COM1: 触摸板`, `COM2 & COM3: 灯板`
-* ongeki: `COM2: VFD屏幕`, `COM3: 灯板`
+   | 游戏 | 占用端口号及用途 |
+   | :---: | :---: |
+   |maimai DX | COM2: VFD屏幕<br>COM3 & COM4: 1P & 2P 触摸屏<br>COM21 & COM23: 灯板 |
+   |ONGEKI | COM2: VFD屏幕<br>COM3: 灯板 |
+   |CHUNITHM<br>( SP 模式 ) | COM1: 触摸板<br>COM2: VFD屏幕<br>COM20 & COM21: 灯板 |
+   |CHUNITHM<br>( CVT 模式 ) | COM1: 触摸板<br>COM2 & COM3: 灯板 |
 
 以上端口号均无法用于读卡器端口。
 
