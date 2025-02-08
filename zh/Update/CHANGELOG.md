@@ -14,8 +14,6 @@
 增加了全局的低功耗模式，10分钟内如果没有读取到任何卡片并且没有连接到任何游戏时就会开启，连接到游戏或读取到卡片时就会自动关闭
 SEGA串口模式增加了多卡选择，暂不开放，未来开放使用
 
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024093002)
-
 ## HINATA-2024090500
 
 2024/9/5:
@@ -24,14 +22,10 @@ Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-202
 修复aimeio的dll在部分segatools中被拒绝的问题
 压缩包内放了个更旧方式的更新脚本，给老固件用
 
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090500)
-
 ## HINATA-2024090400
 
 2024/9/4：
 修复cardio工作不正常的问题
-
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090400)
 
 ## HINATA-2024090300
 
@@ -43,8 +37,6 @@ Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-202
 
 2024/9/2.2:
 优化实现扩展安全验证后的felica卡读卡速度
-
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090300)
 
 ## HINATA-2024090201
 
@@ -74,8 +66,6 @@ aimeio下暂不支持旧版banapass(非Amusement IC版本的)
 再次优化全自动模式切换逻辑
 为下一代控制中心做了些预留api
 
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090201)
-
 ## HINATA-2024050400
 
 2024/5/4：
@@ -94,5 +84,3 @@ Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-202
 删除了控制中心中的 Felica兼容模式 按钮，改为默认开启
 Cardio现在可以读取Aime卡的Access Code了，而非UID（为了兼容以前的用户的账号，该功能默认关闭）
 控制中心中添加了调整cardio设置的页面：M1卡UID读取（默认开启），[new]Aime卡Access Code读取(默认关闭)
-
-Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/2024050400)
