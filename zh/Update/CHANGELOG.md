@@ -1,0 +1,98 @@
+# 更新日志
+
+## HINATA-2024093002
+
+2024/9/30:
+重写SEGA串口接包逻辑，再次修复游戏尝试更新读卡器固件的问题。
+传入游戏的hw/fw版本修改为837-15396 94
+
+2024/9/28:
+这次真的修了游戏刷固件bug，由于没有其他更改，所以这次版本叫做2024091401
+
+2024/9/14:
+修复SEGA游戏进test时会不断尝试给读卡器刷固件的bug
+增加了全局的低功耗模式，10分钟内如果没有读取到任何卡片并且没有连接到任何游戏时就会开启，连接到游戏或读取到卡片时就会自动关闭
+SEGA串口模式增加了多卡选择，暂不开放，未来开放使用
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024093002)
+
+## HINATA-2024090500
+
+2024/9/5:
+在读卡器通电时会亮黄色灯光，USB握手成功后才会渐变为蓝色灯光，可以直观判断读卡器有没有成功连接到电脑
+再次优化模式切换逻辑
+修复aimeio的dll在部分segatools中被拒绝的问题
+压缩包内放了个更旧方式的更新脚本，给老固件用
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090500)
+
+## HINATA-2024090400
+
+2024/9/4：
+修复cardio工作不正常的问题
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090400)
+
+## HINATA-2024090300
+
+**有 Bug，请谨慎刷入**
+
+2024/9/3：
+由于已经实现了官方读卡器完整的所有读卡逻辑，现在暂时删除Felica兼容模式(把各类Felica卡伪装为Felica Lite-S来骗过游戏)
+底层屏蔽掉了sak20的标签（因为会影响Mobile Felica）。现在刷Pixel以及各类日版机的Mobile Felica应该可以更加稳定。
+
+2024/9/2.2:
+优化实现扩展安全验证后的felica卡读卡速度
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090300)
+
+## HINATA-2024090201
+
+**有 Bug，请谨慎刷入**
+
+2024/9/2.1:
+修复了9月2日固件引入的无法读卡的bug
+
+2024/9/2:
+实现了官方读卡器的额外校验，现在可以让游戏直接连接官服aimedb刷卡了
+（代码部分地方做了大改，有可能会不稳定）
+
+2024/8/31:
+今天是初音未来女士33岁生日 祝她生日快乐
+正式支持了aimeio，虽然旧版固件也能用我的aimeio，但是有点小bug，于是先把这个固件发出来了
+
+aimeio下读卡器可以在游戏内热插拔，读卡器拔掉以后也不会断网，也可以随时插回去，并且可以在segatools.ini中调整灯光亮度。
+即插即用，不需要和Windows斗智斗勇来设置端口号
+aimeio相对于 原生串口协议 来说对头文字D之类或者其他小众sega游戏支持较好
+
+aimeio下暂不支持旧版banapass(非Amusement IC版本的)
+并且由于segatools有些抽象实现，导致aimeio下可能在某些实现了官方aimedb的服务器刷四社卡后卡号依然不对，RIN服已经联系解决，其他服请自求多福（
+如果你用的是aqua/artemis本地服，或者是鹿网，nageki网之类的没有实现官方aimedb的服务器，对你没有影响
+
+建议优先使用原生协议模式（串口）
+
+再次优化全自动模式切换逻辑
+为下一代控制中心做了些预留api
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/HINATA-2024090201)
+
+## HINATA-2024050400
+
+2024/5/4：
+控制中心内读卡时点击可以一键复制卡号
+在HINATA上电后不需要绑定灯光就可以使用CardIO，但如果上电后启动过SEGA游戏，就需要绑定灯光，或者重新插拔读卡器。
+现在在太鼓上应该不会刷一次卡就炸游戏了。
+修复了spicecfg的 Analog 选项卡中会显示HINATA的bug。
+控制中心内读卡速度优化
+
+2024/5/2：
+！该版本各种意义上都改动较大，如果遇到以前没有遇到过的bug请回退版本
+！控制中心请不要沿用旧版的config.json
+优化了CardIO和SEGA串口的切换逻辑
+修复了spicecfg中会显示两个HINATA的bug
+修复了控制中心在启动时不会向读卡器同步设置的bug
+删除了控制中心中的 Felica兼容模式 按钮，改为默认开启
+Cardio现在可以读取Aime卡的Access Code了，而非UID（为了兼容以前的用户的账号，该功能默认关闭）
+控制中心中添加了调整cardio设置的页面：M1卡UID读取（默认开启），[new]Aime卡Access Code读取(默认关闭)
+
+Link: [Github](https://github.com/nerimoe/HINATA-release/releases/tag/2024050400)
