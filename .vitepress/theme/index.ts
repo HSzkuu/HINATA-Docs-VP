@@ -9,10 +9,6 @@ import {
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-import { 
-  NolebaseInlineLinkPreviewPlugin, 
-} from '@nolebase/vitepress-plugin-inline-link-preview/client'
-import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 
 import {  
   NolebaseHighlightTargetedHeading,  
@@ -34,7 +30,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    app.use(NolebaseInlineLinkPreviewPlugin) 
     // ...
   }
 } satisfies Theme
