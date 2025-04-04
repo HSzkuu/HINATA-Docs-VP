@@ -14,7 +14,7 @@ AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器
 ## 游戏配置
 1. 首先请确保你的游戏是**已经联网**的，进入游戏后能够显示一个**绿色地球图标**，否则请先把游戏的联网设置好，不在本文讨论范围内
 2. 把本文提供的 `hinata.dll` 放入游戏目录下(与 amdaemon.exe, inject.exe, segatools.ini 放一起)
-[点我下载](https://github.com/nerimoe/HINATA-release/releases/download/HINATA-2024090500/hinata.dll)（如果下载慢的话可以在售后群下载）
+[点我下载](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/main/hinata.dll)（如果下载慢的话可以在售后群下载）
 3. 打开 `segatools.ini`，并按照如下方式修改：
    ```ini
    ;如果没有[aime]条目则请手动添加该条目和条目下内容
