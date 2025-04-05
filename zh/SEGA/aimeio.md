@@ -25,21 +25,28 @@ AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器
 
    ; 如果没有 [aimeio] 条目的话需要自己添加
    [aimeio]
-   ; path 用于指定 dll 路径
+   ; 指定 dll 路径
    path=hinata.dll
-   ; brightness 控制读卡器亮度（0 ~ 255，默认 128）
+   ; 控制读卡器亮度（0 ~ 255，默认 128）
    brightness=128
+   ```
+
+4. 若你想要修改默认设置，请在 `segatools.ini` 中的 `[aimeio]` 条目下添加：
+
+   ```ini
    ; 和回车刷卡共存 (0 = 关，1 = 开，默认开)
    enableReturnKey=1
    ```
-   如果你的固件版本号 ≥ `2025040400`，则可以在 `[aimeio]` 条目下添加：
+
+   如果你的固件版本号 ≥ `2025040400`，则可以继续添加：
+
    ```ini
    ; Amusement IC 卡号绕过 AimeDB 服务器，直接将卡号发送给服务器（0 = 关，1 = 开，默认开）
    aicBypassDB=1
    ```
 
-4. 启动游戏
-5. 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools，或者更换为**串口协议**连接
+5. 启动游戏
+6. 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools，或者更换为**串口协议**连接
 
 
 ## 其他页面
