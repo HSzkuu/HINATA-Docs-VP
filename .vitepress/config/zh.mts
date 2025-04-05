@@ -33,18 +33,18 @@ export const zh = defineConfig({
                 ]
                 
               },
-              { text: 'KONAMI 游戏', link: '/KONAMI/' },
-              { text: 'HINATA 控制中心', link: '/HCP/' },
-              {
-                text: '固件更新',
-                items: [
-                  { text: '更新说明', link: '/Update/' },
-                  { text: '更新日志', link: '/Update/CHANGELOG' }
-                ]
-              }
+              { text: 'KONAMI 游戏', link: '/KONAMI/' }
             ]
-            
-          }
+          },
+          { text: 'HINATA 控制中心', link: '/HCC/' },
+          {
+            text: '固件更新',
+            items: [
+              { text: '更新说明', link: '/Update/' },
+              { text: '更新日志', link: '/Update/CHANGELOG' }
+            ]
+          },
+          { text: 'HINATA 控制中心（旧）', link: '/HCP/' }
         ]
         
       },
