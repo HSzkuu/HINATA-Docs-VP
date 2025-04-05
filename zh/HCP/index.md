@@ -1,5 +1,5 @@
 # HINATA 控制中心（旧）
-简称 **HCP**，请与 **HCC** (HINATA Control Center) 分辨清楚
+简称 **HCP**，请与 [**HCC** (HINATA Control Center)](/HCC/) 分辨清楚
 
 **该功能仅限标准版使用**
 ## 简介

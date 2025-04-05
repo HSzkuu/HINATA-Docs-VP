@@ -1,5 +1,5 @@
 # HINATA 控制中心
-简称 **HCC**，请与 **HCP** (HINATA Control Panel) 分辨清楚
+简称 **HCC**，请与 [**HCP** (HINATA Control Panel)](/HCP/) 分辨清楚
 
 **该功能仅限 HINATA & HINATA Lite 固件版本 2025040400 及以上使用**
 
