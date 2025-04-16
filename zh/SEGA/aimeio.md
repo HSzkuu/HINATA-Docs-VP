@@ -1,10 +1,11 @@
 # AimeIO 方式连接游戏
 
 ## 食用须知
-AimeIO 依托于 Segatools 对读卡器的 hook，可以实现游戏内读卡器热插拔  
-但是受限于 Segatools，有以下缺点：
-* 使用 `Amusement IC` 卡片时**无法登录 SEGA 官服**；
-* 目前无法读取特别早期发行的 `Banapass`
+使用 **AimeIO** 时支持游戏内热插拔读卡器，读卡速度相比串口协议会稍快，并且 **配置方便，不需要和 Windows 斗智斗勇来设置串口**，支持绕过服务器，**直接读取 `Amusement IC` 卡片的正确卡号**。但是部分行为受 Segatools 限制无法正确实现：
+
+* 使用 `Amusement IC` 卡片时**无法登录 SEGA 官服**（SDGA，SDGS 等）  
+本地服以及私服不受影响
+* 目前无法读取非 `Amusement IC` 的 `Banapass` (卡上没有 aic 的标志，或者背面是英文或韩文或日文的)
 * 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，或是实现不正确。如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时在游戏中遇到了各种刷卡问题，请更换一份 Segatools，或者更换为**串口协议**连接
 
 **标准版需求固件版本号 ≥ `2024083100` （2024 年 8 月 31 日后发货的可以直接用，2024 年 8 月 31 日前发货的需要更新固件**
