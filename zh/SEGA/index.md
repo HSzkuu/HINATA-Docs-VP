@@ -18,5 +18,5 @@
 
 * 使用 `Amusement IC` 卡片时**无法登录 SEGA 官服**（SDGA，SDGS 等）  
 本地服以及私服不受影响
-* 目前无法读取特别早期发行的 `Banapass`
+* 目前无法读取非 `Amusement IC` 的 `Banapass` (卡上没有 aic 的标志，或者背面是英文或韩文或日文的)
 * 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，或是实现不正确。如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时在游戏中遇到了各种刷卡问题，请更换一份 Segatools，或者更换为**串口协议**连接
