@@ -35,13 +35,13 @@ Lite 版需求固件版本号 ≥ `2024090500`（2024 年 9 月 5 日后发货�
    [aimeio]
    ; 指定 dll 路径
    path=hinata.dll
-   ; 控制读卡器亮度（0 ~ 255，默认 128）
-   brightness=128
    ```
 
-4. 若你想要修改默认设置，请在 `segatools.ini` 中的 `[aimeio]` 条目下添加：
+4. 若你想要修改默认设置，请在 `segatools.ini` 中的 `[aimeio]` 条目下添加以下设置，一下三条设置如果不添加的话则全部为默认值：
 
    ```ini
+   ; 控制读卡器亮度（0 ~ 255，默认 128）
+   brightness=128
    ; 和回车刷卡共存 (0 = 关，1 = 开，默认开)
    enableReturnKey=1
    ```
