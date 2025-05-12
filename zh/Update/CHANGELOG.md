@@ -1,4 +1,14 @@
 # 更新日志
+## HINATA & HINATA Lite 2025051301-c4fea99b
+
+重构部分模块
+修复部分特殊sak卡片不能刷的问题
+实现了sega游戏的thincaled指令
+优化刷卡速度和稳定性
+优化了iPhone的pasmo读取成功率
+为后续控制中心的使用预留了更多接口
+上电后的灯效修改为彩虹灯，如果检测到卡片就会提高亮度
+
 
 ## HINATA & HINATA Lite 2025040400
 

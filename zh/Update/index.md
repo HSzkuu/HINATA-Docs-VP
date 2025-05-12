@@ -5,18 +5,10 @@
 
 ## 使用 HINATA 控制中心进行更新
 **该功能仅限 HINATA & HINATA Lite 固件版本 2025040400 及以上使用**  
-**当前版本不支持 Windows 使用控制中心进行固件更新，请下载固件后手动更新**
+仅支持 macOS, Linux(需要编辑udev规则), ChromeOS
 
 [使用 HINATA 控制中心进行更新](/HCC/#固件更新)
 
-## 使用更新包手动更新
-
-### 更新包下载
-* **HINATA** 的更新包在 [售后群](https://qm.qq.com/q/r6ptk9XsQ2) 内提供，也在 [Github](https://github.com/nerimoe/HINATA-release/releases) 上提供  
-**HINATA Lite** 的更新包只在 [售后群](https://qm.qq.com/q/r6ptk9XsQ2) 内提供
-  
-### 更新方式
-![update](assets/update.png)
-1. 首先解压更新包
-2. 安装 `CH372DRV.EXE`
-3. 双击 `flash.bat`，并按照脚本内的提示更新固件
+## 使用更新器更新
+Windows 下需要使用 HINATAUT 来更新固件，下载后直接点击运行就可以了
+[点我下载](https://github.com/nerimoe/HINATA-release/releases/download/updater/hinataut-rs.exe)
