@@ -8,7 +8,7 @@ hero:
   tagline: 
   actions:
     - theme: brand
-      text: 快速开始
+      text: 快速开始(完整说明书)
       link: ./quickstart
     - theme: brand
       text: 视频说明书
