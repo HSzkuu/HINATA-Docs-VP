@@ -11,14 +11,15 @@ hero:
       text: 快速开始(完整说明书)
       link: ./quickstart
     - theme: brand
-      text: 视频说明书
-      link: https://www.bilibili.com/video/BV1VQCUYyEGA/      
+      text: 购买 & 售后
+      link: ./purchase_contact
     - theme: alt
       text: 介绍视频
       link: https://www.bilibili.com/video/BV1Gi421i7ej/
     - theme: alt
-      text: 购买 & 售后
-      link: ./purchase_contact
+      text: 视频说明书
+      link: https://www.bilibili.com/video/BV1VQCUYyEGA/      
+
 
 features:
   - title: SEGA / KONAMI 游戏支持
