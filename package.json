@@ -8,7 +8,8 @@
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.13.0",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.13.0",
     "@nolebase/vitepress-plugin-sidebar": "^2.13.0",
-    "vitepress": "^1.5.0"
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },
   "dependencies": {
     "@lunariajs/core": "^0.1.1",
