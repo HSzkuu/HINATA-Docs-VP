@@ -2,7 +2,7 @@
 
 **如果你没有 中二节奏 和 舞萌/音击 来回换着玩的需求，也没有什么特殊需求的话可以忽略本节**
 
-本文仅限对于使用官方串口协议连接的用户使用，如果您按照下面的教程修改了部分配置文件，但要使用 `虚拟读卡(回车)` 或者 `aimeio`，请将配置文件还原回默认配置，否则无法使用。
+本文仅限对于使用官方串口协议连接的用户使用，如果您按照下面的教程修改了部分配置文件，但要使用 `虚拟读卡(回车)` 或者 `AimeIO`，请将配置文件还原回默认配置，否则无法使用。
 
 ## 简介
    | 游戏 | 默认端口号 |
@@ -24,10 +24,10 @@
 
 * `config_client.json` 和 `config_server.json` 均为配信服务器相关设置，本文可以忽略
 * `config_hook.json` 为segatools自带的，用于强制覆写部分设置
-* `config_cvt.json` 和 `config_sp.json` 是 **Chunithm** 独有的配置文件
+* `config_cvt.json` 和 `config_sp.json` 是 **CHUNITHM** 独有的配置文件
 * `config_common.json` 是所有游戏都会有的配置文件
 
-我们要找的端口号设置就存放在 `config_common.json`，但是如果是 **Chunithm** 的话则需要编辑 `config_cvt.json` 和 `config_sp.json` 根据启动时使用的框体不同而不同
+我们要找的端口号设置就存放在 `config_common.json`，但是如果是 **CHUNITHM** 的话则需要编辑 `config_cvt.json` 和 `config_sp.json` 根据启动时使用的框体不同而不同
 
 ### 修改
 打开 `config_common.json` 或者 `config_cvt/sp.json`，往下翻就可以找到 `aime` 条目：

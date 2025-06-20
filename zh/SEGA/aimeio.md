@@ -57,7 +57,7 @@
    aicBypassDB=1
    ```
 
-5. 启动游戏，但如果你发现无论如何怎么配置都只有回车刷卡能用，而读卡器的灯光没任何反应，也无法刷卡的话，那就是你的 segatools 并不支持加载 aimeio ，请更换一份segatools (xxxhook.dll, inject.exe)
+5. 启动游戏，但如果你发现无论如何怎么配置都只有回车刷卡能用，而读卡器的灯光没任何反应，也无法刷卡的话，那就是你的 segatools 并不支持加载 aimeio ，请更换一份 Segatools (xxxhook.dll, inject.exe)
 6. 部分 Segatools 无法使用包括 `Amusement IC` 在内的所有 [Felica](https://zh.wikipedia.org/wiki/FeliCa) 卡片，如果您出现了刷 `Amusement IC`、`Hime` 等 Felica 卡片时游戏中遇到了刷卡错误的情况，请更换一份 Segatools，或者更换为**串口协议**连接
 
 
