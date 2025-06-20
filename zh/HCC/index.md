@@ -29,7 +29,7 @@ Coming Soon
 
 ![card1](assets/card1.png)
 
-放置卡片后出现以下界面，写卡请输入 **20 位 Access Code** 到输入框内并**回车**以刷入卡号
+放置卡片后出现以下界面，写卡请输入 **20 位 Access Code** 到输入框内并**回车**以刷入卡号，如果没有卡号输入的对话框说明卡片不支持写入
 
 ![card2](assets/card2.png)
 
