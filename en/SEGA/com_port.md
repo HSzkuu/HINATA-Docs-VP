@@ -44,10 +44,10 @@ Avoid ports reserved for other official hardware. Examples:
 
 | Game              | Occupied Ports & Usage                      |  
 | :---------------- | :------------------------------------------ |  
-| **maimai DX**     | COM2: VFD Screen<br>COM3/COM4: Touchscreens<br>COM21/COM23: Light Boards |  
-| **ONGEKI**        | COM2: VFD Screen<br>COM3: Light Boards       |  
-| **CHUNITHM (SP)** | COM1: Touch Panel<br>COM2: VFD Screen<br>COM20/COM21: Light Boards |  
-| **CHUNITHM (CVT)**| COM1: Touch Panel<br>COM2/COM3: Light Boards |  
+| **maimai DX**     | COM2: VFD Screen<br>COM3/COM4: Touchscreens<br>COM21/COM23: LED |  
+| **ONGEKI**        | COM2: VFD Screen<br>COM3: LED       |  
+| **CHUNITHM (SP)** | COM1: Ground Slider<br>COM2: VFD Screen<br>COM20/COM21: LED |  
+| **CHUNITHM (CVT)**| COM1: Ground Slider<br>COM2/COM3: LED |  
 
 ***Never*** assign the card reader to these ports.  
 
