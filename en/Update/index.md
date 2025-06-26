@@ -1,12 +1,15 @@
-# Firmware Update
 
-* **HINATA** is shipped with the latest stable firmware pre-installed as of the shipping date. If the card reader is functioning properly and you are not interested in new features, you do not need to update.
-* The control center currently does not have a one-click firmware update feature; firmware updates require downloading an update package.
-* Update packages for **HINATA** are provided on [GitHub](https://github.com/nerimoe/HINATA-release/releases).  
+# Firmware Update  
+Update only if necessary—if the reader works stably and new features aren’t needed. Firmware updates may resolve certain issues.  
 
-## Update Method
-![update](assets/update.png)
+## Updating via HINATA Control Center  
+**Requires HINATA/HINATA Lite firmware ≥ 2025040400**  
+Supported: macOS, Linux (requires udev rules setup), ChromeOS  
 
-1. First, extract the update package.
-2. Install `CH372DRV.EXE`.
-3. Double-click `flash.bat` and follow the prompts in the script to update the firmware.
+[Update via HINATA Control Center](../HCC/#firmware-update)  
+
+## Updating via Updater Tool (Windows)  
+Use **HINATAUT** on Windows:  
+1. Download the updater:  
+   * [International Download](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)   
+2. Run the downloaded `.exe` file.

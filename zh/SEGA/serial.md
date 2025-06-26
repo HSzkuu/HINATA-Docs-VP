@@ -55,7 +55,7 @@
 
    ;如果有[aimeio]条目(比如使用了hinata的aimeio模式，以及mageki或nageki)
    ;在前面添加";"来注释掉，或者直接整段删掉
-   [aimeio]
+   ;[aimeio]
    ;path=hinata.dll
    ;如果有以上条目的话请务必删除
    ```

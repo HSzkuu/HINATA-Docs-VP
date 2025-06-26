@@ -32,7 +32,7 @@ AimeIO relies on Segatools to hook into the card reader, allowing for hot-swappi
    ```
 4. Start the game.
 
-## Other Resources
+## Related Guides
 * [Connecting to SEGA Games via Serial Protocol](serial.md)
 * [In-Game Card Reader Test](in_game_test.md)
 * [KONAMI Game Configuration Instructions](../KONAMI/index.md)

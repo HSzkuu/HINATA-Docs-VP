@@ -1,4 +1,6 @@
 # HINATA Control Panel
+Abbreviated as **HCP**. *Distinguish from [**HCC** (HINATA Control Center)](../HCC/)* 
+
 **This feature is limited to the standard version.**
 
 ## Introduction

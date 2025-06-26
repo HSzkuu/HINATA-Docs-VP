@@ -19,25 +19,26 @@ export const en = defineConfig({
         items: [
           { text: 'Introduction & First Use', link: '/en/quickstart' },
           {
-            text: 'Configuring the Game',
+            text: 'Configure Games',
             items: [
               {
                 text: 'SEGA Games',
                 items: [
                   { text: 'Configuration Instructions', link: '/en/SEGA/' },
                   { text: 'Official Serial Protocol', link: '/en/SEGA/serial' },
+                  { text: 'Modifying Required COM Port for Games', link: '/en/SEGA/com_port'},
                   { text: 'AimeIO', link: '/en/SEGA/aimeio' },
                   { text: 'In-Game Card Reader Test', link: '/en/SEGA/in_game_test' },
-                  { text: 'Q & A', link: '/en/SEGA/qa' }
+                  { text: 'Q&A', link: '/en/SEGA/qa' }
                 ]
                 
               },
-              { text: 'KONAMI Games', link: '/en/KONAMI/' },
-              { text: 'HINATA Control Panel', link: '/en/HCP/' },
-              { text: 'Firmware Update', link: '/en/Update/' }
+              { text: 'KONAMI Games', link: '/en/KONAMI/' }
             ]
-            
-          }
+          },
+          { text: 'HINATA Control Center', link: '/en/HCC/' },
+          { text: 'Firmware Update', link: '/en/Update' },
+          { text: 'HINATA Control Panel（Old）', link: '/en/HCP/' }
         ]
         
       },

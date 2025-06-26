@@ -1,27 +1,47 @@
 # Quick Start
 
 ## Unboxing
-By default, users will receive:
-* **HINATA** * 1
-* USB Type-C Cable * 1
-* Mifare Classic 1k sak:0x08 Blank Card * 1
+Standard Edition users will receive by default:
+* **HINATA** × 1  
+* USB Type-C cable × 1  
+* Mifare Classic 1k sak:0x08 blank card × 1  
 
-## What Needs to Do
-### 1. Connect to the Computer
-Connect HINATA to the computer using a USB Type-C Cable.<br>When HINATA is powered on, a yellow light will turn on, and once successfully connected to the computer, it will gradually turn blue.
+Lite Edition users will receive:
+* **HINATA Lite** × 1  
 
-![connection](</assets/connection.jpg>)
+## What to Do
+### 0. Notes
 
-At this point, the HINATA device should appear in Windows `Device Manager`.
+After receiving the card reader, check the firmware version and update to the latest release. See [Firmware Update](Update/index.md).  
 
-### 2. Write Aime Access Code to the Provided Card
-Only the Standard Edition includes the card.
-The blank card requires a Access Code to be written on it for use in SEGA games.
-If you already have an `Aime` card, `Banapass` card, or `Amusement IC` card and do not wish to use the provided blank card, you may **skip** this step.
+**Note for HINATA Lite**:  
+Since HINATA Lite uses off-the-shelf RF antenna modules, performance may vary with close-proximity card scanning. The optimal reading position for some cards isn't direct contact but slightly elevated (a few centimeters). If you encounter unstable scanning with compatible cards:  
+1. Test card stability in [HINATA Control Center](HCC/index.md)  
+2. Elevate cards slightly during gameplay or use non-metallic spacers  
+3. Alternatively, apply copper foil tape to the red-lit area on HINATA Lite's back (test optimal size via web interface).
 
-For writing instructions, see: [Card Reading and Writing](HCP/index.md#card-reading-and-writing).
+### 1. Connect to Computer
+Connect HINATA to your computer using the USB Type-C cable.  
+- HINATA glows yellow when powered, then transitions to blue after successful USB handshake.  
+- HINATA Lite shows a steady red backlight (this is normal).  
 
-### 3. Start Configuring Games
-[SEGA Games](SEGA/index.md)
+![connection](</assets/connection.jpg>)  
 
-[KONAMI Games](KONAMI/index.md)
+Windows Device Manager should now detect HINATA:  
+![devmgr0](<assets/devmgr0.png>)  
+![devmgr1](<assets/devmgr1.png>)  
+
+### 2. Write Aime Card Number to Included Card
+(Standard Edition only)  
+The blank card requires an Aime number to work with SEGA games.  
+**Skip this step** if using your own `Aime`, `Banapass`, or `Amusement IC` card.  
+
+Writing methods:  
+* [Card Read/Write (Legacy) (Firmware ≤ 2024093002)](HCP/index.md#card-reading-and-writing)  
+* [Card Read/Write (New) (Firmware ≥ 2025052106)](HCC/index.md#card-read-write)  
+
+### 3. Configure Games
+SEGA and KONAMI game configurations can coexist.  
+(Reader automatically switches states – no need to adjust SEGA settings when configuring KONAMI games)  
+* [SEGA Games](SEGA/index.md)  
+* [KONAMI Games](KONAMI/index.md)  

@@ -9,7 +9,7 @@
 3. In this menu, you can perform **card reading tests** and **LED tests**.  
    If Segatools has disabled Aime's hook and the top two lines showing the hardware and software version numbers do not display anything, it indicates that the game has not successfully connected to the card reader.
 
-## Other Resources
+## Related Guides
 * [Connecting to Games via Serial Protocol](serial.md)
 * [Connecting to Games via AimeIO](aimeio.md)
 * [KONAMI Game Configuration Instructions](../KONAMI/index.md)
