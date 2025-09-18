@@ -37,6 +37,7 @@ export const zh = defineConfig({
             ]
           },
           { text: 'HINATA 控制中心', link: '/HCC/' },
+          { text: 'PN532 直通生态', link: '/PN532/'},
           {
             text: '固件更新',
             items: [
