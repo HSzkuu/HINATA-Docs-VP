@@ -8,7 +8,7 @@
 [使用 HINATA 控制中心进行更新](/HCC/#固件更新)
 
 ## 使用更新器更新
-Windows 下需要使用 HINATAUT 来更新固件，下载后直接点击运行就可以了
-电脑需要在 Microsoft Store 安装 [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) 后方可正常运行
+Windows 下需要使用 HINATAUT 来更新固件，Windows 11 可以直接运行，如果是 Windows 10 则可能需要在 Microsoft Store 安装 [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) 才可正常运行
+
 * [点击下载(国际)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
 * [点击下载(中国大陆)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)
