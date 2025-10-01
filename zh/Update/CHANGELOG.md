@@ -1,5 +1,8 @@
 # 更新日志
 
+## HINATA & HINATA Lite 2025100121-af106a7b
+* 修复了潜在的无法启动的问题
+
 ## HINATA & HINATA Lite 2025093016-d770c302
 * 兼容了 バンダイナムコ (Bandai Namco) 游戏的原生协议（湾岸，太鼓达人，高达等）
 * 将 `PN532 直通模式` 和 `バンダイナムコ原生协议` 下放给 HINATA Lite
