@@ -1,5 +1,5 @@
 # KONAMI 游戏配置说明
-**该功能仅限标准版**
+**该功能仅限标准版 | Lite版可以支付 CN¥49 解锁该功能**
 
 ## CardIO 读卡设置
 
@@ -15,13 +15,13 @@
 
 默认情况下 CardIO 偏向最高兼容性，能刷入的卡包括:
 
-| 卡类型 | 能否刷卡 |
-| :---: | :---: |
-| Amusement IC (四社通)| ✅ |
-| 任何 ISO14443-A | ✅ |
-| 任何 Felica 卡(Suica, AIC, Osaifu-Keitai) | ✅ |
-| 任何 Aime 卡 | ✅ |
-| ISO15693 (旧版 epass) | ❌ |
+|                  卡类型                   | 能否刷卡 |
+| :---------------------------------------: | :------: |
+|           Amusement IC (四社通)           |    ✅     |
+|              任何 ISO14443-A              |    ✅     |
+| 任何 Felica 卡(Suica, AIC, Osaifu-Keitai) |    ✅     |
+|               任何 Aime 卡                |    ✅     |
+|           ISO15693 (旧版 epass)           |    ❌     |
 
 可以在 [HINATA 控制中心](../HCP/index.md) 中控制可以读取的卡范围 （ISO14443A，Aime）
 
