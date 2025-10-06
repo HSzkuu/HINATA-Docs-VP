@@ -23,7 +23,7 @@
 |               任何 Aime 卡                |    ✅     |
 |           ISO15693 (旧版 epass)           |    ❌     |
 
-可以在 [HINATA 控制中心](../HCP/index.md) 中控制可以读取的卡范围 （ISO14443A，Aime）
+可以在 [HINATA 控制中心](../HCC/index.md) 中控制可以读取的卡范围 （ISO14443A，Aime）
 
 
 ## HID 灯光绑定
@@ -39,5 +39,5 @@
 
 
 ## 其他页面
-* [调整 CardIO 读卡限制](../HCP/index.md#cardio-设置)
+* [调整 CardIO 读卡限制](../HCC/index.md)
 * [SEGA 游戏设置](../SEGA/index.md)

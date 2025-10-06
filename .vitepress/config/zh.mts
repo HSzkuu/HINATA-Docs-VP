@@ -44,8 +44,7 @@ export const zh = defineConfig({
               { text: '更新说明', link: '/Update/' },
               { text: '更新日志', link: '/Update/CHANGELOG' }
             ]
-          },
-          { text: 'HINATA 控制中心（旧）', link: '/HCP/' }
+          }
         ]
         
       },
