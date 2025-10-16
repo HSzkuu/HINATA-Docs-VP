@@ -22,10 +22,10 @@ hero:
 
 
 features:
-  - title: SEGA / KONAMI 游戏支持
-    details: 支持 太鼓之达人<br>SEGA 系所有街机游戏及手台<br>所有使用 SpiceTools 的 KONAMI 游戏
+  - title: 三社游戏支持 & 全自动切换
+    details: 支持 SEGA、KONAMI、BANDAI NAMCO 三家所有游戏<br>所有模式全自动切换
   - title: GUI 控制面板 & 固件更新
-    details: 可视化调整灯光、CardIO 设置<br>使用卡片读写、PN532 直通模式功能<br>不定时更新固件以支持新功能
+    details: 可视化调整灯光、CardIO 设置<br>使用卡片读写以及 PN532 直通模式等扩展功能<br>不定时更新固件以支持新功能
   - title: 售后服务
     details: 一年内非人为损坏只换不修<br>QQ 群内可提供支持
 ---
