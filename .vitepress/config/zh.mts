@@ -26,18 +26,19 @@ export const zh = defineConfig({
                 items: [
                   { text: '配置说明', link: '/SEGA/' },
                   { text: '串口方式连接', link: '/SEGA/serial' },
-                  { text: '修改游戏所需的端口号', link: '/SEGA/com_port'},
+                  { text: '修改游戏所需的端口号', link: '/SEGA/com_port' },
                   { text: 'AimeIO 连接', link: '/SEGA/aimeio' },
                   { text: '游戏内测试读卡器', link: '/SEGA/in_game_test' },
                   { text: '常见问题', link: '/SEGA/qa' }
                 ]
-                
+
               },
-              { text: 'KONAMI 游戏', link: '/KONAMI/' }
+              { text: 'KONAMI 游戏', link: '/KONAMI/' },
+              { text: 'Bandai Namco 游戏', link: '/BANA' }
             ]
           },
           { text: 'HINATA 控制中心', link: '/HCC/' },
-          { text: 'PN532 直通生态', link: '/PN532/'},
+          { text: 'PN532 直通生态', link: '/PN532/' },
           {
             text: '固件更新',
             items: [
@@ -46,7 +47,7 @@ export const zh = defineConfig({
             ]
           }
         ]
-        
+
       },
       { text: '购买 & 售后', link: '/purchase_contact' }
     ],
