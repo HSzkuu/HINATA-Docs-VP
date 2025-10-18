@@ -1,7 +1,7 @@
 # HINATA 控制中心
 
 ## 简介
-HINATA 控制中心用于控制 HINATA 的各项设置以及写卡用（Coming Soon）。所以现阶段只能更新固件用。
+HINATA 控制中心用于控制 HINATA 的各项设置以及写卡用。所以现阶段只能更新固件用。
 
 无需本地下载，只需要联网并访问 [cc.neri.moe](https://cc.neri.moe) 即可使用！
 
