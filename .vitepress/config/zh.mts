@@ -34,7 +34,7 @@ export const zh = defineConfig({
 
               },
               { text: 'KONAMI 游戏', link: '/KONAMI/' },
-              { text: 'Bandai Namco 游戏', link: '/BANA' }
+              { text: 'Bandai Namco 游戏', link: '/BANA/' }
             ]
           },
           { text: 'HINATA 控制中心', link: '/HCC/' },
