@@ -1,8 +1,8 @@
 # Bandai Namco 游戏配置说明
-
+::: tip
 * 所有(大概) Bandai Namco 游戏都可以使用 `Bandai Namco 读卡器原生协议`
 * **太鼓之达人** 可以同时支持 `Bandai Namco 读卡器原生协议` 与 `CardIO`
-
+:::
 ## Bandai Namco 原生协议 (以太鼓之达人举例)
 如果您的游戏使用了 `bnusio.dll`，那么需要在 `config.toml` 中进行设置。
 
