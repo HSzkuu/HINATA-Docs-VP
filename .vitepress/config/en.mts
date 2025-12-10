@@ -33,12 +33,19 @@ export const en = defineConfig({
                 ]
                 
               },
-              { text: 'KONAMI Games', link: '/en/KONAMI/' }
+              { text: 'KONAMI Games', link: '/en/KONAMI/' },
+              { text: 'Bandai Namco Games', link: '/en/BANA/' }
             ]
           },
           { text: 'HINATA Control Center', link: '/en/HCC/' },
-          { text: 'Firmware Update', link: '/en/Update' },
-          { text: 'HINATA Control Panel（Old）', link: '/en/HCP/' }
+          { text: 'PN532 Passthrough Ecosystem', link: '/en/PN532/' },
+          {
+            text: 'Firmware Update',
+            items: [
+              { text: 'Update Instructions', link: '/en/Update/' },
+              { text: 'Changelog', link: '/en/Update/CHANGELOG' }
+            ]
+          }
         ]
         
       },
