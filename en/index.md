@@ -1,23 +1,31 @@
 ---
+# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "HINATA"
-  text: "General-purpose<br>Multifunctional<br>Arcade Game<br>Card Reader"
+  text: "Universal Multi-function<br>Arcade Game Card Reader"
   tagline: 
   actions:
     - theme: brand
-      text: "Quick Start"
+      text: Quick Start (Full Manual)
       link: ./quickstart
-    - theme: alt
-      text: "Purchase & Support"
+    - theme: brand
+      text: Purchase & After-sales
       link: ./purchase_contact
+    - theme: alt
+      text: Introduction Video
+      link: https://www.bilibili.com/video/BV1Gi421i7ej/
+    - theme: alt
+      text: Video Manual
+      link: https://www.bilibili.com/video/BV1VQCUYyEGA/      
+
 
 features:
-  - title: SEGA / KONAMI Game Support
-    details: 'Supports: Taiko no Tatsujin<br>All arcade and handheld games by SEGA<br>All KONAMI games using SpiceTools'
-  - title: GUI Control Panel
-    details: Visual adjustment for lighting, CardIO settings<br>Card reading and writing<br>PN532 passthrough mode
-  - title: After-Sales Service
-    details: One-year replacement warranty for non-manmade damage<br>Firmware updates for bugfix and new features
+  - title: Three Companies Game Support & Fully Automatic Switching
+    details: Supports all games from SEGA, KONAMI, and BANDAI NAMCO<br>All modes switch automatically
+  - title: GUI Control Panel & Firmware Update
+    details: Visually adjust lighting, CardIO settings<br>Use extended functions such as card reading/writing and PN532 passthrough mode<br>Firmware updated irregularly to support new features
+  - title: After-sales Service
+    details: One-year non-human damage replacement only<br>Support available in the QQ group
 ---

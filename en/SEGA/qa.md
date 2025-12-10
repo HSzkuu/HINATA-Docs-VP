@@ -1,50 +1,58 @@
+# Frequently Asked Questions (SEGA)
+---
 
-# Frequently Asked Questions (SEGA)  
+**Q: Why was my game able to connect to the network before using the card reader, but can't connect after using it?**  
+**A:** After disabling the simulated card reader in Segatools, the game will directly disconnect from the network if it does not detect a card reader. So please check if the card reader's connection and configuration are correct.
 
 ---
 
-**Q: Why does the game lose network connection after I start using the card reader?**  
-**A:** When Segatools' emulated card reader is disabled, the game disconnects from the network if no physical reader is detected. Verify that the card reader is properly connected and configured.  
+**Q: I have confirmed that the card reader is connected (the lights are controlled normally), but I cannot swipe the card.**  
+**A:** Is it attached to the surface of an ADX, or is there metal under the card reader? If so, please raise it with a non-metallic material or move it elsewhere.
 
 ---
 
-**Q: The card reader appears connected (LEDs respond), but cards won’t scan.**  
-**A:** Ensure the card is not placed directly against the ADX surface or metallic objects. Elevate the reader with non-metallic materials or reposition it.  
+**Q: The card number swiped from the official card in the game (starting with 0008) is different from the one printed on the back.**  
+**A:** If you use the official protocol, the card number you get when swiping an `Amusement IC` card will depend on the server. If the AimeDB server is implemented correctly, it will work (Rin server, official AimeDB). The solution is to change the server, or use the **new AimeIO**.
 
 ---
 
-**Q: Official cards show incorrect numbers (starting with 0008) in-game instead of the printed ID.**  
-**A:** When using the **Serial Protocol**, `Amusement IC` card numbers depend on the server’s AimeDB implementation. This works correctly only on servers with proper AimeDB support (e.g., Rin Server, official SEGA servers). Solutions:  
-- Switch to a compatible server.  
-- Use **AimeIO (firmware ≥ 2025040400)** to bypass server limitations.  
+**Q: What if the card reader has too few features / has bugs?**  
+**A:** For feature suggestions or bugs, please directly raise them in the after-sales group or private message me. Software bugs will be fixed as soon as possible after verification.
 
 ---
 
-**Q: How do I request new features or report bugs?**  
-**A:** Submit feature requests or bug reports directly in the support group or via private message. Software issues will be prioritized for fixes.  
+**Q: What if I can't swipe my card?**  
+**A:** Please pay attention to the game's prompt message:
+1. **筐体のデータが古いバージョンです (The cabinet's data is an old version)**:  
 
----
+    Please confirm if you have played a higher version of the game before. You can also check the server dashboard interface (e.g., Rin server):
 
-**Q: How to troubleshoot card scanning failures?**  
-**A:** Check in-game error messages:  
+    ![rin_ver](assets/rin_ver.png)
 
-1. **筐体のデータが古いバージョンです** (Cabinet data is outdated):  
-   - Confirm your game version matches the server’s supported version (e.g., in Rin Server’s dashboard):  
-     ![rin_ver](assets/rin_ver.png)  
-   - Adjust the version number in settings to match or fall below the server’s requirement.  
+    Please make sure the game version corresponds, or you can modify the version number to the corresponding game version or lower.
 
-2. **このモードでは本バージョンのプレイデータが存在しない Aime は使用できません** (Aime accounts without play data cannot be used in this mode):  
-   - Disable **Event Mode** (e.g., in CHUNITHM NEW+):  
-     ![event_mode](assets/event_mode.png)  
-     → Set **イベントモード** (Event Mode) to **通常モード** (Normal Mode).  
+2. **このモードでは本バージョンのプレイデータが存在しない Aime は使用できません (Aime cards without play data for this version cannot be used in this mode)**:  
 
-3. **通信に失敗しました** (Communication failed):  
-   - Verify network connectivity and correct **KeychipID** entry (e.g., in `segatools.ini`):  
-     ![keychip](assets/keychip.png)  
-     - Retrieve KeychipID from your server dashboard (e.g., Rin Server):  
-       ![keychip_rin](assets/keychip_rin.png)  
-   - **Card/connection compatibility**:  
-     - Most unofficial cards fail on **official AimeDB servers**.  
-     - For AimeIO issues: [See troubleshooting](aimeio.md#important-notes).  
+    Please confirm if you have enabled tournament mode. New accounts cannot be registered in tournament mode.  
+    Taking SDHD (after CHUNITHM NEW) as an example:
+
+    ![event_mode](assets/event_mode.png)
+
+    Please change **イベントモード (Event Mode)** here to **通常モード (Normal Mode)**.
+
+3. **通信に失敗しました (Communication failed)**:  
+
+    Please confirm that you are properly connected to the network and have correctly filled in the KeychipID:
+
+    ![keychip](assets/keychip.png)
+
+    To obtain and use the KeychipID, please check the server dashboard interface yourself. Here is an example from the Rin server:  
+
+    ![keychip_rin](assets/keychip_rin.png)
+
+    For other issues, please check **the card you are using and the connection method**:  
+
+    Most compatible cards cannot be swiped when using the **official AimeDB**.  
+    [See here if you can't swipe your card with the AimeIO connection method](aimeio.md#important-notes)
 
 ---

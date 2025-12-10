@@ -1,41 +1,43 @@
+# KONAMI Game Configuration Instructions
+**This feature is limited to the Standard Edition | The Lite version can be unlocked for CN¥49.**
 
-# KONAMI Game Configuration Guide  
-**Applies to Standard Edition Only**  
+## CardIO Card Reading Settings
 
-## CardIO Reader Setup  
-1. Older firmware versions require binding HID lights for card reading functionality.  
-2. Open **spicecfg** → Select **Advanced** (or **Options** in older Spice versions with hidden options enabled).  
-   → Enable `CardIO HID Reader Support (-cardio)` as shown:  
-   ![spicecardio](/assets/spicecardio.png)  
-3. If card reading fails after enabling `-cardio` (common on legacy Spice/non-Windows 10+ systems), try enabling `HID SmartCard`. **Only enable this if necessary!**  
-4. For incorrect slot assignment (e.g., 1P/2P in IIDX):  
-   → Enable the corresponding `xxx Order Flip` option below.  
+1. Some older firmware versions require binding HID lights to read cards.
+2. Open *spicecfg*, select **Advanced** at the top (in **Options** for older Spice versions, and you may need to show hidden options), find `CardIO HID Reader Support (-cardio)` and check it.  
+As shown in the figure:
+   
+   ![spicecardio](/assets/spicecardio.png)
 
-**Default Card Compatibility (optimized for maximum support):**  
-| Card Type                      | Supported |  
-| :----------------------------- | :-------: |  
-| Amusement IC (Multi-company)   | ✅        |  
-| Any ISO14443-A                 | ✅        |  
-| Any Felica (Suica/AIC/Osaifu-Keitai) | ✅ |  
-| Any Aime                       | ✅        |  
-| ISO15693 (Legacy e-pass)       | ❌        |  
+3. If the card reader does not work after checking `CardIO HID Reader Support (-cardio)` (this may occur on ancient versions of Spice or non-Windows 10 and above versions), please try checking `HID SmartCard`. Please only check this if it is confirmed not to work; do not check it unless necessary.
+4. If you find that the card swipe slot is incorrect (for games like IIDX with 1P and 2P),  
+Please check the `xxx Order Flip` below.
 
-*Adjust card restrictions via [HINATA Control Center](../HCP/index.md).*  
+By default, CardIO prioritizes maximum compatibility. Cards that can be swiped include:
 
-## HID Light Binding  
-*Required for lighting effects in:*  
-- SDVX **Valkyrie Model cabinets**  
-- IIDX **Lightning Model cabinets**  
+|                  Card Type                   | Can be swiped |
+| :---------------------------------------: | :------: |
+|           Amusement IC           |    ✅     |
+|              Any ISO14443-A              |    ✅     |
+| Any Felica Card (Suica, AIC, Osaifu-Keitai) |    ✅     |
+|               Any Aime Card                |    ✅     |
+|           ISO15693 (old epass)           |    ❌     |
 
-1. Open **spicecfg** → Select **Lights** → Locate `IC Card Reader *`.  
-2. Bind channels as shown:  
-   ![spicelight](/assets/spicelight.png)  
-3. For multi-player games (e.g., IIDX):  
-   - Bind channels for your player position (1P/2P).  
-   - Use two readers for simultaneous 1P+2P operation.  
-4. Adjust brightness: **Advanced** → `Light Brightness Adjustment`:  
-   ![spicebrightness](/assets/spicebrightness.png)  
+You can control the range of readable cards (ISO14443A, Aime) in the [HINATA Control Center](../HCC/index.md).
 
-## Related Guides  
-* [Configure CardIO Restrictions](../HCP/index.md#cardio-settings)  
-* [SEGA Game Setup](../SEGA/index.md)
+
+## HID Light Binding
+When SDVX is in Valkyrie model mode or IIDX is in Lightning model mode, the game will output light to the card reader. Here is how to bind it:
+1. Open *spicecfg* , select **Lights** at the top, find `IC Card Reader *`
+2. Bind as shown in the figure below:
+   
+   ![spicelight](/assets/spicelight.png)
+
+3. Games like IIDX with a 2P position will be divided into six channels for 1P and 2P. Bind the P position you play, or you can bind both when using two card readers.
+4. Adjust light brightness: You can adjust it in *spicecfg* > **Advanced** > `Light Brightness Adjustment`.
+![spicebrightness](/assets/spicebrightness.png)
+
+
+## Other Pages
+* [Adjust CardIO reading restrictions](../HCC/index.md)
+* [SEGA Game Settings](../SEGA/index.md)

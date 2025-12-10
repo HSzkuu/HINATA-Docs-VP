@@ -1,15 +1,14 @@
+# Firmware Update
+If the card reader is working normally and stably, and you are not interested in new features, you do not need to update. If you encounter some problems, updating the firmware may solve them.
 
-# Firmware Update  
-Update only if necessary—if the reader works stably and new features aren’t needed. Firmware updates may resolve certain issues.  
+## Update using HINATA Control Center
+**This feature is only available for HINATA & HINATA Lite firmware version 2025040400 and above.**  
+Only supports macOS, Linux (requires editing udev rules), ChromeOS.
 
-## Updating via HINATA Control Center  
-**Requires HINATA/HINATA Lite firmware ≥ 2025040400**  
-Supported: macOS, Linux (requires udev rules setup), ChromeOS  
+[Update using HINATA Control Center](/HCC/#firmware-update)
 
-[Update via HINATA Control Center](../HCC/#firmware-update)  
+## Update using the updater
+On Windows, you need to use HINATAUT to update the firmware. Windows 11 can run it directly. If you are on Windows 10, you may need to install [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) from the Microsoft Store to run it properly.
 
-## Updating via Updater Tool (Windows)  
-Use **HINATAUT** on Windows:  
-1. Download the updater:  
-   * [International Download](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)   
-2. Run the downloaded `.exe` file.
+* [Click to download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
+* [Click to download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)
