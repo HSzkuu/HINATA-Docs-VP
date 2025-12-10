@@ -4,7 +4,7 @@
 * [SEGA Official Serial Protocol](serial.md)
 * [AimeIO (based on Segatools)](aimeio.md)
 
-Each of the two methods has its own advantages and disadvantages. Currently (with firmware version 2025040400), I recommend using **AimeIO**.
+Each of the two methods has its own advantages and disadvantages. Currently (with firmware version 2025040400), I recommend using **SEGA Official Serial Protocal**.
 
 Please prepare a game that can **connect to the network normally** first.
 
