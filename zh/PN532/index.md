@@ -1,12 +1,30 @@
 # PN532 直通模式
+
 ::: tip
-推荐将固件更新至最新版本使用
+建议将读卡器固件更新至 **最新版本** 后再使用该功能，以获得最佳兼容性与稳定性。
 :::
-HINATA 全系拥有 `PN532 直通模式` ，可以接入第三方上位机生态，可用于分析与写入IC卡
 
-无需任何设置，读卡器会自动识别场景并启用 `PN532 直通模式`
+HINATA 全系设备均支持 **PN532 直通模式**。
 
-推荐使用的上位机：
+在该模式下，读卡器可以作为 **PN532 设备直通接入第三方上位机软件生态**，  
+常用于 **IC 卡分析、调试以及写入操作**。
 
-* [Mifare One Tool](https://github.com/xcicode/MifareOneTool)
-* [NFCToolsGUI](https://github.com/GSWXXN/NFCToolsGUI)
+## 使用说明
+
+- **无需进行任何额外设置**
+- 读卡器会根据当前连接的上位机软件 **自动识别使用场景**
+- 在需要时自动启用 `PN532 直通模式`
+
+::: warning
+在使用 PN532 直通模式时，请确保：
+- 游戏或其他占用读卡器的程序未在后台运行
+- 同一时间仅有一个上位机软件连接读卡器  
+否则可能导致设备无法正常通信。
+:::
+
+## 推荐的上位机软件
+
+以下软件已确认可正常配合 PN532 直通模式使用：
+
+- [Mifare One Tool](https://github.com/xcicode/MifareOneTool)
+- [NFCToolsGUI](https://github.com/GSWXXN/NFCToolsGUI)
