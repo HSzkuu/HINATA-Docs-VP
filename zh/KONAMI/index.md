@@ -10,17 +10,17 @@
 1. 部分较旧的固件版本需要先绑定 **HID 灯光** 才能进行读卡。
 
 2. 打开 *spicecfg*，在顶部选择 **Advanced**  
-   （如果 Spice 版本较旧，则在 **Options** 中，且需要开启“显示隐藏选项”），  
+   （如果 Spice 版本较旧，则在 **Options** 中，且需要显示隐藏选项”，  
    找到 `CardIO HID Reader Support (-cardio)` 并勾选，如下图所示：
 
    ![spicecardio](/assets/spicecardio.png)
 
-3. 如果勾选 `CardIO HID Reader Support (-cardio)` 后读卡器仍不工作  
+3. 如果勾选 `CardIO HID Reader Support (-cardio)` 后读卡器不工作  
    （常见于较老版本的 Spice，或非 Windows 10 及以上系统），  
    请**再尝试**勾选 `HID SmartCard`。  
    请确认确实无法工作后再勾选，**非必要情况下请勿勾选**。
 
-4. 如果发现刷卡槽位不正确（例如 IIDX 存在 1P / 2P 的情况），  
+4. 如果发现刷卡槽位不正确（例如 IIDX 这种存在 1P / 2P 的游戏），  
    请勾选下方的 `xxx Order Flip` 选项进行调整。
 
 默认情况下，CardIO 以**最高兼容性**模式运行，可刷入的卡片类型如下：
