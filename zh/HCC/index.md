@@ -30,8 +30,10 @@ HINATA 控制中心用于控制 HINATA 的各项设置以及写卡用。
 ![card2](assets/card2.png)
 
 ### 固件更新
+::: warning
 **当前版本不支持 Windows 使用控制中心进行固件更新，请下载固件后手动更新**  
-**如果您使用 MacOS 或者 Linux, ChromeOS 等系统，则可以在网页内直接更新**
+:::
+**如果您使用 MacOS 或者 Linux, ChromeOS 等系统，可以在网页内直接更新**
 
 ![update](assets/update.png)
 

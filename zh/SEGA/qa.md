@@ -51,8 +51,9 @@
     ![keychip_rin](assets/keychip_rin.png)
 
     其余请查看**自己使用的卡片和连接方式**：  
-
+    ::: tip
     大部分兼容卡无法在使用 **官服 AimeDB** 时刷卡。  
     [AimeIO 连接方式无法刷卡请见](aimeio.md#食用须知)
+    :::
 
 ---

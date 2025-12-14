@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "HINATA"
-  text: "泛用多功能<br>街机游戏读卡器"
-  tagline: 
+  text: 
+  tagline: "泛用多功能街机游戏读卡器"
   actions:
     - theme: brand
       text: 快速开始(完整说明书)

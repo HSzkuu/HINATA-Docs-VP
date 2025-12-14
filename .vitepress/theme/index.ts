@@ -6,6 +6,8 @@ import mediumZoom from 'medium-zoom';
 import { onMounted, watch, nextTick } from 'vue';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
+import '@theojs/lumen/style'
+import './var.css'
 import './style.css'
 import { 
   NolebaseEnhancedReadabilitiesMenu, 
