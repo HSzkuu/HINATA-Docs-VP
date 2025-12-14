@@ -6,7 +6,7 @@
 - [AimeIO（基于 Segatools）](aimeio.md)
 
 两种方式各有优缺点。  
-在当前 **2025040400 固件版本**下，我更推荐使用 **SEGA 官方串口协议**。
+在当前 **2025040400 固件版本**下，更推荐使用 **SEGA 官方串口协议**。
 
 在开始配置前，请确保你已准备好一套 **能够正常联网运行的游戏环境**。
 
@@ -42,7 +42,7 @@
 ::: warning
 - 使用 `Amusement IC` 卡片时，**无法登录 SEGA 官服**（如 SDGA、SDGS 等）  
   本地服与私服不受影响
-- 目前无法读取 **非 `Amusement IC` 的 `Bandai Namco Passport` 卡片**，包括但不限于：
+- 目前无法读取 **非 `Amusement IC` 的 `Bandai Namco Passport`、`BANA PASSPORT` 卡片**，如何辨别：
   - 卡片上没有 Amusement IC 标志  
   - 卡号为 **3 开头的 20 位数字**  
   - 卡片背面为英文、韩文或中文
