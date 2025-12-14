@@ -9,7 +9,7 @@
 
 如果你的游戏目录中使用了 `bnusio.dll`，则需要通过 `config.toml` 进行配置。
 
-1. 打开 `config.toml`，找到 `card_reader` 参数，并将其修改为：
+1. 打开 `config.toml`，找到 `[emulation]` 下的 `card_reader` 参数，并将其修改为：
 
    ```toml
    card_reader = false
