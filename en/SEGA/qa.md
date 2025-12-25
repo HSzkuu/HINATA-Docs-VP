@@ -1,58 +1,70 @@
-# Frequently Asked Questions (SEGA)
----
+# Common Questions (SEGA)
 
-**Q: Why was my game able to connect to the network before using the card reader, but can't connect after using it?**  
-**A:** After disabling the simulated card reader in Segatools, the game will directly disconnect from the network if it does not detect a card reader. So please check if the card reader's connection and configuration are correct.
+## Q: Why can the game connect to the network before using the reader, but cannot connect after using it?
+**A:**  
+After closing Segatools' simulated reader (Aime hook), if the game fails to detect a real reader, it will directly determine this as an abnormality and disconnect from the network.  
+Please check if the reader is correctly connected, and whether configurations such as port and mode are correct.
 
----
+## Q: I have confirmed the reader is connected (lights can be controlled normally), but cannot swipe cards?
+**A:**  
+Please check if the reader is pressed against the surface of the ADX panel, or if the bottom is touching metal.  
+If the above situation exists, please use **non-metallic materials** to raise the reader, or move it to another position before trying again.
 
-**Q: I have confirmed that the card reader is connected (the lights are controlled normally), but I cannot swipe the card.**  
-**A:** Is it attached to the surface of an ADX, or is there metal under the card reader? If so, please raise it with a non-metallic material or move it elsewhere.
+## Q: The card number read in the game (starting with 0008) is different from the number printed on the back of the official card?
+**A:**  
+When using the **SEGA official serial protocol**, the card number obtained when swiping `Amusement IC` cards depends on whether the server correctly implements AimeDB.
 
----
+- Official servers or servers that correctly implement AimeDB (such as Rin server) can normally obtain card numbers  
+- Servers that do not correctly access AimeDB will return incorrect card numbers starting with `0008`
 
-**Q: The card number swiped from the official card in the game (starting with 0008) is different from the one printed on the back.**  
-**A:** If you use the official protocol, the card number you get when swiping an `Amusement IC` card will depend on the server. If the AimeDB server is implemented correctly, it will work (Rin server, official AimeDB). The solution is to change the server, or use the **new AimeIO**.
+Solutions:
+- Change servers  
+- Or switch to the **new AimeIO connection method**
 
----
+## Q: What should I do if the reader has too few features / has bugs?
+**A:**  
+Functional suggestions or bug feedback should be directly raised in the support group or via private chat.  
+After confirming it is a software issue, it will be repaired as soon as possible.
 
-**Q: What if the card reader has too few features / has bugs?**  
-**A:** For feature suggestions or bugs, please directly raise them in the after-sales group or private message me. Software bugs will be fixed as soon as possible after verification.
+## Q: What should I do if I cannot swipe cards?
+**A:**  
+Please troubleshoot according to the game's prompt messages:
 
----
+### 1. `筐体のデータが古いバージョンです` (Cabinet data is from an older version)
 
-**Q: What if I can't swipe my card?**  
-**A:** Please pay attention to the game's prompt message:
-1. **筐体のデータが古いバージョンです (The cabinet's data is an old version)**:  
+Please confirm if you have played **higher version** games before.  
+You can also enter the server dashboard interface to check (taking Rin server as an example):
 
-    Please confirm if you have played a higher version of the game before. You can also check the server dashboard interface (e.g., Rin server):
+![rin_ver](assets/rin_ver.png)
 
-    ![rin_ver](assets/rin_ver.png)
+Please ensure the game version matches the server configuration. If necessary, modify the version number to the corresponding version or lower.
 
-    Please make sure the game version corresponds, or you can modify the version number to the corresponding game version or lower.
+### 2. `このモードでは本バージョンのプレイデータが存在しない Aime は使用できません` (Aime with no play data for this version cannot be used in this mode)
 
-2. **このモードでは本バージョンのプレイデータが存在しない Aime は使用できません (Aime cards without play data for this version cannot be used in this mode)**:  
+Please confirm if **Event Mode** is enabled.  
+New accounts cannot be registered in Event Mode.
 
-    Please confirm if you have enabled tournament mode. New accounts cannot be registered in tournament mode.  
-    Taking SDHD (after CHUNITHM NEW) as an example:
+Taking SDHD (after CHUNITHM NEW version) as an example:
 
-    ![event_mode](assets/event_mode.png)
+![event_mode](assets/event_mode.png)
 
-    Please change **イベントモード (Event Mode)** here to **通常モード (Normal Mode)**.
+Please change **イベントモード** to **通常モード**.
 
-3. **通信に失敗しました (Communication failed)**:  
+### 3. `通信に失敗しました` (Communication failed)
 
-    Please confirm that you are properly connected to the network and have correctly filled in the KeychipID:
+Please confirm the following:
 
-    ![keychip](assets/keychip.png)
+- Whether the game has correctly connected to the network  
+- Whether the KeychipID is filled in correctly  
 
-    To obtain and use the KeychipID, please check the server dashboard interface yourself. Here is an example from the Rin server:  
+![keychip](assets/keychip.png)
 
-    ![keychip_rin](assets/keychip_rin.png)
+For KeychipID acquisition method, please check the dashboard page of the server you are using. The following is an example of Rin server:
 
-    For other issues, please check **the card you are using and the connection method**:  
+![keychip_rin](assets/keychip_rin.png)
 
-    Most compatible cards cannot be swiped when using the **official AimeDB**.  
-    [See here if you can't swipe your card with the AimeIO connection method](aimeio.md#important-notes)
+Additionally, you need to confirm whether **the card type used matches the connection method**.
 
----
+**Note**: Most compatible cards cannot be used when using **official server AimeDB**.  
+If you cannot swipe cards when using the **AimeIO connection method**, please refer to:  
+[AimeIO Usage Notes](aimeio.md#usage-notes)

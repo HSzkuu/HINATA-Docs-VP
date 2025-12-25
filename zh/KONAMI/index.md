@@ -1,6 +1,6 @@
 # KONAMI 游戏配置说明
 
-::: tip
+::: info
 - 该功能 **仅限标准版**
 - Lite 版可支付 **CN¥49** 解锁该功能
 :::
@@ -10,7 +10,7 @@
 1. 部分较旧的固件版本需要先绑定 **HID 灯光** 才能进行读卡。
 
 2. 打开 *spicecfg*，在顶部选择 **Advanced**  
-   （如果 Spice 版本较旧，则在 **Options** 中，且需要显示隐藏选项”，  
+   （如果 Spice 版本较旧，则在 **Options** 中，且需要显示隐藏选项），  
    找到 `CardIO HID Reader Support (-cardio)` 并勾选，如下图所示：
 
    ![spicecardio](/assets/spicecardio.png)
@@ -33,13 +33,11 @@
 | 任意 Aime 卡 | ✅ |
 | ISO15693（旧版 e-amusement pass） | ❌ |
 
-可在 [HINATA 控制中心](../HCC/index.md) 中进一步控制可读取的卡片范围  
-（如 ISO14443-A、Aime）。
+可在 [HINATA 控制中心](../HCC/index.md) 中进一步控制可读取的卡片范围（如 ISO14443-A、Aime）。
 
 ## HID 灯光绑定
 
 当以下情况成立时，游戏会向读卡器输出灯光信号：
-
 - SDVX 处于 **女武神框体模式**
 - IIDX 处于 **雷霆框体模式**
 

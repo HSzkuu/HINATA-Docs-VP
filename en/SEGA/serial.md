@@ -1,69 +1,98 @@
-# Connecting to the game via SEGA Official Serial Protocol
+# SEGA Official Serial Protocol Connection
 
-## Important Notes
-Using the SEGA official serial card reader protocol requires disabling the reader hook in Segatools.  
-If the game fails to connect to the card reader after disabling the hook (e.g., due to incorrect settings somewhere), the game will disconnect from the network. You need to fix the issue and restart the game.
+::: warning
+When using the SEGA official serial reader protocol, you need to close Segatools' reader hook.
+
+If the game fails to connect to the reader after closing the hook (for example, due to incorrect port configuration), the game will directly disconnect from the network. Please restart the game after confirming the configuration is correct.
+:::
 
 ## Reader Port Configuration
 
-   |   Game    | Default Port |
-   | :-------: | :--------: |
-   | maimai DX |    COM1    |
-   |  ONGEKI   |    COM1    |
-   | CHUNITHM  |    COM4    |
+| Game | Default Port Number |
+| :--: | :----------------: |
+| maimai DX | COM1 |
+| ONGEKI | COM1 |
+| CHUNITHM | COM4 |
 
-1. First, confirm the **port number** of the game you are playing and write it down. The above are the default port numbers for common games. For other games that use amdaemon, you can [view or modify](com_port.md) it in `config_common.json`.
+### Port Confirmation and Release
 
-2. Next, we need to ensure that the port number for connecting the game to the card reader is not occupied by other devices.
-   1. Open the Windows `Device Manager`. By default, devices are listed by type. As shown in the figure, check `Show hidden devices`:
-   
+1. First, confirm the **serial port number** used by the game you are playing and note this value.  
+   The table above shows the default port numbers for common games.
+
+   For other games using AMDaemon, you can view or modify the port number in `config_common.json`:  
+   [View or Modify Serial Port Number](com_port.md)
+
+2. Open Windows **Device Manager**, keep the default "View devices by type" view, and check  
+   **View → Show hidden devices**
+
    ![devmgr4](assets/devmgr4.png)
-   
-   2. **Unplug the card reader** and look for the `Ports` drop-down menu.
+
+3. **Unplug the reader** and check if there is a `Ports (COM and LPT)` category
 
    ![devmgr3](assets/devmgr3.png)
 
-   3. If you don't see the `Ports` drop-down menu, you can proceed to the next step.  
-   If you do, expand it and check if any device is occupying the target port.
-   4. If a device is occupying the port, right-click the device and select `Properties → Port Settings → Advanced`.
-   
+   - If there is no such category, you can directly skip to the next section  
+   - If it exists, expand it and check if the target port number is occupied by other devices
+
+4. If the port is occupied, right-click the device and go to  
+   **Properties → Port Settings → Advanced**
+
    ![devmgr2](assets/devmgr2.png)
-   
-   5. Change the COM port number **to another port** (e.g., COM255).
-3. **Plug in the card reader** and go to the menu shown in the figure below (**View devices by container**).
-   
+
+5. Change the `COM Port Number` of that device to another rarely used port (e.g., COM255)
+
+### Set Reader Port Number
+
+6. **Insert the reader**, switch Device Manager to **View devices by container**
+
    ![devmgr0](<../assets/devmgr0.png>)
 
-4. Find **HINATA**.
-   
+7. Find **HINATA**
+
    ![devmgr1](<../assets/devmgr1.png>)
 
-5. Right-click `USB Serial Device`, and select `Properties → Port Settings → Advanced`.
-6. Change the `COM Port Number` to the port number required by the corresponding game. Since the card reader uses the *USB CDC* class for serial communication, you normally do not need to modify the baud rate settings.
-7. After completion, it is recommended to go back to listing devices by type, find the `Ports` drop-down menu, and check if the card reader port conflicts with other devices.
-8. **After making changes, be sure to unplug and plug the card reader back in once. If this is your first time setting it up, please restart your computer once**, or disable and then re-enable the card reader's `USB Serial Device` in the Device Manager.
+8. Right-click `USB Serial Device`, go to  
+   **Properties → Port Settings → Advanced**
 
+9. Change the `COM Port Number` to the port number required by the corresponding game.  
+   Since the reader uses *USB CDC* class for serial communication, typically **no need to modify the baud rate**.
+
+10. After modification, it is recommended to switch back to **View devices by type** and confirm again:
+    - The reader port does not conflict with other devices
+
+11. **After modification, please be sure to unplug and replug the reader once**.  
+    If it's the first configuration, it is recommended to restart the computer once;  
+    or disable and re-enable the `USB Serial Device` in Device Manager.
 
 ## Game Configuration
-1. First, please make sure your game is **already connected to the network**. After entering the game, a **green globe icon** should be displayed. Otherwise, please set up the game's network connection first, which is not discussed in this article.
-2. Open `segatools.ini` and modify it as follows:
+
+::: tip
+Please ensure the game has been successfully connected to the network.  
+After entering the game, it should display a **green globe icon**, otherwise please complete the network configuration first (not discussed in this article).
+:::
+
+1. Open `segatools.ini` and modify the configuration as follows:
+
    ```ini
-   ;If there is no [aime] entry, please add it and its contents manually
+   ; If there is no [aime] section, please add it manually
    [aime]
    enable=0
-   ;The purpose of enable=0 is to disable the segatools reader hook and use the official serial IO. Please be sure to set it this way.**
+   ; enable=0 is used to close Segatools' reader hook
+   ; Must be set this way when using official serial IO
 
-   ;If there is an [aimeio] entry (e.g., using hinata's aimeio mode, as well as mageki or nageki)
-   ;Add ";" in front to comment it out, or delete the entire section
+   ; If there is an [aimeio] section (for example, if you have used HINATA's AimeIO mode,
+   ; or mageki / nageki, etc.), please comment it out or delete it directly
    ;[aimeio]
    ;path=hinata.dll
-   ;If the above entry exists, please be sure to delete it
    ```
-3. Since the card reader uses the *USB CDC* class for serial communication, you normally do not need to modify the baud rate settings.
-4. Start the game.
+
+2. Since the reader uses *USB CDC* class for serial communication, typically **no need to modify baud rate settings**
+
+3. Start the game
 
 ## Other Pages
-* [Adjust light brightness in serial mode](../HCC/index.md)
-* [Connecting to SEGA games via AimeIO](aimeio.md)
-* [In-game card reader test](in_game_test.md)
+
+* [Adjust Light Brightness in Serial Mode](../HCC/index.md)
+* [AimeIO Method for Connecting SEGA Games](aimeio.md)
+* [Test Reader in Game](in_game_test.md)
 * [KONAMI Game Settings](../KONAMI/index.md)

@@ -14,7 +14,7 @@
   （通常出厂时会刷入发货当天的最新版）
 :::
 
-## 食用须知
+## 使用说明
 
 使用 **AimeIO** 的优点：
 - 支持游戏内热插拔读卡器
@@ -31,7 +31,7 @@
   - 卡上没有 Amusement IC 标志
   - 卡号为 **3 开头的 20 位数字**
   - 卡背为英文 / 韩文 / 中文
-- 少部分 Segatools 对 Felica 支持不完整  
+- 少数 Segatools 对 Felica 支持不完整  
   若刷 `Amusement IC`、`Hime` 等 Felica 卡片时出现异常：
   - 请更换 Segatools  
   - 或改用 **串口协议**
@@ -68,7 +68,7 @@ enable=1
 [aimeio]
 ; 指定 dll 路径
 path=hinata.dll
-````
+```
 
 ### 3. 可选配置（非必需）
 

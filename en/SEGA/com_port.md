@@ -1,62 +1,91 @@
-# Modifying the port number required by the game
+# Modify Game Port Numbers
 
-**If you don't need to switch between CHUNITHM and maimai/ONGEKI, and have no other special needs, you can ignore this section.**
+::: info
+If you do not have the need to switch between CHUNITHM and maimai/ONGEKI, and have no other special requirements, you can safely ignore this section.
+:::
 
-This article is only for users who connect using the official serial protocol. If you modify some configuration files according to the tutorial below, but want to use `Virtual Reader (Enter)` or `AimeIO`, please restore the configuration files to their default configuration, otherwise they will not work.
+::: warning
+This article **only applies to users connecting via the SEGA official serial protocol**.  
+If you modify the configuration files according to the tutorial below but later want to use `virtual reading (Enter key)` or `AimeIO`, please be sure to restore the configuration files to their default settings, otherwise they will not work properly.
+:::
 
 ## Introduction
-   | Game | Default Port |
-   | :---: | :---: |
-   |maimai DX | COM1 |
-   |ONGEKI | COM1 |
-   |CHUNITHM | COM4 |
 
-The above are the default port numbers for the three rhythm games, but they are **not fixed**. Users can modify the port number required by the game by modifying the configuration file.
+| Game | Default Port Number |
+| :--: | :----------------: |
+| maimai DX | COM1 |
+| ONGEKI | COM1 |
+| CHUNITHM | COM4 |
 
-Imagine a scenario where you only have one computer and one card reader, but you want to play multiple games. Since ONGEKI and maimai have the same game port number, you can set it up once and play by default. But since CHUNITHM's card reader port number is different from other games, this tutorial was born.
+The above are the default port numbers for the GekiChuMai games, but **they are not fixed**. Users can change the reader port number used by the game by modifying the configuration files.
 
-Currently, most SEGA games use `amdaemon`. The card reader related settings are controlled by `amdaemon`. Players can modify the card reader port number required by the game in the configuration file passed to `amdaemon`.
+Imagine a scenario:  
+You have only one computer and one reader, but want to play multiple SEGA rhythm games.  
+maimai and ONGEKI typically only need to be set once since they have the same default port number.  
+CHUNITHM has a different port number, hence the need for this tutorial.
+
+Currently, most SEGA games use `AMDaemon`, and reader-related settings are managed uniformly by `AMDaemon`.  
+Players can change the reader port number required by the game by modifying the configuration file passed to `AMDaemon`.
 
 ## File Modification
+
 ### File Introduction
-The following are all the configuration files for `amdaemon` that will appear in a normal game file:
-![amdcfg](assets/amdaemon_cfg.png)
 
-* `config_client.json` and `config_server.json` are both related to the content delivery server settings and can be ignored in this article.
-* `config_hook.json` is included with segatools and is used to forcibly overwrite some settings.
-* `config_cvt.json` and `config_sp.json` are configuration files unique to **CHUNITHM**.
-* `config_common.json` is a configuration file that all games have.
+The following are `AMDaemon` configuration files that may exist in a normal game directory:
 
-The port number setting we are looking for is stored in `config_common.json`, but for **CHUNITHM**, you need to edit `config_cvt.json` and `config_sp.json` depending on the cabinet model used at startup.
+![amdcfg](assets/amdaemon_cfg.jpg)
 
-### Modification
-Open `config_common.json` or `config_cvt/sp.json`, scroll down and you will find the `aime` entry:
+- `config_client.json`, `config_server.json`  
+  Related to distribution servers, can be ignored for this article
+- `config_hook.json`  
+  Comes with Segatools, used to forcibly override some settings
+- `config_cvt.json`, `config_sp.json`  
+  **CHUNITHM specific configuration files**
+- `config_common.json`  
+  Configuration file common to all games
+
+Typically, reader port number configuration is located in `config_common.json`.  
+However, for **CHUNITHM**, you need to modify `config_cvt.json` or `config_sp.json` depending on the cabinet type used at startup.
+
+### Modification Method
+
+Open `config_common.json` or `config_cvt.json / config_sp.json`, and look down for the `aime` entry:
 
 ![amdcfg2](assets/amdaemon_cfg2.png)
 
-The `4` after `"port": 4` is what we need to modify. We can change it to another port number that is not the same as **other port numbers used by the official setup**.
+Where:
 
-### What are "other port numbers used by the official setup"?
+```json
+"port": 4
+```
 
-For example, in **CHUNITHM**, SEGA officially uses `COM1` to connect the *Ground Slider* (ground touch panel), so you cannot use `COM1` when modifying the card reader port number.
+Here, `4` is the port number used by the reader (corresponding to COM4).  
+You can modify it to **another port number not occupied by official devices**.
 
-The following are the officially used port numbers (excluding the card reader) for common games:
+**Note**: What are "other port numbers officially used"?
 
-   | Game | Occupied Port and Purpose |
-   | :---: | :---: |
-   |maimai DX | COM2: VFD screen<br>COM3 & COM4: 1P & 2P touch screen<br>COM21 & COM23: Light panels |
-   |ONGEKI | COM2: VFD screen<br>COM3: Light panel |
-   |CHUNITHM<br>( SP mode ) | COM1: Touch panel<br>COM2: VFD screen<br>COM20 & COM21: Light panels |
-   |CHUNITHM<br>( CVT mode ) | COM1: Touch panel<br>COM2 & COM3: Light panels |
+Take **CHUNITHM** as an example. SEGA officially uses `COM1` to connect to the *Ground Slider* (ground key touch panel), so **COM1 cannot be used** when modifying the reader port number.
 
-The above port numbers cannot be used for the card reader port.
+Below are the **port numbers occupied by official games and cannot be used for readers**:
 
-## Use Case
+| Game | Occupied Port Numbers and Purpose |
+| :-----------: | :--------------------------------------------------------- |
+| maimai DX | COM2: VFD screen<br>COM3 / COM4: 1P / 2P touch screen<br>COM21 / COM23: Light board |
+| ONGEKI | COM2: VFD screen<br>COM3: Light board |
+| CHUNITHM (SP) | COM1: Touch panel<br>COM2: VFD screen<br>COM20 / COM21: Light board |
+| CHUNITHM (CVT) | COM1: Touch panel<br>COM2 / COM3: Light board |
 
-I only have one card reader and one computer, but I want to switch between CHUNITHT and maimai.
-Then you can:
-1. Edit maimai's `config_common.json` and change the card reader port number to `COM7`. 
-2. Open CHUNITHM's `config_cvt/sp.json` and change the card reader port number to `COM7` as well.
-3. Finally, go to the device manager, change the actual port number of the card reader to `COM7`, and re-plug it.
+All the above port numbers **cannot be used as reader ports**.
 
-This way, you don't need to switch the card reader port number when switching between the two games.
+## Use Case Description
+
+Requirement:  
+I have only one computer and one reader, but want to switch between playing **CHUNITHM** and **maimai**.
+
+You can follow these steps:
+
+1. Edit maimai's `config_common.json` and change the reader port number to `COM7`
+2. Edit CHUNITHM's `config_cvt.json` or `config_sp.json`, and also change the reader port number to `COM7`
+3. Open Windows Device Manager, change the reader's actual port number to `COM7`, and replug the reader
+
+After completion, you can switch between the two games without repeatedly changing the reader port number.

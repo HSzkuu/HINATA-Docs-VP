@@ -1,11 +1,18 @@
-# In-game card reader test
+# Test Reader in Game
 
-1. Enter the *Test Mode (TEST)* of the corresponding game. ![test0](assets/test0.png)
-2. Select `Aime Card Reader Test` using the specific operation method of each game. ![test1](assets/test1.png)
-3. Inside, you can perform **card reading tests** and **LED tests**.  
-After disabling the Aime hook in Segatools, if the top two lines of the hardware and software version numbers do not show anything in the game, it means the game has not successfully connected to the card reader.
+1. Enter the game's *TEST mode*  
+   ![test0](assets/test0.png)
+
+2. Depending on the game's operation method, select `Aimeカードリーダーテスト`  
+   ![test1](assets/test1.png)
+
+3. After entering, you can perform **card reading tests** and **LED tests**
+
+::: tip
+After closing Segatools' Aime hook, if **both the software/hardware version numbers in the top two rows show no content** in this test interface, it means the game **has not successfully connected to the reader**.
+:::
 
 ## Other Pages
-* [Connecting to the game via serial port](serial.md)
-* [Connecting to the game via AimeIO](aimeio.md)
-* [KONAMI Game Settings](../KONAMI/index.md)
+- [Serial Method for Connecting Games](serial.md)
+- [AimeIO Method for Connecting Games](aimeio.md)
+- [KONAMI Game Settings](../KONAMI/index.md)

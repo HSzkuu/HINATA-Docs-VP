@@ -7,143 +7,134 @@
 * Fixed a potential startup failure issue.
 
 ## HINATA & HINATA Lite 2025093016-d770c302
-* Added compatibility with the native protocol of Bandai Namco games (Wangan Midnight, Taiko no Tatsujin, Gundam, etc.).
-* `PN532 Passthrough Mode` and `Bandai Namco Native Protocol` are now available on HINATA Lite.
-* Added a low-power mode. The RF module and LED lights will be turned off when the computer is shut down and will automatically recover when the computer is turned on.
-* Fixed an issue from the 2025040400 version where the `SEGA Serial Protocol` would occasionally fail to connect and require re-plugging.
-* Optimized the default rainbow light effect on power-on and provided a fixed light effect mode for subsequent adjustments.
-* The light brightness adjustment in `SEGA Serial Protocol` has been restored.
-* Reserved some setting items for future use by the HINATA Control Center.
+* Added compatibility with the native protocol of Bandai Namco games (Wangan Midnight, Taiko no Tatsujin, Gundam, etc.)
+* `PN532 Passthrough Mode` and `Bandai Namco Native Protocol` are now available on HINATA Lite
+* Added a low-power mode. The RF module and LED lights will be turned off when the computer is shut down and will automatically recover when the computer is turned on
+* Fixed an issue from the 2025040400 version where the `SEGA Serial Protocol` would occasionally fail to connect and require re-plugging
+* Optimized the default rainbow light effect on power-on and provided a fixed light effect mode for subsequent adjustments
+* The light brightness adjustment in `SEGA Serial Protocol` has been restored
+* Reserved some setting items for future use by the HINATA Control Center
 
 ## HINATA & HINATA Lite 2025052505-40e67bd6
-* A line of test code was accidentally left in the previous version (which could cause abnormal operation in sega serial mode).
+* A line of test code was accidentally left in the previous version (which could cause abnormal operation in SEGA serial mode)
 
 ## HINATA & HINATA Lite 2025052106-3915f44d
-* Fixed an issue with abnormal PN532 passthrough mode.
-* Fixed an occasional packet error when placing a card with aimeio.
+* Fixed an issue with abnormal PN532 passthrough mode
+* Fixed an occasional packet error when placing a card with aimeio
 * (The above two issues were because yesterday's update did not completely solve them)
-* Preliminarily added multi-card selection.
+* Preliminarily added multi-card selection
 
 ## HINATA & HINATA Lite 2025052019-b75d2083
-* Fixed an issue with abnormal PN532 passthrough mode.
-* Fixed an occasional packet error when placing a card under aimeio.
+* Fixed an issue with abnormal PN532 passthrough mode
+* Fixed an occasional packet error when placing a card under aimeio
 
 ## HINATA & HINATA Lite 2025051301-c4fea99b
-
-* Refactored some modules.
-* Fixed an issue where some special sak cards could not be read.
-* Implemented the `thincaled` command for sega games.
-* Optimized card reading speed and stability.
-* Optimized the success rate of reading iPhone's Pasmo.
-* Reserved more interfaces for future use by the control center.
-* The light effect after power-on has been changed to a rainbow light. If a card is detected, the brightness will increase.
-
+* Refactored some modules
+* Fixed an issue where some special sak cards could not be read
+* Implemented the `thincaled` command for SEGA games
+* Optimized card reading speed and stability
+* Optimized the success rate of reading iPhone's Pasmo
+* Reserved more interfaces for future use by the control center
+* The light effect after power-on has been changed to a rainbow light. If a card is detected, the brightness will increase
 
 ## HINATA & HINATA Lite 2025040400
 
-2025/4/4:
-Refactored reader firmware:
-Currently supports:
-A possibly more stable SEGA official protocol reading than before.
-A revolutionary new AimeIO.
-CardIO for Konami games and Taiko no Tatsujin (Standard Edition Only).
-Fully automatic PN532 Passthrough (Standard Edition Only).
-Future firmware updates will all be online web updates.
-Todo:
-Bandai Namco native protocol.
-New control center to be improved.
-Brand new AimeIO:
-Backward compatible with old firmware, and can now coexist with enter-to-swipe!
+2025/4/4:  
+Refactored reader firmware, currently supports:
+* SEGA official protocol reading (possibly more stable than before)
+* Revolutionary new AimeIO
+* CardIO for Konami games and Taiko no Tatsujin (Standard Edition Only)
+* Fully automatic PN532 Passthrough (Standard Edition Only)
+* Future firmware updates will all be online web updates
 
-Exclusive new features only available with the 2025 new firmware:
-As we all know, the card number of an Amusement IC card normally needs to send the card serial number to the game server, which then returns the card number.
-However, many servers are not compatible with this, causing the card number swiped by the player to become a card number converted from a serial number starting with 0008.
-So now there is this version of AimeIO, which bypasses the server and sends the card number on the back of the Amusement IC card directly to the game, ensuring you can read the correct card number on any server.
-Mac and Linux users can visit https://cc.neri.moe to update the firmware.
-Windows users need to download the firmware package in the group files to update.
+New AimeIO features:
+* Backward compatible with old firmware, and can now coexist with enter-to-swipe
+* Exclusive feature: Bypasses the server and sends the correct Amusement IC card number directly to the game, ensuring correct card numbers on any server
 
+Mac and Linux users can visit https://cc.neri.moe to update firmware, Windows users need to download firmware package from group files
 
 ## HINATA-2024093002
 
-2024/9/30:
-Rewrote the SEGA serial port packet receiving logic to once again fix the issue of the game trying to update the reader firmware.
-The hw/fw version passed to the game has been changed to 837-15396 94.
+2024/9/30:  
+Rewrote SEGA serial port packet receiving logic, fixed game attempting to update reader firmware again. Changed hw/fw version passed to game to 837-15396 94
 
-2024/9/28:
-This time the game firmware flashing bug is really fixed. Since there are no other changes, this version is called 2024091401.
+2024/9/28:  
+Actually fixed the game firmware flashing bug. Since no other changes, version is 2024091401
 
-2024/9/14:
-Fixed a bug where SEGA games would constantly try to flash the reader firmware when entering test mode.
-Added a global low-power mode, which is enabled when no card is read within 10 minutes and not connected to any game. It automatically turns off when connected to a game or a card is read.
-SEGA serial mode has added multi-card selection, which is not yet open and will be available in the future.
+2024/9/14:  
+Fixed bug where SEGA games constantly tried to flash reader firmware when entering test mode  
+Added global low-power mode (enabled after 10 minutes of no card reading and no game connection)  
+SEGA serial mode added multi-card selection (not yet open)
 
 ## HINATA-2024090500
 
-2024/9/5:
-The reader will light up yellow when powered on, and will gradually change to blue light after a successful USB handshake, which can visually determine whether the reader is successfully connected to the computer.
-Optimized the mode switching logic again.
-Fixed the issue where the aimeio dll was rejected in some segatools.
-An older update script for old firmware is included in the compressed package.
+2024/9/5:  
+Reader lights yellow on power-on, gradually changes to blue after USB handshake success  
+Optimized mode switching logic again  
+Fixed aimeio dll rejection in some segatools  
+Included older update script for old firmware
 
 ## HINATA-2024090400
 
-2024/9/4:
-Fixed an issue where cardio was not working properly.
+2024/9/4:  
+Fixed cardio not working properly
 
 ## HINATA-2024090300
 
-**Contains bugs, please flash with caution.**
+**Contains bugs, flash with caution**
 
-2024/9/3:
-Since the complete card reading logic of the official reader has been implemented, the Felica compatibility mode (disguising various Felica cards as Felica Lite-S to trick the game) has been temporarily removed.
-The sak20 tag is blocked at the bottom layer (because it affects Mobile Felica). Now swiping Pixel and various Japanese Mobile Felica should be more stable.
+2024/9/3:  
+Removed Felica compatibility mode (disguising Felica cards as Felica Lite-S)  
+Blocked sak20 tag at bottom layer (affects Mobile Felica)  
+Optimized Mobile Felica reading stability
 
-2024/9/2.2:
-Optimized the reading speed of felica cards with extended security verification.
+2024/9/2.2:  
+Optimized felica card reading speed with extended security verification
 
 ## HINATA-2024090201
 
-**Contains bugs, please flash with caution.**
+**Contains bugs, flash with caution**
 
-2024/9/2.1:
-Fixed a bug introduced in the September 2nd firmware that prevented card reading.
+2024/9/2.1:  
+Fixed bug preventing card reading in Sept 2 firmware
 
-2024/9/2:
-Implemented the official reader's additional verification, now you can directly connect to the official aimedb to swipe cards.
-(Some parts of the code have been greatly changed, which may be unstable)
+2024/9/2:  
+Implemented official reader additional verification, can now connect to official aimedb  
+(Some code changes may cause instability)
 
-2024/8/31:
-Today is Hatsune Miku's 33rd birthday, happy birthday to her.
-Officially supports aimeio. Although the old firmware can also use my aimeio, there is a small bug, so this firmware was released first.
+2024/8/31:  
+Happy 33rd birthday to Hatsune Miku  
+Officially supports aimeio (small bugs in old firmware fixed)
 
-Under aimeio, the reader can be hot-plugged in the game. The network will not be disconnected after the reader is unplugged, and it can be plugged back in at any time. The light brightness can also be adjusted in segatools.ini.
-Plug and play, no need to fight with Windows to set the port number.
-Compared to the native serial protocol, aimeio has better support for games like Initial D or other niche sega games.
+Under aimeio:
+* Hot-plugging supported in game
+* Network stays connected when unplugged
+* Light brightness adjustable in segatools.ini
+* Plug and play, no Windows port configuration needed
+* Better support for Initial D and niche SEGA games
+* Does not support old banapass (non-Amusement IC)
+* May have card number issues on servers with official aimedb (RIN server contacted, others self-resolve)
+* No impact on aqua/artemis local servers, deer network, nageki network
 
-Under aimeio, old banapass (non-Amusement IC version) is not supported for now.
-And due to some abstract implementations of segatools, the card number may still be incorrect after swiping a four-company card on some servers that have implemented the official aimedb. The RIN server has been contacted to solve this problem, for other servers, you are on your own.
-If you are using an aqua/artemis local server, or a deer network, nageki network or other servers that have not implemented the official aimedb, this will not affect you.
-
-It is recommended to use the native protocol mode (serial port) first.
-
-Optimized the fully automatic mode switching logic again.
-Reserved some apis for the next generation control center.
+Recommended to use native protocol (serial) first  
+Optimized automatic mode switching  
+Reserved APIs for next-gen control center
 
 ## HINATA-2024050400
 
-2024/5/4:
-Click to copy the card number when reading the card in the control center.
-CardIO can be used without binding lights after HINATA is powered on, but if a SEGA game is started after power-on, you need to bind the lights or re-plug the reader.
-It should no longer crash the game after swiping a card once on Taiko.
-Fixed a bug where HINATA was displayed in the Analog tab of spicecfg.
-Optimized card reading speed in the control center.
+2024/5/4:  
+Click to copy card number in control center  
+CardIO works without light binding after power-on (needs binding if SEGA game started)  
+Should not crash Taiko after card swipe  
+Fixed HINATA showing in spicecfg Analog tab  
+Optimized control center card reading speed
 
-2024/5/2:
-! This version has major changes in various senses. If you encounter bugs that you have not encountered before, please roll back the version.
-! Please do not use the old config.json for the control center.
-Optimized the switching logic of CardIO and SEGA serial port.
-Fixed a bug where two HINATAs were displayed in spicecfg.
-Fixed a bug where the control center would not synchronize settings to the reader on startup.
-Removed the Felica compatibility mode button in the control center and enabled it by default.
-Cardio can now read the Access Code of Aime cards instead of the UID (this function is disabled by default to be compatible with previous user accounts).
-Added a page to adjust cardio settings in the control center: M1 card UID reading (default on), [new]Aime card Access Code reading (default off)
+2024/5/2:  
+! Major changes, roll back if encountering new bugs  
+! Do not use old config.json for control center  
+Optimized CardIO and SEGA serial switching  
+Fixed two HINATAs showing in spicecfg  
+Fixed control center not syncing settings to reader on startup  
+Removed Felica compatibility mode button (enabled by default)  
+Cardio can now read Aime Access Code instead of UID (default off for compatibility)  
+Added cardio settings page: M1 UID reading (default on), Aime Access Code reading (default off)

@@ -4,28 +4,29 @@ layout: home
 
 hero:
   name: "HINATA"
-  text: "Universal Multi-function<br>Arcade Game Card Reader"
-  tagline: 
+  tagline: "Universal Multi-Function Arcade Card Reader"
   actions:
     - theme: brand
       text: Quick Start (Full Manual)
       link: ./quickstart
     - theme: brand
-      text: Purchase & After-sales
+      text: Purchase & Support
       link: ./purchase_contact
     - theme: alt
-      text: Introduction Video
+      text: Intro Video
       link: https://www.bilibili.com/video/BV1Gi421i7ej/
     - theme: alt
       text: Video Manual
-      link: https://www.bilibili.com/video/BV1VQCUYyEGA/      
-
+      link: https://www.bilibili.com/video/BV1VQCUYyEGA/
 
 features:
-  - title: Three Companies Game Support & Fully Automatic Switching
-    details: Supports all games from SEGA, KONAMI, and BANDAI NAMCO<br>All modes switch automatically
-  - title: GUI Control Panel & Firmware Update
-    details: Visually adjust lighting, CardIO settings<br>Use extended functions such as card reading/writing and PN532 passthrough mode<br>Firmware updated irregularly to support new features
-  - title: After-sales Service
-    details: One-year non-human damage replacement only<br>Support available in the QQ group
+  - title: Three-Platform Support & Auto-Switching
+    details: |
+      Supports SEGA, KONAMI, and BANDAI NAMCO arcade games<br>Automatically switches based on game type and protocol, no manual configuration needed
+  - title: GUI Control Panel & Firmware Updates
+    details: |
+      Web GUI control center for visual adjustment of lighting and CardIO settings<br>Supports card read/write, PN532 passthrough mode, and other extended functions<br>Periodic firmware updates for new features and compatibility improvements
+  - title: After-Sales Service
+    details: |
+      One-year warranty: replacement for non-human damage<br>QQ group and private chat support for centralized issue handling
 ---

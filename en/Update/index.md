@@ -1,14 +1,36 @@
 # Firmware Update
-If the card reader is working normally and stably, and you are not interested in new features, you do not need to update. If you encounter some problems, updating the firmware may solve them.
 
-## Update using HINATA Control Center
-**This feature is only available for HINATA & HINATA Lite firmware version 2025040400 and above.**  
-Only supports macOS, Linux (requires editing udev rules), ChromeOS.
+If the reader is currently **working normally and stably**, and you **have no need for new features**, you can choose not to update the firmware.  
+However, if you encounter exceptions, compatibility issues, or known bugs during use, **updating the firmware can usually resolve some problems**, so it is still recommended to update when needed.
 
-[Update using HINATA Control Center](/HCC/#firmware-update)
+## Using HINATA Control Center for Updates
 
-## Update using the updater
-On Windows, you need to use HINATAUT to update the firmware. Windows 11 can run it directly. If you are on Windows 10, you may need to install [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) from the Microsoft Store to run it properly.
+::: warning
+This update method only supports the following conditions:
+- Firmware version **2025040400 and above**
+- Only supports **macOS / Linux / ChromeOS**
+- Linux requires **pre-configured udev rules**
+:::
 
-* [Click to download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
-* [Click to download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)
+You can perform online updates by accessing the HINATA Control Center via browser:
+
+[Using HINATA Control Center for Updates](/HCC/#firmware-update)
+
+This method requires no additional tools and is suitable for non-Windows users.
+
+## Using Updater for Updates (Windows)
+
+On Windows systems, you need to use the **HINATAUT** tool to update the firmware.
+
+- **Windows 11**: Can run the updater directly
+- **Windows 10**: May need to install Windows Terminal from Microsoft Store first
+
+::: warning
+If there is no response or it crashes directly on Windows 10, please install  
+[Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) first.
+:::
+
+### Download Updater
+
+- [Click to Download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
+- [Click to Download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)

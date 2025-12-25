@@ -1,50 +1,72 @@
-# Quick Start | Please read the documentation carefully
+# Quick Start | Please Read the Manual Carefully
 
 ## Unboxing
-By default, Standard Edition users will receive:
-* **HINATA** * 1
-* USB Type-C data cable * 1
-* Mifare Classic 1k sak:0x08 blank card * 1
 
-Lite Edition users will receive:
-* **HINATA Lite** * 1
+### Standard Edition
+Standard edition users will receive the following items:
 
-## What to do
+- **HINATA × 1**
+- USB Type-C data cable × 1
+- Mifare Classic 1k (sak:0x08) blank card × 1
 
-### -1. A note on the HINATA Lite antenna
-Since HINATA Lite uses an off-the-shelf RF antenna module, it may not be a perfect match for the current use case of placing cards directly on the reader. The optimal reading position for some cards is not when they are placed right against the reader, but rather a few centimeters higher. If you encounter very unstable issues when scanning some compatible cards, please first go to the [HINATA Control Center](HCC/index.md) to test the card reading stability, then appropriately raise the card a few centimeters when swiping in-game or use a non-metallic object of appropriate thickness as a cushion. Alternatively, you can use a copper foil sticker and apply a piece to the area on the back of the HINATA Lite that glows red. The specific size is recommended to be tested on the webpage. **HINATA Lite units shipped after July 20, 2025, will come with a copper foil sticker of a suitable size.**
+### Lite Edition
+Lite edition users will receive:
 
-### 0. Join the after-sales group & some notes
-Join the after-sales group: [362419355](https://qm.qq.com/q/uKIsTeNXyw)
+- **HINATA Lite × 1**
 
-Feel free to ask any questions in the group. I can also provide remote assistance at a suitable time.
+## Usage Instructions
 
-After receiving the card reader, you can first check the firmware version and update it to the latest version. See [Firmware Update](Update/index.md).
+::: tip Note on HINATA Lite Antenna Performance
+HINATA Lite uses a ready-made RF antenna module, which may not provide optimal reading performance in scenarios requiring cards to be held close to the reader.
 
-### 1. Connect to the computer
-Connect HINATA to the computer using a USB Type-C data cable.  
-HINATA will light up yellow when powered on, and will gradually turn blue after a successful USB handshake with the computer.  
-HINATA Lite will have a constant red light on the back when powered on, please ignore it.
+The optimal reading position for some cards is not completely flush with the reader, but rather a few centimeters above. If you experience unstable reading when scanning certain compatible cards, first test card reading stability in the [HINATA Control Center](HCC/index.md), then try holding the card a few centimeters higher during gameplay, or use a suitable non-metallic item as a spacer.
+
+Additionally, you can apply a copper foil sticker to the red light area on the back of HINATA Lite. The recommended size can be determined through testing on the control center webpage.
+
+**HINATA Lite units shipped after July 20, 2025 will include a copper foil sticker of appropriate size.**
+:::
+
+### 0. Join Support Group & Notes
+
+::: info
+Support Group:  
+[362419355](https://qm.qq.com/q/uKIsTeNXyw)
+
+If you encounter any issues during use, you can ask questions in the group; I can also provide remote assistance when appropriate.
+:::
+
+After receiving the reader, it is recommended to check the firmware version and update to the latest version, see:  
+[Firmware Update](Update/index.md)
+
+### 1. Connect to Computer
+
+Use a USB Type-C data cable to connect HINATA to your computer.
+
+- **HINATA**: Lights up yellow when powered on, gradually turns blue after successful USB handshake with computer  
+- **HINATA Lite**: Red light on the back stays on when powered on, this is normal
 
 ![connection](</assets/connection.jpg>)
 
-At this time, you should be able to see the HINATA device in the Windows ```Device Manager```.
+After successful connection, you should see the HINATA device in Windows **Device Manager**:
 
 ![devmgr0](<assets/devmgr0.png>)
-
 ![devmgr1](<assets/devmgr1.png>)
 
+### 2. Write Aime Card Number to Included Card
 
-### 2. Write an Aime card number to the provided card
-Only the standard edition comes with a card.  
-The white card needs to have a card number written to it before it can be used in SEGA games.  
-If you have your own `Aime` card, `Banapass` card, or `Amusement IC` card, and you don't want to use the provided white card, you can **skip** this step.
+This step only applies to the blank card included with the standard edition.
 
-For writing methods, please see:
-* [Card Reading and Writing](HCC/index.md#card-reading-and-writing)
+Blank cards need to have a card number written to them before they can be used in SEGA games. If you already have an `Aime` card, `Bandai Namco Passport` card, `BANA PASSPORT` card, or `Amusement IC` (four-platform compatible) card, and don't intend to use the included blank card, you can skip this step.
 
-### 3. Start configuring the game
-The configuration for SEGA games and KONAMI games can coexist.  
-(When adjusting the configuration for KONAMI games, you don't need to worry about whether the SEGA game port number is configured or not, the reader status will switch automatically)
-* [SEGA Games](SEGA/index.md)
-* [KONAMI Games](KONAMI/index.md)
+For writing methods, please refer to:
+
+- [Card Read/Write](HCC/index.md#card-read-write)
+
+### 3. Start Game Configuration
+
+::: tip
+SEGA and KONAMI game configurations can coexist. When adjusting KONAMI game settings, you don't need to worry about SEGA game port settings; the reader status will switch automatically.
+:::
+
+- [SEGA Games](SEGA/index.md)
+- [KONAMI Games](KONAMI/index.md)
