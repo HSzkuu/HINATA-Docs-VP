@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: 介绍视频
       link: https://www.bilibili.com/video/BV1Gi421i7ej/
-    - theme: alt
-      text: 视频说明书
-      link: https://www.bilibili.com/video/BV1VQCUYyEGA/
 
 features:
   - title: 三社游戏支持 & 全自动切换

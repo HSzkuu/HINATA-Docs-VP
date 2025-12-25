@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: Intro Video
       link: https://www.bilibili.com/video/BV1Gi421i7ej/
-    - theme: alt
-      text: Video Manual
-      link: https://www.bilibili.com/video/BV1VQCUYyEGA/
 
 features:
   - title: Three-Platform Support & Auto-Switching
