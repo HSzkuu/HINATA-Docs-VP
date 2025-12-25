@@ -33,7 +33,7 @@ Players can change the reader port number required by the game by modifying the 
 
 The following are `AMDaemon` configuration files that may exist in a normal game directory:
 
-![amdcfg](assets/amdaemon_cfg.jpg)
+![amdcfg](assets/amdaemon_cfg.png)
 
 - `config_client.json`, `config_server.json`  
   Related to distribution servers, can be ignored for this article
