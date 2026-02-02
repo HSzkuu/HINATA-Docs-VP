@@ -45,7 +45,9 @@ export const en = defineConfig({
               { text: 'Update Instructions', link: '/en/Update/' },
               { text: 'Changelog', link: '/en/Update/CHANGELOG' }
             ]
-          }
+          },
+          { text: 'For developer', link: '/rustlib/' }
+
         ]
         
       },

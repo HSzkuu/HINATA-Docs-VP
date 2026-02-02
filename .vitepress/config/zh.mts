@@ -45,7 +45,8 @@ export const zh = defineConfig({
               { text: '更新说明', link: '/Update/' },
               { text: '更新日志', link: '/Update/CHANGELOG' }
             ]
-          }
+          },
+          { text: '二次开发', link: '/rustlib/' }
         ]
 
       },
