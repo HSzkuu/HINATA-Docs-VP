@@ -77,6 +77,6 @@ brightness=255
 :::
 
 ## 其他页面 
-* [串口方式连接 SEGA 游戏](serial.md) 
-* [游戏内测试读卡器](in_game_test.md) 
-* [KONAMI 游戏设置](../KONAMI/index.md)
+* [串口方式连接 SEGA 游戏](../serial.md) 
+* [游戏内测试读卡器](../in_game_test.md) 
+* [KONAMI 游戏设置](../../KONAMI/index.md)
