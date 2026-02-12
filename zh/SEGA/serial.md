@@ -1,4 +1,4 @@
-# SEGA 官方串口协议连接游戏
+# 使用 SEGA 官方串口协议连接游戏
 
 ::: tip 食用须知
 使用 SEGA 官方串口读卡器协议时，需要关闭 Segatools 的读卡器 hook。
@@ -94,6 +94,6 @@
 ## 其他页面
 
 * [调整串口模式下灯光亮度](../HCC/index.md)
-* [AimeIO 方式连接 SEGA 游戏](aimeio.md)
+* [AimeIO 方式连接 SEGA 游戏](AimeIO/index.md)
 * [游戏内测试读卡器](in_game_test.md)
 * [KONAMI 游戏设置](../KONAMI/index.md)

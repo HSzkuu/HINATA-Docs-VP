@@ -3,7 +3,7 @@
 **HINATA** 与 **HINATA Lite** 支持通过以下两种方式连接 SEGA 游戏，请根据需求选择其中一种：
 
 - [SEGA 官方串口协议](serial.md)
-- [AimeIO（基于 Segatools）](aimeio.md)
+- [AimeIO（基于 Segatools）](AimeIO/index.md)
 
 两种方式各有优缺点。  
 在当前 **2025040400 固件版本**下，更推荐使用 **SEGA 官方串口协议**。
