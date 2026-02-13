@@ -16,45 +16,65 @@ export const zh = defineConfig({
     sidebar: [
       {
         text: '快速开始',
+        collapsed: false,
         items: [
-          { text: '介绍 & 初次使用', link: '/quickstart' },
-          {
-            text: '配置游戏',
-            items: [
+          {text: '开始使用', link: '/quickstart'}
+        ]
+        
+      },
+      {
+        text: '配置游戏',
+        collapsed: false,
+        items: [
               {
                 text: 'SEGA 游戏',
+                collapsed: true,
                 items: [
-                  { text: '配置说明', link: '/SEGA/' },
-                  { text: '使用串口方式连接', link: '/SEGA/serial' },
-                  { text: '修改游戏所需的端口号', link: '/SEGA/com_port' },
-                  { text: 'AimeIO',
+                  { text: '配置说明', link: '/game-setting/sega/' },
+                  { text: '官方串口协议', 
+                    collapsed: true,
                     items: [
-                      { text: '使用方法', link: '/SEGA/AimeIO/' },
-                      { text: '扩展功能', link: '/SEGA/AimeIO/extension' }
+                      { text: '使用方法', link: '/game-setting/sega/serial/'},
+                      { text: '修改游戏所需的端口号', link: '/game-setting/sega/serial/com_port'}
+                    ]
+                  },
+                  { text: 'AimeIO',
+                    collapsed: true,
+                    items: [
+                      { text: '使用方法', link: '/game-setting/sega/aimeio/' },
+                      { text: '扩展功能', link: '/game-setting/sega/aimeio/extension' }
                     ] 
                   },
-                  { text: '游戏内测试读卡器', link: '/SEGA/in_game_test' },
-                  { text: '常见问题', link: '/SEGA/qa' }
+                  { text: '游戏内测试读卡器', link: '/game-setting/sega/in_game_test' },
+                  { text: '常见问题', link: '/game-setting/sega/qa' }
                 ]
 
               },
-              { text: 'KONAMI 游戏', link: '/KONAMI/' },
-              { text: 'Bandai Namco 游戏', link: '/BANA/' }
+              { text: 'KONAMI 游戏', link: '/game-setting/konami/' },
+              { text: 'Bandai Namco 游戏', link: '/game-setting/bandai-namco/' }
             ]
-          },
-          { text: 'HINATA 控制中心', link: '/HCC/' },
-          { text: 'PN532 直通生态', link: '/PN532/' },
-          {
+        },
+        { text: '修改读卡器设置', 
+          collapsed: false,
+          items: [
+            { text: 'HINATA 控制中心', link: '/hcc/' }
+          ]
+        },
+        {
             text: '固件更新',
+            collapsed: true,
             items: [
-              { text: '更新说明', link: '/Update/' },
-              { text: '更新日志', link: '/Update/CHANGELOG' }
+              { text: '更新方法', link: '/update/' },
+              { text: '更新日志', link: '/update/changelog' }
             ]
-          },
-          { text: '二次开发', link: '/rustlib/' }
-        ]
-
-      },
+        },
+        { text: '生态',
+          collapsed: true,
+          items: [
+            { text: 'PN532 直通生态', link: '/integration/pn532/' },
+            { text: '二次开发', link: '/integration/rustlib/' }
+          ]
+        },
       { text: '购买 & 售后', link: '/purchase_contact' }
     ],
 

@@ -26,11 +26,11 @@
 2. 打开 Windows 的 **设备管理器**，保持默认的“按类型列出设备”视图，并勾选  
    **查看 → 显示隐藏的设备**
 
-   ![devmgr4](assets/devmgr4.png)
+   ![devmgr4](../assets/devmgr4.png)
 
 3. **拔掉读卡器**，查看是否存在 `端口 (COM 和 LPT)` 分类
 
-   ![devmgr3](assets/devmgr3.png)
+   ![devmgr3](../assets/devmgr3.png)
 
    - 如果没有该分类，可直接跳到下一节  
    - 如果存在，请展开并检查目标端口号是否已被其他设备占用
@@ -38,7 +38,7 @@
 4. 若端口被占用，右键该设备并依次进入  
    **属性 → 端口设置 → 高级**
 
-   ![devmgr2](assets/devmgr2.png)
+   ![devmgr2](../assets/devmgr2.png)
 
 5. 将该设备的 `COM 端口号` 修改为其他不常用的端口（例如 COM255）
 
@@ -46,11 +46,11 @@
 
 6. **插入读卡器**，将设备管理器切换为 **按容器列出设备**
 
-   ![devmgr0](<../assets/devmgr0.png>)
+   ![devmgr0](<../../assets/devmgr0.png>)
 
 7. 找到 **HINATA**
 
-   ![devmgr1](<../assets/devmgr1.png>)
+   ![devmgr1](<../../assets/devmgr1.png>)
 
 8. 右键 `USB 串行设备`，依次进入  
    **属性 → 端口设置 → 高级**
@@ -93,7 +93,7 @@
 
 ## 其他页面
 
-* [调整串口模式下灯光亮度](../HCC/index.md)
-* [AimeIO 方式连接 SEGA 游戏](AimeIO/index.md)
-* [游戏内测试读卡器](in_game_test.md)
-* [KONAMI 游戏设置](../KONAMI/index.md)
+* [调整串口模式下灯光亮度](../../../hcc/index.md)
+* [AimeIO 方式连接 SEGA 游戏](../aimeio/index.md)
+* [游戏内测试读卡器](../in_game_test.md)
+* [KONAMI 游戏设置](../../konami/index.md)
