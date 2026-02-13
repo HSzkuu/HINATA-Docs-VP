@@ -1,4 +1,4 @@
-# AimeIO 方式连接游戏
+# 使用 AimeIO 连接游戏
 
 ::: warning
 - 需求固件版本号 >= `2025052500`，建议更新到最新版固件1️以获得最佳效果
@@ -62,7 +62,7 @@ path=hinata.dll
 ; 灯光亮度 可选值为 0~255,默认为 255
 ; 不添加这一条也可以正常使用
 brightness=255
-````
+```
 
 ### 3. 启动并确认
 
@@ -77,6 +77,6 @@ brightness=255
 :::
 
 ## 其他页面 
-* [串口方式连接 SEGA 游戏](serial.md) 
-* [游戏内测试读卡器](in_game_test.md) 
-* [KONAMI 游戏设置](../KONAMI/index.md)
+* [串口方式连接 SEGA 游戏](../serial/index.md) 
+* [游戏内测试读卡器](../in_game_test.md) 
+* [KONAMI 游戏设置](../../konami/index.md)

@@ -34,7 +34,7 @@
 
 以下是一个正常游戏目录中可能存在的 `AMDaemon` 配置文件：
 
-![amdcfg](assets/amdaemon_cfg.jpg)
+![amdcfg](../assets/amdaemon_cfg.jpg)
 
 - `config_client.json`、`config_server.json`  
   与配信服务器相关，本文可忽略
@@ -52,7 +52,7 @@
 
 打开 `config_common.json` 或 `config_cvt.json / config_sp.json`，向下查找 `aime` 条目：
 
-![amdcfg2](assets/amdaemon_cfg2.png)
+![amdcfg2](../assets/amdaemon_cfg2.png)
 
 其中：
 

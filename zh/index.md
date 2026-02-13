@@ -10,6 +10,9 @@ hero:
       text: 快速开始（完整说明书）
       link: ./quickstart
     - theme: brand
+      text: 固件更新
+      link: ./update/
+    - theme: brand
       text: 购买 & 售后
       link: ./purchase_contact
     - theme: alt

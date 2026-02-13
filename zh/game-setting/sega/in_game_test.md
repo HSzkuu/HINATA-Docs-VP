@@ -15,6 +15,6 @@
 :::
 
 ## 其他页面
-- [串口方式连接游戏](serial.md)
-- [AimeIO 方式连接游戏](aimeio.md)
-- [KONAMI 游戏设置](../KONAMI/index.md)
+- [串口方式连接游戏](serial/index.md)
+- [AimeIO 方式连接游戏](aimeio/index.md)
+- [KONAMI 游戏设置](../konami/index.md)
