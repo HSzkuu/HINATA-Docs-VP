@@ -46,11 +46,11 @@
 
 6. **插入读卡器**，将设备管理器切换为 **按容器列出设备**
 
-   ![devmgr0](<../../assets/devmgr0.png>)
+   ![devmgr0](<../../../assets/devmgr0.png>)
 
 7. 找到 **HINATA**
 
-   ![devmgr1](<../../assets/devmgr1.png>)
+   ![devmgr1](<../../../assets/devmgr1.png>)
 
 8. 右键 `USB 串行设备`，依次进入  
    **属性 → 端口设置 → 高级**
