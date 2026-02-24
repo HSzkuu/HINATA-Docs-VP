@@ -1,8 +1,8 @@
 # SEGA Game Configuration Instructions
 
 **HINATA** and **HINATA Lite** support connecting to the game in two ways, please choose one:
-* [SEGA Official Serial Protocol](serial.md)
-* [AimeIO (based on Segatools)](aimeio.md)
+* [SEGA Official Serial Protocol](serial/index.md)
+* [AimeIO (based on Segatools)](aimeio/index.md)
 
 Each of the two methods has its own advantages and disadvantages. Currently (with firmware version 2025040400), I recommend using **SEGA Official Serial Protocal**.
 

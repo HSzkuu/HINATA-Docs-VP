@@ -63,7 +63,7 @@ If the game fails to connect to the card reader after disabling the hook (e.g., 
 4. Start the game.
 
 ## Other Pages
-* [Adjust light brightness in serial mode](../HCC/index.md)
-* [Connecting to SEGA games via AimeIO](aimeio.md)
-* [In-game card reader test](in_game_test.md)
-* [KONAMI Game Settings](../KONAMI/index.md)
+* [Adjust light brightness in serial mode](../../hcc/index.md)
+* [Connecting to SEGA games via AimeIO](../aimeio/index.md)
+* [In-game card reader test](../in_game_test.md)
+* [KONAMI Game Settings](../../konami/index.md)

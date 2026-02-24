@@ -23,7 +23,7 @@ By default, CardIO prioritizes maximum compatibility. Cards that can be swiped i
 |               Any Aime Card                |    ✅     |
 |           ISO15693 (old epass)           |    ❌     |
 
-You can control the range of readable cards (ISO14443A, Aime) in the [HINATA Control Center](../HCC/index.md).
+You can control the range of readable cards (ISO14443A, Aime) in the [HINATA Control Center](../../hcc/index.md).
 
 
 ## HID Light Binding
@@ -39,5 +39,5 @@ When SDVX is in Valkyrie model mode or IIDX is in Lightning model mode, the game
 
 
 ## Other Pages
-* [Adjust CardIO reading restrictions](../HCC/index.md)
-* [SEGA Game Settings](../SEGA/index.md)
+* [Adjust CardIO reading restrictions](../../hcc/index.md)
+* [SEGA Game Settings](../sega/index.md)

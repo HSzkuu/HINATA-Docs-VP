@@ -53,7 +53,7 @@ The above port numbers cannot be used for the card reader port.
 
 ## Use Case
 
-I only have one card reader and one computer, but I want to switch between CHUNITHT and maimai.
+I only have one card reader and one computer, but I want to switch between CHUNITHM and maimai.
 Then you can:
 1. Edit maimai's `config_common.json` and change the card reader port number to `COM7`. 
 2. Open CHUNITHM's `config_cvt/sp.json` and change the card reader port number to `COM7` as well.

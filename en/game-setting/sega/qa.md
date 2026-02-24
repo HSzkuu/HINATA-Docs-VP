@@ -53,6 +53,6 @@
     For other issues, please check **the card you are using and the connection method**:  
 
     Most compatible cards cannot be swiped when using the **official AimeDB**.  
-    [See here if you can't swipe your card with the AimeIO connection method](aimeio.md#important-notes)
+    [See here if you can't swipe your card with the AimeIO connection method](aimeio/index.md#important-notes)
 
 ---

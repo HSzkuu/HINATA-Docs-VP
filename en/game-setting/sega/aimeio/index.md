@@ -23,7 +23,7 @@ Local servers and private servers are not affected.
 * A small number of Segatools cannot use all [Felica](https://en.wikipedia.org/wiki/FeliCa) cards, including `Amusement IC`, or the implementation is incorrect. If you encounter various card swiping problems in the game when swiping Felica cards such as `Amusement IC` or `Hime`, please replace your Segatools, or switch to the **serial protocol** connection.
 
 ## Game Configuration
-0. If you have modified the reader port number of amdaemon according to [Modify the port number required by the game](com_port.md), please restore the modified settings first, otherwise the following settings will not work.
+0. If you have modified the reader port number of amdaemon according to [Modify the port number required by the game](../serial/com_port.md), please restore the modified settings first, otherwise the following settings will not work.
 1. First, please make sure your game is **already connected to the network**. After entering the game, a **green globe icon** should be displayed. Otherwise, please set up the game's network connection first, which is not discussed in this article.
 2. Place the `hinata.dll` provided in this article into the game directory (together with amdaemon.exe, inject.exe, segatools.ini).   
    * [Click to download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll)
@@ -64,6 +64,6 @@ Local servers and private servers are not affected.
 
 
 ## Other Pages
-* [Connecting to SEGA games via serial port](serial.md)
-* [In-game card reader test](in_game_test.md)
-* [KONAMI Game Settings](../KONAMI/index.md)
+* [Connecting to SEGA games via serial port](../serial/index.md)
+* [In-game card reader test](../in_game_test.md)
+* [KONAMI Game Settings](../../konami/index.md)
