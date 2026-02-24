@@ -17,26 +17,26 @@ If the game fails to connect to the card reader after disabling the hook (e.g., 
 2. Next, we need to ensure that the port number for connecting the game to the card reader is not occupied by other devices.
    1. Open the Windows `Device Manager`. By default, devices are listed by type. As shown in the figure, check `Show hidden devices`:
    
-   ![devmgr4](assets/devmgr4.png)
+   ![devmgr4](../assets/devmgr4.png)
    
    2. **Unplug the card reader** and look for the `Ports` drop-down menu.
 
-   ![devmgr3](assets/devmgr3.png)
+   ![devmgr3](../assets/devmgr3.png)
 
    3. If you don't see the `Ports` drop-down menu, you can proceed to the next step.  
    If you do, expand it and check if any device is occupying the target port.
    4. If a device is occupying the port, right-click the device and select `Properties → Port Settings → Advanced`.
    
-   ![devmgr2](assets/devmgr2.png)
+   ![devmgr2](../assets/devmgr2.png)
    
    5. Change the COM port number **to another port** (e.g., COM255).
 3. **Plug in the card reader** and go to the menu shown in the figure below (**View devices by container**).
    
-   ![devmgr0](<../assets/devmgr0.png>)
+   ![devmgr0](../../../assets/devmgr0.png)
 
 4. Find **HINATA**.
    
-   ![devmgr1](<../assets/devmgr1.png>)
+   ![devmgr1](../../../assets/devmgr1.png)
 
 5. Right-click `USB Serial Device`, and select `Properties → Port Settings → Advanced`.
 6. Change the `COM Port Number` to the port number required by the corresponding game. Since the card reader uses the *USB CDC* class for serial communication, you normally do not need to modify the baud rate settings.
@@ -63,7 +63,7 @@ If the game fails to connect to the card reader after disabling the hook (e.g., 
 4. Start the game.
 
 ## Other Pages
-* [Adjust light brightness in serial mode](../../hcc/index.md)
+* [Adjust light brightness in serial mode](../../../hcc/index.md)
 * [Connecting to SEGA games via AimeIO](../aimeio/index.md)
 * [In-game card reader test](../in_game_test.md)
 * [KONAMI Game Settings](../../konami/index.md)
