@@ -30,6 +30,6 @@ serverUrl=wss://aime-ws.neri.moe/REPLACEME
 ```ini
 ; 挂载其他 AimeIO 同时使用，如 amnet、mageki、yubideck（大四）
 ; 请在有需求时添加使用
-; 使用 ':' 作为分隔符可同时挂载多个 dll
-dllMux=MU3Input.dll:amnet.dll
+; 使用 '|' 作为分隔符可同时挂载多个 dll
+dllMux=MU3Input.dll|amnet.dll
 ```
