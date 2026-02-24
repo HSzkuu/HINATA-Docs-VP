@@ -20,7 +20,7 @@ Currently, most SEGA games use `amdaemon`. The card reader related settings are 
 ## File Modification
 ### File Introduction
 The following are all the configuration files for `amdaemon` that will appear in a normal game file:
-![amdcfg](assets/amdaemon_cfg.png)
+![amdcfg](../assets/amdaemon_cfg.png)
 
 * `config_client.json` and `config_server.json` are both related to the content delivery server settings and can be ignored in this article.
 * `config_hook.json` is included with segatools and is used to forcibly overwrite some settings.
@@ -32,7 +32,7 @@ The port number setting we are looking for is stored in `config_common.json`, bu
 ### Modification
 Open `config_common.json` or `config_cvt/sp.json`, scroll down and you will find the `aime` entry:
 
-![amdcfg2](assets/amdaemon_cfg2.png)
+![amdcfg2](../assets/amdaemon_cfg2.png)
 
 The `4` after `"port": 4` is what we need to modify. We can change it to another port number that is not the same as **other port numbers used by the official setup**.
 
