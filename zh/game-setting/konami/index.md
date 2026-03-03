@@ -61,4 +61,4 @@
 
 ## 其他页面
 - [调整 CardIO 读卡限制](../../hcc/index.md)
-- [SEGA 游戏设置](../sega/index.md)
+- [SEGA 游戏设置](../sega/hinata-client/index.md)
