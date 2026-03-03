@@ -16,7 +16,7 @@
 
 1. 根据提示拖拽文件夹或手动选择文件夹，此文件夹内需包含 `segatools.ini`
 
-   一般情况下：中二节奏为 `bin` 文件夹，舞萌为 `Package` 文件夹
+   一般情况下：中二节奏为 `bin` 文件夹，舞萌为 `Package` 或 `AMDaemon` 文件夹
 
    ![hinata-client-folders-select](assets/hinata-client-folders-select.png)
 
