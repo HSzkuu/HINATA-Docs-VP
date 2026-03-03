@@ -30,19 +30,25 @@ export const zh = defineConfig({
                 text: 'SEGA 游戏',
                 collapsed: true,
                 items: [
-                  { text: '配置说明', link: '/game-setting/sega/' },
-                  { text: '官方串口协议', 
+                  { text: 'GUI 配置（推荐）', link:'/game-setting/sega/hinata-client/'},
+                  { text: '手动配置', 
                     collapsed: true,
                     items: [
-                      { text: '使用方法', link: '/game-setting/sega/serial/'},
-                      { text: '修改游戏所需的端口号', link: '/game-setting/sega/serial/com_port'}
-                    ]
-                  },
-                  { text: 'AimeIO',
-                    collapsed: true,
-                    items: [
-                      { text: '使用方法', link: '/game-setting/sega/aimeio/' },
-                      { text: '扩展功能', link: '/game-setting/sega/aimeio/extension' }
+                      { text: '配置说明', link:'/game-setting/sega/manual/'},
+                      { text: '官方串口协议', 
+                        collapsed: true,
+                        items: [
+                          { text: '使用方法', link: '/game-setting/sega/manual/serial/'},
+                          { text: '修改游戏所需的端口号', link: '/game-setting/sega/manual/serial/com_port'}
+                        ]
+                      },
+                      { text: 'AimeIO',
+                        collapsed: true,
+                        items: [
+                          { text: '使用方法', link: '/game-setting/sega/manual/aimeio/' },
+                          { text: '扩展功能', link: '/game-setting/sega/manual/aimeio/extension' }
+                        ] 
+                      },
                     ] 
                   },
                   { text: '游戏内测试读卡器', link: '/game-setting/sega/in_game_test' },

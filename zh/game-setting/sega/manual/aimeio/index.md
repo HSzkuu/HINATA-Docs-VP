@@ -17,7 +17,7 @@
 以下行为受 Segatools 限制，无法正确实现：
 - 使用 `Amusement IC` 卡片时 **无法登录 SEGA 官服**（SDGA、SDGS 等）  
   本地服与私服不受影响
-- 无法读取非 `Amusement IC` 的 `Bandai Namco Passport` 或 `BANA PASSPORT`：
+- 只有部分 Segatools 支持读取非 `Amusement IC` 的 `Bandai Namco Passport` 或 `BANA PASSPORT`：
   - 卡上没有 Amusement IC 标志
   - 卡号为 **3 开头的 20 位数字**
   - 卡背为英文 / 韩文 / 中文
@@ -78,5 +78,5 @@ brightness=255
 
 ## 其他页面 
 * [串口方式连接 SEGA 游戏](../serial/index.md) 
-* [游戏内测试读卡器](../in_game_test.md) 
-* [KONAMI 游戏设置](../../konami/index.md)
+* [游戏内测试读卡器](../../in_game_test.md) 
+* [KONAMI 游戏设置](../../../konami/index.md)
