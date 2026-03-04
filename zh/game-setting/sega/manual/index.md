@@ -1,4 +1,4 @@
-# SEGA 游戏配置说明
+# 手动配置 SEGA 游戏
 
 **HINATA** 与 **HINATA Lite** 支持通过以下两种方式连接 SEGA 游戏，请根据需求选择其中一种：
 
@@ -42,7 +42,7 @@
 ::: warning
 - 使用 `Amusement IC` 卡片时，**无法登录 SEGA 官服**（如 SDGA、SDGS 等）  
   本地服与私服不受影响
-- 目前无法读取 **非 `Amusement IC` 的 `Bandai Namco Passport`、`BANA PASSPORT` 卡片**，如何辨别：
+- 只有部分 Segatools 支持读取 **非 `Amusement IC` 的 `Bandai Namco Passport`、`BANA PASSPORT` 卡片**，如何辨别：
   - 卡片上没有 Amusement IC 标志  
   - 卡号为 **3 开头的 20 位数字**  
   - 卡片背面为英文、韩文或中文

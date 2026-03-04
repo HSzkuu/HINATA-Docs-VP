@@ -18,19 +18,22 @@
 
 该方式无需下载额外工具，适合非 Windows 用户。
 
-## 使用更新器更新（Windows）
+## 使用 HINATA Client 更新（Windows）
 
-在 Windows 系统下，需要使用 **HINATAUT** 工具来更新固件。
+在 Windows 系统下，需要使用 **HINATA Client** 工具来更新固件。
 
-- **Windows 11**：可直接运行更新器
-- **Windows 10**：可能需要先从 Microsoft Store 安装 Windows Terminal
+### 下载 HINATA Client
 
-::: warning
-如果在 Windows 10 下直接运行无反应或闪退，请先安装  
-[Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701)
-:::
+[点此下载](https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip)
 
-### 下载更新器
+### 开始使用
 
-- [点击下载（国际）](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
-- [点击下载（中国大陆）](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)
+解压后应存在以下文件：
+
+![hinata-client-files](assets/hinata-client-files.png)
+
+双击 `hinata_client.exe` 打开 HINATA Clients
+
+### 固件更新
+
+点击侧边栏固件更新，进入固件更新页面进行更新
