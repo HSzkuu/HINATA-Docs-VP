@@ -20,7 +20,7 @@
 
    ![hinata-client-folders-select](assets/hinata-client-folders-select.png)
 
-2. 根据提示选择工作模式，选中对应模式后会有优缺点说明与可选的高级设置
+2. 根据提示选择工作模式，选中对应模式后会有优缺点说明与 [可选的高级设置](advanced.md)
 
    ![hinata-client-mode-select](assets/hinata-client-mode-select.png)
 

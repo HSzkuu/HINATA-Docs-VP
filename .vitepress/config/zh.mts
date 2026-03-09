@@ -30,7 +30,13 @@ export const zh = defineConfig({
                 text: 'SEGA 游戏',
                 collapsed: true,
                 items: [
-                  { text: 'GUI 配置（推荐）', link:'/game-setting/sega/hinata-client/'},
+                  { text: 'GUI 配置（推荐）', 
+                    collapsed: false,
+                    items: [
+                      { text: '配置说明', link:'/game-setting/sega/hinata-client/' },
+                      { text: '高级设置', link: '/game-setting/sega/hinata-client/advanced' }
+                    ]
+                  },
                   { text: '手动配置', 
                     collapsed: true,
                     items: [

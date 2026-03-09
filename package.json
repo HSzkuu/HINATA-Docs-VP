@@ -15,6 +15,7 @@
   "dependencies": {
     "@lunariajs/core": "^0.1.1",
     "@theojs/lumen": "^6.4.4",
-    "@vitejs/plugin-vue": "^5.2.1"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "HINATA-Docs-VP": "link:"
   }
 }
