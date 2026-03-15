@@ -6,7 +6,7 @@ import mediumZoom from 'medium-zoom';
 import { onMounted, watch, nextTick } from 'vue';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
-import '@theojs/lumen/style'
+// import '@theojs/lumen/style'
 import './var.css'
 import './style.css'
 import { 
@@ -21,6 +21,10 @@ import {
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
+
+
+import type { EnhanceAppContext } from 'vitepress'
+import { BoxCube, Card, Links, Pill } from '@theojs/lumen'
 
 export default {
   extends: DefaultTheme,
@@ -71,6 +75,9 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component('Pill', Pill) 
+    app.component('Links', Links) 
+    app.component('Card', Card) 
+    app.component('BoxCube', BoxCube) 
   }
 } satisfies Theme

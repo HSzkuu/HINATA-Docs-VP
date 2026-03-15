@@ -1,8 +1,4 @@
-import { createRequire } from 'module'
 import { defineConfig, type DefaultTheme } from 'vitepress'
-
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
 
 export const en = defineConfig({
   lang: 'en-US',
@@ -54,7 +50,8 @@ export const en = defineConfig({
               { text: 'Bandai Namco Games', link: '/en/game-setting/bandai-namco/' }
             ]
         },
-        { text: 'Modify Card Reader Settings', 
+        {
+          text: 'Modify Card Reader Settings',
           collapsed: false,
           items: [
             { text: 'HINATA Control Center', link: '/en/hcc/' }

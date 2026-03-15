@@ -1,8 +1,4 @@
-import { createRequire } from 'module'
 import { defineConfig, type DefaultTheme } from 'vitepress'
-
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
 
 export const zh = defineConfig({
   lang: 'zh-Hans',
@@ -11,6 +7,7 @@ export const zh = defineConfig({
 
   themeConfig: {
     nav: [
+      { text: '下载中心', link: '/downloads' }
     ],
 
     sidebar: [
@@ -18,7 +15,8 @@ export const zh = defineConfig({
         text: '快速开始',
         collapsed: false,
         items: [
-          {text: '开始使用', link: '/quickstart'}
+          {text: '开始使用', link: '/quickstart'},
+          {text: '下载中心', link: '/downloads'}
         ]
         
       },

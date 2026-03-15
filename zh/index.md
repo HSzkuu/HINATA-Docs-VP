@@ -13,6 +13,9 @@ hero:
       text: 固件更新
       link: ./update/
     - theme: brand
+      text: 下载中心
+      link: ./downloads
+    - theme: alt
       text: 购买 & 售后
       link: ./purchase_contact
     - theme: alt

@@ -5,17 +5,17 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.13.0",
-    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.13.0",
-    "@nolebase/vitepress-plugin-sidebar": "^2.13.0",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
+    "@nolebase/vitepress-plugin-sidebar": "^2.18.2",
     "medium-zoom": "^1.1.0",
-    "vitepress": "^1.6.3",
+    "vitepress": "2.0.0-alpha.16",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },
   "dependencies": {
     "@lunariajs/core": "^0.1.1",
-    "@theojs/lumen": "^6.4.4",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@theojs/lumen": "^6.4.5",
+    "@vitejs/plugin-vue": "^5.2.4",
     "HINATA-Docs-VP": "link:"
   }
 }

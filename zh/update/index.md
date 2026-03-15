@@ -24,7 +24,15 @@
 
 ### 下载 HINATA Client
 
-[点此下载](https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip)
+<Links
+  :items="[
+    {
+      name: 'HINATA Client',
+      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
+      linkText: '立即下载'
+    }
+  ]"
+/>
 
 ### 开始使用
 
