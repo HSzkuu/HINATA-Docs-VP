@@ -68,6 +68,31 @@ SEGA 游戏与 KONAMI 游戏的配置可以共存。
 在调整 KONAMI 游戏配置时，无需在意 SEGA 游戏的端口号设置，读卡器状态会自动切换。
 :::
 
-- [SEGA 游戏](game-setting/sega/hinata-client/index.md)
-- [KONAMI 游戏](game-setting/konami/index.md)
-- [Bandai Namco 游戏](game-setting/bandai-namco/index.md)
+<Links
+  :items="[
+    {
+      image: '/assets/SEGA_logo.svg',
+      name: 'SEGA 游戏',
+      link: 'game-setting/sega/hinata-client/',
+      desc: '使用 HINATA Client 配置 SEGA 游戏'
+    }
+  ]"
+/>
+
+<Links
+  :grid="2"
+  :items="[
+    {
+      image: '/assets/Konami_logo.svg',
+      name: 'KONAMI 游戏',
+      desc: '配置 KONAMI 游戏',
+      link: 'game-setting/konami/'
+    },
+    {
+      image: '/assets/Bandai-Namco_logo.svg',
+      name: 'Bandai Namco 游戏',
+      desc: '配置 Bandai Namco 游戏',
+      link: 'game-setting/bandai-namco/'
+    }
+  ]"
+/>

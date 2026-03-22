@@ -5,7 +5,18 @@
 HINATA 控制中心用于管理 **HINATA / HINATA Lite** 的各项设置，并提供卡片读写等功能。
 
 无需本地下载安装，只需在**联网状态**下通过浏览器访问  
-[cc.neri.moe](https://cc.neri.moe)  
+
+<Links
+  :items="[
+    {
+      image: 'https://cc.neri.moe/icons/Icon-192.png',
+      name: 'HINATA 控制中心',
+      link: 'https://cc.neri.moe',
+      desc: 'cc.neri.moe'
+    }
+  ]"
+/>
+
 即可直接使用。
 
 ![hcc](assets/hcc.png)
