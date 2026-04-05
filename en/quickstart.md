@@ -46,5 +46,5 @@ For writing methods, please see:
 ### 3. Start configuring the game
 The configuration for SEGA games and KONAMI games can coexist.  
 (When adjusting the configuration for KONAMI games, you don't need to worry about whether the SEGA game port number is configured or not, the reader status will switch automatically)
-* [SEGA Games](game-setting/sega/index.md)
+* [SEGA Games](game-setting/sega/hinata-client/index.md)
 * [KONAMI Games](game-setting/konami/index.md)

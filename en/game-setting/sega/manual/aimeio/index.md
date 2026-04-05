@@ -65,5 +65,5 @@ Local servers and private servers are not affected.
 
 ## Other Pages
 * [Connecting to SEGA games via serial port](../serial/index.md)
-* [In-game card reader test](../in_game_test.md)
-* [KONAMI Game Settings](../../konami/index.md)
+* [In-game card reader test](../../in_game_test.md)
+* [KONAMI Game Settings](../../../konami/index.md)
