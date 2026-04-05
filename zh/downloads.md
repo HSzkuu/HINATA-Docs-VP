@@ -8,6 +8,7 @@
   :items="[
     {
       name: 'HINATA Client',
+      desc: '用于快速配置 SEGA 游戏',
       link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
       linkText: '立即下载'
     }
@@ -22,7 +23,7 @@
       image: 'https://cc.neri.moe/icons/Icon-192.png',
       name: 'HINATA 控制中心',
       link: 'https://cc.neri.moe',
-      desc: 'cc.neri.moe',
+      desc: '用于调整读卡器设置以及读取卡片信息',
       linkText: '点击访问'
     }
   ]"
