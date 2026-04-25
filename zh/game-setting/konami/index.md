@@ -33,7 +33,7 @@
 | 任意 Aime 卡 | ✅ |
 | ISO15693（旧版 e-amusement pass） | ❌ |
 
-可在 [HINATA 控制中心](../../hcc/index.md) 中进一步控制可读取的卡片范围  
+可在 [HINATA Go](/configuration) 中进一步控制可读取的卡片范围  
 （如 ISO14443-A、Aime）。
 
 ## HID 灯光绑定

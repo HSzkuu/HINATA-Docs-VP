@@ -14,7 +14,7 @@
 
 HINATA Go 是一款移动应用程序，可将您的手机变身为多功能街机游戏刷卡器。它配合 HINATA AimeIO 服务使用，支持多种类型的游戏卡片读取（如 Amusement IC、旧版 Aime、Bandai Namco Passport 等），并能通过 NFC 或连接 HINATA 读卡器进行刷卡操作。该应用允许用户将手机连接到 SEGA 或 KONAMI 等街机游戏，作为远程读卡器使用，同时也提供卡片管理功能，方便用户保存、分类和使用卡片。HINATA Go 支持多平台，旨在为街机游戏爱好者提供便捷的卡片管理和游戏体验。
 
-HINATA Go 也可以连接 HINATA 读卡器进行 [HINATA 读卡器的配置与固件更新](features/hinata-card-reader)。
+HINATA Go 也可以连接 HINATA 读卡器进行 [HINATA 读卡器的配置与固件更新](/configuration)。
 
 
 ## 网页版
