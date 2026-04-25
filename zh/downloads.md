@@ -16,15 +16,19 @@
 
 ## HINATA Go
 
+### 网页版
+
 <Links
   :items="[
     {
-      name: 'GitHub HINATA Go Repository',
-      link: 'https://github.com/Project-HINATA/hinata_go',
+      name: 'HINATA Go',
+      link: 'https://go.neri.moe',
       linkText: '点击访问'
     }
   ]"
 />
+
+### 下载
 
 | iOS | Android |
 | --- | ------- |

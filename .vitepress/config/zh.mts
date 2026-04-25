@@ -7,7 +7,8 @@ export const zh = defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '下载中心', link: '/downloads' }
+      { text: '下载中心', link: '/downloads' },
+      { text: 'QQ 群', link: 'https://qm.qq.com/q/uKIsTeNXyw' }
     ],
 
     sidebar: [
@@ -15,8 +16,9 @@ export const zh = defineConfig({
         text: '快速开始',
         collapsed: false,
         items: [
-          {text: '开始使用', link: '/quickstart'},
-          {text: '下载中心', link: '/downloads'}
+          { text: '目录', link: '/guide' },
+          { text: '使用方式', link: '/usage' },
+          { text: '下载中心', link: '/downloads' }
         ]
         
       },
@@ -24,6 +26,7 @@ export const zh = defineConfig({
         text: '配置游戏',
         collapsed: false,
         items: [
+              { text: '目录', link: '/game-setting/' },
               {
                 text: 'SEGA 游戏',
                 collapsed: true,
@@ -67,18 +70,18 @@ export const zh = defineConfig({
         { text: 'HINATA Go', 
           collapsed: false,
           items: [
-            { text: '开始使用 HINATA Go', link: '/go/' },
+            { text: '开始使用', link: '/go/' },
             { text: '功能', 
               collapsed: true,
               items: [
                 { text: '读取卡片信息', link: '/go/features/read-card-info' },
                 { text: '连接游戏作为读卡器', link: '/go/features/game-connection' },
-                { text: 'HINATA 读卡器配置 & 更新', link: '/go/features/hinata-card-reader' },
                 { text: '卡片管理', link: '/go/features/cards' }
               ]
-            },
+            }
           ]
         },
+        { text: '更改配置', link: '/configuration' },
         {
             text: '固件更新',
             collapsed: true,
@@ -91,7 +94,7 @@ export const zh = defineConfig({
           collapsed: true,
           items: [
             { text: 'PN532 直通生态', link: '/integration/pn532/' },
-            { text: '二次开发', link: '/integration/rustlib/' }
+            { text: 'Rust HINATA 库', link: '/integration/rustlib/' }
           ]
         },
       { text: '购买 & 售后', link: '/purchase_contact' }
