@@ -60,5 +60,5 @@
    ![spicebrightness](/assets/spicebrightness.png)
 
 ## 其他页面
-- [调整 CardIO 读卡限制](../../hcc/index.md)
+- [调整 CardIO 读卡限制](/configuration)
 - [SEGA 游戏设置](../sega/hinata-client/index.md)
