@@ -40,4 +40,4 @@ When SDVX is in Valkyrie model mode or IIDX is in Lightning model mode, the game
 
 ## Other Pages
 * [Adjust CardIO reading restrictions](../../hcc/index.md)
-* [SEGA Game Settings](../sega/hinata-client/index.md)
+* [SEGA Game Settings](../sega/index.md)

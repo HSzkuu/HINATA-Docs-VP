@@ -64,10 +64,19 @@ export const zh = defineConfig({
               { text: 'Bandai Namco 游戏', link: '/game-setting/bandai-namco/' }
             ]
         },
-        { text: '修改读卡器设置', 
+        { text: 'HINATA Go', 
           collapsed: false,
           items: [
-            { text: 'HINATA 控制中心', link: '/hcc/' }
+            { text: '开始使用 HINATA Go', link: '/go/' },
+            { text: '功能', 
+              collapsed: true,
+              items: [
+                { text: '读取卡片信息', link: '/go/features/read-card-info' },
+                { text: '连接游戏作为读卡器', link: '/go/features/game-connection' },
+                { text: 'HINATA 读卡器配置 & 更新', link: '/go/features/hinata-card-reader' },
+                { text: '卡片管理', link: '/go/features/cards' }
+              ]
+            },
           ]
         },
         {

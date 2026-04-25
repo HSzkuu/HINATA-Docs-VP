@@ -7,7 +7,7 @@
 If your game uses `bnusio.dll`, you need to configure it in `config.toml`.
 
 1.  Open `config.toml`, find the `card_reader` parameter, and change it to `false`.
-2.  Refer to [Reader Port Configuration](../sega/manual/serial/index.md#reader-port-configuration) to set the reader to **COM1**, and it is recommended to restart your computer.
+2.  Refer to [Reader Port Configuration](../sega/serial/index.md#reader-port-configuration) to set the reader to **COM1**, and it is recommended to restart your computer.
 3.  Start the game.
 
 ## CardIO Protocol

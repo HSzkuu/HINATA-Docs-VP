@@ -8,26 +8,27 @@
   :items="[
     {
       name: 'HINATA Client',
-      desc: '用于快速配置 SEGA 游戏',
       link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
       linkText: '立即下载'
     }
   ]"
 />
 
-## HINATA 控制中心
+## HINATA Go
 
 <Links
   :items="[
     {
-      image: 'https://cc.neri.moe/icons/Icon-192.png',
-      name: 'HINATA 控制中心',
-      link: 'https://cc.neri.moe',
-      desc: '用于调整读卡器设置以及读取卡片信息',
+      name: 'GitHub HINATA Go Repository',
+      link: 'https://github.com/Project-HINATA/hinata_go',
       linkText: '点击访问'
     }
   ]"
 />
+
+| iOS | Android |
+| --- | ------- |
+| [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/app/id6760301105) | [**APK 下载**](https://github.com/nerimoe/hinata_go/releases) |
 
 ## SEGA 游戏使用的文件及链接
 
