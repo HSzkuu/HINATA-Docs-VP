@@ -3,8 +3,18 @@
 ## SEGA 游戏
 
 <br>
-<NCard title="连接 SEGA 游戏" link="sega/hinata-client/">
-使用 HINATA Client 连接 SEGA 游戏
+<NCard title="🚀 一键配置 SEGA 游戏" link="sega/hinata-client/">
+使用 HINATA Client 配置 SEGA 游戏
+</NCard>
+
+<br>
+<NCard title="🪝 使用 AimeIO 方式手动配置 SEGA 游戏" link="sega/manual/aimeio/">
+手动使用 HINATA AimeIO 配置 SEGA 游戏
+</NCard>
+
+<br>
+<NCard title="🔌 使用 串口 方式手动配置 SEGA 游戏" link="sega/manual/serial/">
+手动使用 SEGA 官方串口协议 配置 SEGA 游戏
 </NCard>
 
 ## KONAMI 游戏
