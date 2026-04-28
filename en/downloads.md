@@ -14,19 +14,25 @@ Here you can find all the download links and web tools included in this document
   ]"
 />
 
-## HINATA Control Center
+## HINATA Go
+
+### Web Version
 
 <Links
   :items="[
     {
-      image: 'https://cc.neri.moe/icons/Icon-192.png',
-      name: 'HINATA Control Center',
-      link: 'https://cc.neri.moe',
-      desc: 'cc.neri.moe',
+      name: 'HINATA Go',
+      link: 'https://go.neri.moe',
       linkText: 'Click to Visit'
     }
   ]"
 />
+
+### Download
+
+| iOS | Android |
+| --- | ------- |
+| [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/app/id6760301105) | [**APK Download**](https://github.com/nerimoe/hinata_go/releases) |
 
 ## Files and Links for SEGA Games
 

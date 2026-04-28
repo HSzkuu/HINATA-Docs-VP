@@ -5,14 +5,28 @@
     {
       name: 'HINATA Go Repository',
       link: 'https://github.com/Project-HINATA/hinata_go',
-      linkText: 'Click Here'
+      linkText: 'Click to Visit'
     }
   ]"
 />
 
 ## What is HINATA Go?
 
-While connecting via HINATA AimeIO, turns your mobile phone into a card reader or QR code scanner for arcade games, and can be used with various other devices.
+HINATA Go is a mobile application that turns your phone into a multifunctional arcade game card reader. Used together with the HINATA AimeIO service, it supports reading multiple game card types such as Amusement IC, legacy Aime, and Bandai Namco Passport, and can perform card swipes through NFC or a connected HINATA card reader. The app lets users connect their phones to arcade games such as SEGA or KONAMI titles as remote card readers, and also provides card management features for saving, organizing, and using cards. HINATA Go supports multiple platforms and is designed to provide arcade game players with convenient card management and gameplay experience.
+
+HINATA Go can also connect to a HINATA card reader for [HINATA card reader configuration and firmware updates](/en/configuration).
+
+## Web Version
+
+<Links
+  :items="[
+    {
+      name: 'HINATA Go',
+      link: 'https://go.neri.moe',
+      linkText: 'Click to Visit'
+    }
+  ]"
+/>
 
 ## Download
 
@@ -48,7 +62,7 @@ As shown in the figure, after installing and opening the application, the UI int
   :items="[
     {
       name: 'Configure & Update HINATA Card Reader',
-      link: 'features/hinata-card-reader',
+      link: '/en/configuration',
     }
   ]"
 />

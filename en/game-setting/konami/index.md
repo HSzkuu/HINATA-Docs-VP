@@ -1,43 +1,60 @@
 # KONAMI Game Configuration Instructions
-**This feature is limited to the Standard Edition | The Lite version can be unlocked for CN¥49.**
+
+::: tip
+- This feature is **limited to the Standard Edition**.
+- The Lite Edition can unlock this feature for **CN¥49**.
+:::
 
 ## CardIO Card Reading Settings
 
-1. Some older firmware versions require binding HID lights to read cards.
-2. Open *spicecfg*, select **Advanced** at the top (in **Options** for older Spice versions, and you may need to show hidden options), find `CardIO HID Reader Support (-cardio)` and check it.  
-As shown in the figure:
+1. Some older firmware versions require binding **HID lights** before card reading can work.
+
+2. Open *spicecfg*, select **Advanced** at the top.  
+   For older Spice versions, this is under **Options**, and you may need to show hidden options.  
+   Find `CardIO HID Reader Support (-cardio)` and check it, as shown below:
    
    ![spicecardio](/assets/spicecardio.png)
 
-3. If the card reader does not work after checking `CardIO HID Reader Support (-cardio)` (this may occur on ancient versions of Spice or non-Windows 10 and above versions), please try checking `HID SmartCard`. Please only check this if it is confirmed not to work; do not check it unless necessary.
-4. If you find that the card swipe slot is incorrect (for games like IIDX with 1P and 2P),  
-Please check the `xxx Order Flip` below.
+3. If the card reader does not work after checking `CardIO HID Reader Support (-cardio)`, which commonly happens with older Spice versions or systems older than Windows 10, **try** checking `HID SmartCard` as well.  
+   Please only check it after confirming that the reader truly does not work, and **do not enable it unless necessary**.
 
-By default, CardIO prioritizes maximum compatibility. Cards that can be swiped include:
+4. If the card swipe slot is incorrect, for example in games like IIDX with 1P / 2P slots, check the corresponding `xxx Order Flip` option below to adjust it.
 
-|                  Card Type                   | Can be swiped |
-| :---------------------------------------: | :------: |
-|           Amusement IC           |    ✅     |
-|              Any ISO14443-A              |    ✅     |
-| Any Felica Card (Suica, AIC, Osaifu-Keitai) |    ✅     |
-|               Any Aime Card                |    ✅     |
-|           ISO15693 (old epass)           |    ❌     |
+By default, CardIO runs in **maximum compatibility** mode. The readable card types are:
 
-You can control the range of readable cards (ISO14443A, Aime) in the [HINATA Control Center](../../hcc/index.md).
+| Card Type | Readable |
+| :--: | :--: |
+| Amusement IC | Yes |
+| Any ISO14443-A | Yes |
+| Any Felica card (Suica / AIC / Osaifu-Keitai) | Yes |
+| Any Aime card | Yes |
+| ISO15693 (legacy e-amusement pass) | No |
+
+You can further control the range of readable cards, such as ISO14443-A and Aime, in [HINATA Go](/en/configuration).
 
 
 ## HID Light Binding
-When SDVX is in Valkyrie model mode or IIDX is in Lightning model mode, the game will output light to the card reader. Here is how to bind it:
-1. Open *spicecfg* , select **Lights** at the top, find `IC Card Reader *`
+
+The game outputs light signals to the card reader when the following conditions are met:
+
+- SDVX is in **Valkyrie cabinet mode**
+- IIDX is in **Lightning cabinet mode**
+
+Bind the lights as follows:
+
+1. Open *spicecfg*, select **Lights** at the top, and find `IC Card Reader *`.
 2. Bind as shown in the figure below:
    
    ![spicelight](/assets/spicelight.png)
 
-3. Games like IIDX with a 2P position will be divided into six channels for 1P and 2P. Bind the P position you play, or you can bind both when using two card readers.
-4. Adjust light brightness: You can adjust it in *spicecfg* > **Advanced** > `Light Brightness Adjustment`.
-![spicebrightness](/assets/spicebrightness.png)
+3. For games like IIDX that have a 2P side, the reader is split into **six channels for 1P / 2P**.  
+   Bind the side you play on. If you use two card readers, you can bind all channels.
+
+4. Adjust light brightness in *spicecfg* -> **Advanced** -> `Light Brightness Adjustment`.
+
+   ![spicebrightness](/assets/spicebrightness.png)
 
 
 ## Other Pages
-* [Adjust CardIO reading restrictions](../../hcc/index.md)
-* [SEGA Game Settings](../sega/index.md)
+- [Adjust CardIO reading restrictions](/en/configuration)
+- [SEGA Game Settings](../sega/hinata-client/index.md)

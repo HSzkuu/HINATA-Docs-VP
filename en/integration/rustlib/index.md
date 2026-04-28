@@ -2,9 +2,9 @@
 
 https://github.com/nerimoe/hinata-rs
 
-A rust library for communicating with HINATA and HINATA Lite 
+A Rust library for communicating with HINATA and HINATA Lite.
 
-## Usage
+Usage example:
 ```toml
 # Cargo.toml
 [dependencies]

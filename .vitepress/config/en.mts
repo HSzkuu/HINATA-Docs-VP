@@ -7,6 +7,8 @@ export const en = defineConfig({
 
   themeConfig: {
     nav: [
+      { text: 'Download Center', link: '/en/downloads' },
+      { text: 'QQ Group', link: 'https://qm.qq.com/q/uKIsTeNXyw' }
     ],
 
     sidebar: [
@@ -14,7 +16,9 @@ export const en = defineConfig({
         text: 'Quick Start',
         collapsed: false,
         items: [
-          { text: 'Introduction & First Use', link: '/en/quickstart' }
+          { text: 'Contents', link: '/en/guide' },
+          { text: 'Usage', link: '/en/usage' },
+          { text: 'Download Center', link: '/en/downloads' }
         ]
         
       },
@@ -22,27 +26,41 @@ export const en = defineConfig({
         text: 'Configure Games',
         collapsed: false,
         items: [
+              { text: 'Contents', link: '/en/game-setting/' },
               {
                 text: 'SEGA Games',
                 collapsed: true,
                 items: [
-                  { text: 'Configuration Instructions', link: '/en/game-setting/sega/' },
-                  { text: 'Official Serial Protocol', 
-                    collapsed: true,
+                  { text: 'GUI Configuration (Recommended)', 
+                    collapsed: false,
                     items: [
-                      { text: 'Usage Instructions', link: '/en/game-setting/sega/serial/'},
-                      { text: 'Modifying Required COM Port', link: '/en/game-setting/sega/serial/com_port'}
+                      { text: 'Configuration Instructions', link:'/en/game-setting/sega/hinata-client/' },
+                      { text: 'Advanced Settings', link: '/en/game-setting/sega/hinata-client/advanced' }
                     ]
                   },
-                  { text: 'AimeIO',
+                  { text: 'Manual Configuration', 
                     collapsed: true,
                     items: [
-                      { text: 'Usage Instructions', link: '/en/game-setting/sega/aimeio/' },
-                      { text: 'Extension Features', link: '/en/game-setting/sega/aimeio/extension' }
+                      { text: 'Configuration Instructions', link:'/en/game-setting/sega/manual/'},
+                      { text: 'Official Serial Protocol', 
+                        collapsed: true,
+                        items: [
+                          { text: 'Usage Instructions', link: '/en/game-setting/sega/manual/serial/'},
+                          { text: 'Modify Required Game Port', link: '/en/game-setting/sega/manual/serial/com_port'}
+                        ]
+                      },
+                      { text: 'AimeIO',
+                        collapsed: true,
+                        items: [
+                          { text: 'Usage Instructions', link: '/en/game-setting/sega/manual/aimeio/' },
+                          { text: 'Extension Features', link: '/en/game-setting/sega/manual/aimeio/extension' }
+                        ] 
+                      },
                     ] 
                   },
                   { text: 'In-Game Card Reader Test', link: '/en/game-setting/sega/in_game_test' },
-                  { text: 'Q&A', link: '/en/game-setting/sega/qa' }
+                  { text: 'FAQ', link: '/en/game-setting/sega/qa' },
+                  { text: 'Connect to KDX', link: '/en/kdx' }
                 ]
 
               },
@@ -59,28 +77,52 @@ export const en = defineConfig({
               items: [
                 { text: 'Read Card Information', link: '/en/go/features/read-card-info' },
                 { text: 'Connect to Arcade Games as a Card Reader', link: '/en/go/features/game-connection' },
-                { text: 'Configure & Update HINATA Card Reader', link: '/en/go/features/hinata-card-reader' },
                 { text: 'Card Management', link: '/en/go/features/cards' }
               ]
             },
           ]
         },
+        { text: 'Change Configuration', link: '/en/configuration' },
         {
             text: 'Firmware Update',
             collapsed: true,
             items: [
               { text: 'Update Instructions', link: '/en/update/' },
-              { text: 'Changelog', link: '/en/update/changelog' }
+              { text: 'Changelog', link: '/en/update/CHANGELOG' }
             ]
         },
         { text: 'Ecosystem',
           collapsed: true,
           items: [
             { text: 'PN532 Passthrough Ecosystem', link: '/en/integration/pn532/' },
-            { text: 'For Developer', link: '/en/integration/rustlib/' }
+            { text: 'Rust HINATA Library', link: '/en/integration/rustlib/' }
           ]
         },
       { text: 'Purchase & Support', link: '/en/purchase_contact' }
-    ]
+    ],
+
+    docFooter: {
+      prev: 'Previous page',
+      next: 'Next page'
+    },
+
+    outline: {
+      label: 'On this page'
+    },
+
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
+    langMenuLabel: 'Languages',
+    returnToTopLabel: 'Return to top',
+    sidebarMenuLabel: 'Menu',
+    darkModeSwitchLabel: 'Theme',
+    lightModeSwitchTitle: 'Switch to light mode',
+    darkModeSwitchTitle: 'Switch to dark mode'
   }
 })

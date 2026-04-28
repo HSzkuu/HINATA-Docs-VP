@@ -1,69 +1,84 @@
-# Connecting to the game via AimeIO
+# Connecting to the Game via AimeIO
 
-* There are currently some minor bugs to be fixed, you can use the serial protocol for now.
+::: warning
+- Requires firmware version >= `2025052500`; updating to the latest firmware is recommended for the best results.
+:::
 
-* Standard Edition requires firmware version ≥ `2024083100` (can be used directly if shipped after August 31, 2024, needs firmware update if shipped before August 31, 2024).
-* Lite Edition requires firmware version ≥ `2024090500` (can be used directly if shipped after September 5, 2024, needs firmware update if shipped before September 5, 2024).
-* **Some new features require updating to `2025040400` or above to be used.**
-* Visit the [HINATA Control Center](https://cc.neri.moe) to check the current firmware version. Usually, the latest firmware of the shipping date will be flashed at the time of shipment.
+## Notes
 
-
-## Important Notes
 Advantages of using **AimeIO**:
-* Supports hot-plugging the card reader in-game.
-* The card reading speed is slightly faster than the serial protocol.
-* Can coexist with enter-to-swipe.
-* Convenient configuration, no need to fight with Windows to set the serial port, just plug it in and configure the game to use it.
+
+* Supports hot-plugging the card reader in-game
+* Slightly faster card reading than the serial protocol
+* Can coexist with enter-to-swipe
+* Simple configuration without Windows serial port setup
 * Exclusive feature: **Supports bypassing the server to directly read the correct card number of an `Amusement IC` card and pass it to the game.**
 
-**However, some behaviors are limited by Segatools and cannot be implemented correctly:**
-* **Cannot log in to the official SEGA server** (SDGA, SDGS, etc.) when using an `Amusement IC` card.  
-Local servers and private servers are not affected.
-* Currently unable to read non-`Amusement IC` `Bandai Namco Passport` cards (cards without the Amusement IC logo, or with a 20-digit number starting with **3**, or with English, Korean, or Chinese on the back).
-* A small number of Segatools cannot use all [Felica](https://en.wikipedia.org/wiki/FeliCa) cards, including `Amusement IC`, or the implementation is incorrect. If you encounter various card swiping problems in the game when swiping Felica cards such as `Amusement IC` or `Hime`, please replace your Segatools, or switch to the **serial protocol** connection.
+::: warning
+The following behaviors are limited by Segatools and cannot be implemented correctly:
+
+* When using an `Amusement IC` card, **you cannot log in to official SEGA servers** (SDGA, SDGS, etc.).  
+  Local servers and private servers are not affected.
+* Only some Segatools support reading non-`Amusement IC` `Bandai Namco Passport` or `BANA PASSPORT` cards:
+  * The card has no Amusement IC logo
+  * The card number is a **20-digit number starting with 3**
+  * The back of the card is in English, Korean, or Chinese
+* A small number of Segatools have incomplete FeliCa support.  
+  If errors occur when swiping FeliCa cards that are **not** `Amusement IC`, such as `Hime`:
+  * Replace Segatools
+  * Or switch to the **serial protocol**
+:::
 
 ## Game Configuration
-0. If you have modified the reader port number of amdaemon according to [Modify the port number required by the game](../serial/com_port.md), please restore the modified settings first, otherwise the following settings will not work.
-1. First, please make sure your game is **already connected to the network**. After entering the game, a **green globe icon** should be displayed. Otherwise, please set up the game's network connection first, which is not discussed in this article.
-2. Place the `hinata.dll` provided in this article into the game directory (together with amdaemon.exe, inject.exe, segatools.ini).   
-   * [Click to download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll)
-   * [Click to download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll)
 
-3. Open `segatools.ini` and modify it as follows:
+::: warning
+- If you previously modified AMDaemon's reader port number according to "Modifying the Required Game Port Number (com_port.md)", restore that setting first. Otherwise, the following configuration will not work.
+- The game must already be connected to the network successfully.  
+  After entering the game, it should display a **green globe icon**.  
+  Network configuration is outside the scope of this page.
+:::
 
-   ```ini
-   ; If there is no [aime] entry, please add it and its contents manually
-   [aime]
-   ; The purpose of enable=1 is to enable the reader hook of Segatools, you can also add nothing, if nothing is added, it is enabled by default
-   enable=1
+### 1. Place the File
 
-   ; If there is no [aimeio] entry, you need to add it yourself
-   [aimeio]
-   ; Specify the dll path
-   path=hinata.dll
-   ```
+Place the provided `hinata.dll` into the game directory.  
+It should be in the same directory as `amdaemon.exe`, `inject.exe`, and `segatools.ini`.
 
-4. If you want to modify the default settings, please add the following settings under the `[aimeio]` entry in `segatools.ini`. The following three settings **will all be default values if not added, so you don't need to add them if you don't need to change them**:
+- [Download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll)
+- [Download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll)
 
-   ```ini
-   ; Control reader brightness (0 ~ 255, default 128)
-   brightness=128
-   ; Coexist with enter-to-swipe (0 = off, 1 = on, default on)
-   enableReturnKey=1
-   ```
+### 2. Modify segatools.ini
 
-   If your firmware version is ≥ `2025040400`, you can continue to add:
+```ini
+; If there is no [aime] entry, add it manually
+[aime]
+; enable=1 enables the Segatools card reader hook
+; It is also enabled by default if omitted
+enable=1
 
-   ```ini
-   ; Amusement IC card number bypasses the AimeDB server and sends the card number directly to the server (0 = off, 1 = on, default on)
-   aicBypassDB=1
-   ```
+; If there is no [aimeio] entry, add it manually
+[aimeio]
+; Specify the DLL path
+path=hinata.dll
 
-5. Start the game, but if you find that no matter how you configure it, only enter-to-swipe works, and the reader's light does not respond and you cannot swipe cards, then your segatools does not support loading aimeio. Please replace your Segatools (xxxhook.dll, inject.exe).
-6. Some Segatools cannot use all [Felica](https://en.wikipedia.org/wiki/FeliCa) cards, including `Amusement IC`. If you encounter a card swipe error in the game when swiping Felica cards such as `Amusement IC` or `Hime`, please replace your Segatools, or switch to the **serial protocol** connection.
+; Light brightness. Available values: 0~255. Default: 255
+; It also works normally without this line
+brightness=255
+```
+
+### 3. Start and Confirm
+
+::: tip
+If the following happens:
+
+* Only enter-to-swipe works
+* The reader has no lights and cannot read cards
+
+Then the current Segatools **does not support AimeIO**.  
+Replace it with supported Segatools, or switch to the **serial protocol**.
+:::
 
 
 ## Other Pages
-* [Connecting to SEGA games via serial port](../serial/index.md)
+* [Connecting to SEGA games via serial protocol](../serial/index.md)
 * [In-game card reader test](../../in_game_test.md)
 * [KONAMI Game Settings](../../../konami/index.md)
