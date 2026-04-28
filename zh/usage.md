@@ -4,7 +4,7 @@ HINATA 有多种使用方式，不单单是游戏读卡器
 
 ## 连接读卡器
 
-使用数据线将 HINATA 连接到 Windows / MacOS / Android / Linux 等多种系统的设备
+使用数据线将 HINATA 连接到 Windows、MacOS、Android 或 Linux 等多种系统的设备
 
 ![connection](</assets/connection.jpg>)
 
@@ -21,7 +21,7 @@ HINATA 有多种使用方式，不单单是游戏读卡器
 ## 使用方式
 
 <HCard title="🕹️ 将 HINATA 连接到游戏" link="game-setting/" cols="1">
-  可以将 HINATA 连接到 SEGA / KONAMI / Bandai Namco 等厂家的街机游戏呢
+  可以将 HINATA 连接到 SEGA、KONAMI 或 Bandai Namco 等厂家的街机游戏呢
 </HCard>
 
 <HCard title="⭕ 连接到 Kanade DX" link="kdx" cols="2">

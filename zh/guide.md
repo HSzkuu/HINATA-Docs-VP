@@ -1,7 +1,7 @@
 # HINATA 使用文档 目录
 
 HINATA 是一款读卡器，不单单可以给街机游戏使用，更有丰富的生态。    
-HINATA 有许多独创功能，例如 连接 Kanade DX / 高速读卡 等等特色功能，即插即用。  
+HINATA 有许多独创功能，例如 连接 Kanade DX 和 高速读卡 等等特色功能，即插即用。  
 HINATA 的生态正在不断扩展
 
 ## 使用
@@ -19,7 +19,7 @@ HINATA 的生态正在不断扩展
 ## 更新读卡器固件
 
 <HCard title="⏫ 更新 HINATA 固件" link="update/" cols="1">
-  使用 HINATA Go / HINATA Client 更新 HINATA 固件
+  使用 HINATA Go 或 HINATA Client 更新 HINATA 固件
 </HCard>
 
 ## HINATA Go

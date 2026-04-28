@@ -82,7 +82,7 @@
    ; 使用官方串口 IO 时必须这样设置
 
    ; 如果存在 [aimeio] 条目（例如使用过 HINATA 的 AimeIO 模式，
-   ; 或 mageki / nageki 等），请将其注释或直接删除
+   ; 或 mageki、nageki 等），请将其注释或直接删除
    ;[aimeio]
    ;path=hinata.dll
 

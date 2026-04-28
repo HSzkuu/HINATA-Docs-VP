@@ -4,7 +4,7 @@
 
 <HCard title="🚀 一键配置 SEGA 游戏" link="sega/hinata-client/" cols="1">
   使用 HINATA Client 配置 SEGA 游戏<br>
-  支持 HINATA AimeIO / SEGA 官方串口协议
+  支持 HINATA AimeIO 或 SEGA 官方串口协议
 </HCard>
 
 <HCard title="🪝 AimeIO 手动配置" link="sega/manual/aimeio/" cols="2">
@@ -23,5 +23,5 @@
 ## Bandai Namco 游戏
 
 <HCard title="连接 Bandai Namco 游戏" link="bandai-namco/" cols="1">
-  使用 原生协议 / CardIO 协议 连接 Bandai Namco 游戏
+  使用 原生协议 或 CardIO 协议 连接 Bandai Namco 游戏
 </HCard>
