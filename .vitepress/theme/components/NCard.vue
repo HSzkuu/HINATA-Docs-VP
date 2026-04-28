@@ -59,4 +59,6 @@ a::after {
 .card-text {
     font-size: 0.9em;
 }
+
 </style>
+

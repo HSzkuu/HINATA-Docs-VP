@@ -59,7 +59,8 @@ export const zh = defineConfig({
                     ] 
                   },
                   { text: '游戏内测试读卡器', link: '/game-setting/sega/in_game_test' },
-                  { text: '常见问题', link: '/game-setting/sega/qa' }
+                  { text: '常见问题', link: '/game-setting/sega/qa' },
+                  { text: '连接到 KDX', link: '/kdx' }
                 ]
 
               },
