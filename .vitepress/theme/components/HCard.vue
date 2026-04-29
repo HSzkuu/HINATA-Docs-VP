@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { nextTick, onBeforeUnmount, onMounted, ref } from 'vue';
+
 /**
  * HCard.vue
  * 1-3列自适应，且 cols=1 时字号自动放大
@@ -14,11 +16,73 @@ const props = withDefaults(defineProps<Props>(), {
   target: '_self',
   cols: 3
 });
+
+const containerRef = ref<HTMLElement | null>(null);
+let resizeObserver: ResizeObserver | undefined;
+
+const syncRowHeights = () => {
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.h-card-container'));
+  const links = cards
+    .map((card) => ({ card, link: card.querySelector<HTMLElement>('.fc-link') }))
+    .filter((item): item is { card: HTMLElement; link: HTMLElement } => Boolean(item.link));
+
+  links.forEach(({ card, link }) => {
+    card.style.height = '';
+    link.style.height = '';
+    link.style.minHeight = '';
+  });
+
+  if (window.matchMedia('(max-width: 640px)').matches) return;
+
+  const rows = new Map<number, Array<{ card: HTMLElement; link: HTMLElement }>>();
+  links.forEach(({ card, link }) => {
+    if (card.dataset.cols === '1') return;
+
+    const rowTop = Math.round(card.offsetTop);
+    const row = rows.get(rowTop) ?? [];
+    row.push({ card, link });
+    rows.set(rowTop, row);
+  });
+
+  rows.forEach((row) => {
+    if (row.length < 2) return;
+
+    const maxHeight = Math.max(...row.map(({ card }) => card.offsetHeight));
+    row.forEach(({ card, link }) => {
+      card.style.height = `${maxHeight}px`;
+      link.style.height = '100%';
+    });
+  });
+};
+
+const scheduleSyncRowHeights = () => {
+  void nextTick(() => {
+    requestAnimationFrame(syncRowHeights);
+  });
+};
+
+onMounted(() => {
+  scheduleSyncRowHeights();
+  window.addEventListener('resize', scheduleSyncRowHeights);
+  window.addEventListener('load', scheduleSyncRowHeights);
+
+  if ('ResizeObserver' in window) {
+    resizeObserver = new ResizeObserver(scheduleSyncRowHeights);
+    if (containerRef.value) resizeObserver.observe(containerRef.value);
+    resizeObserver.observe(document.body);
+  }
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', scheduleSyncRowHeights);
+  window.removeEventListener('load', scheduleSyncRowHeights);
+  resizeObserver?.disconnect();
+});
 </script>
 
 <template>
   <ClientOnly>
-    <div class="h-card-container" :data-cols="props.cols">
+    <div ref="containerRef" class="h-card-container" :data-cols="props.cols">
       <a :href="props.link" :target="props.target" class="fc-link">
         <div class="fc-box">
           <div class="fc-title">{{ props.title }}</div>
@@ -34,7 +98,7 @@ const props = withDefaults(defineProps<Props>(), {
 <style scoped>
 /* --- 布局基础 --- */
 .h-card-container {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: top;
   box-sizing: border-box;
   padding: 8px;
@@ -48,7 +112,8 @@ const props = withDefaults(defineProps<Props>(), {
 .h-card-container[data-cols="3"] { width: 33.33%; }
 
 .fc-link {
-  display: block;
+  display: flex;
+  width: 100%;
   text-decoration: none !important;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
@@ -65,6 +130,8 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .fc-box {
+  box-sizing: border-box;
+  width: 100%;
   padding: 1.5rem;
   transition: padding 0.2s ease;
 }
