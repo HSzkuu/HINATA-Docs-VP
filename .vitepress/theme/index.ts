@@ -25,6 +25,8 @@ import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 
 import type { EnhanceAppContext } from 'vitepress'
 import { BoxCube, Card, Links, Pill } from '@theojs/lumen'
+import NCard from './components/NCard.vue'
+import HCard from './components/HCard.vue'
 
 export default {
   extends: DefaultTheme,
@@ -79,5 +81,7 @@ export default {
     app.component('Links', Links) 
     app.component('Card', Card) 
     app.component('BoxCube', BoxCube) 
+    app.component('NCard', NCard)
+    app.component('HCard', HCard)
   }
 } satisfies Theme

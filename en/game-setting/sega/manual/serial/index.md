@@ -93,7 +93,6 @@ After entering the game, it should display a **green globe icon**. Otherwise, pl
 
 ## Other Pages
 
-* [Adjust serial mode light brightness](../../../../hcc/index.md)
 * [Connecting to SEGA games via AimeIO](../aimeio/index.md)
 * [In-game card reader test](../../in_game_test.md)
 * [KONAMI Game Settings](../../../konami/index.md)

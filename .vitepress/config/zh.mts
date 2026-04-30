@@ -7,7 +7,8 @@ export const zh = defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '下载中心', link: '/downloads' }
+      { text: '下载中心', link: '/downloads' },
+      { text: 'QQ 群', link: 'https://qm.qq.com/q/uKIsTeNXyw' }
     ],
 
     sidebar: [
@@ -15,8 +16,9 @@ export const zh = defineConfig({
         text: '快速开始',
         collapsed: false,
         items: [
-          {text: '开始使用', link: '/quickstart'},
-          {text: '下载中心', link: '/downloads'}
+          { text: '目录', link: '/guide' },
+          { text: '使用方式', link: '/usage' },
+          { text: '下载中心', link: '/downloads' }
         ]
         
       },
@@ -24,6 +26,7 @@ export const zh = defineConfig({
         text: '配置游戏',
         collapsed: false,
         items: [
+              { text: '目录', link: '/game-setting/' },
               {
                 text: 'SEGA 游戏',
                 collapsed: true,
@@ -56,7 +59,8 @@ export const zh = defineConfig({
                     ] 
                   },
                   { text: '游戏内测试读卡器', link: '/game-setting/sega/in_game_test' },
-                  { text: '常见问题', link: '/game-setting/sega/qa' }
+                  { text: '常见问题', link: '/game-setting/sega/qa' },
+                  { text: '连接到 KDX', link: '/kdx' }
                 ]
 
               },
@@ -64,12 +68,21 @@ export const zh = defineConfig({
               { text: 'Bandai Namco 游戏', link: '/game-setting/bandai-namco/' }
             ]
         },
-        { text: '修改读卡器设置', 
+        { text: 'HINATA Go', 
           collapsed: false,
           items: [
-            { text: 'HINATA 控制中心', link: '/hcc/' }
+            { text: '开始使用', link: '/go/' },
+            { text: '功能', 
+              collapsed: true,
+              items: [
+                { text: '读取卡片信息', link: '/go/features/read-card-info' },
+                { text: '连接游戏作为读卡器', link: '/go/features/game-connection' },
+                { text: '卡片管理', link: '/go/features/cards' }
+              ]
+            }
           ]
         },
+        { text: '更改配置', link: '/configuration' },
         {
             text: '固件更新',
             collapsed: true,
@@ -82,7 +95,7 @@ export const zh = defineConfig({
           collapsed: true,
           items: [
             { text: 'PN532 直通生态', link: '/integration/pn532/' },
-            { text: '二次开发', link: '/integration/rustlib/' }
+            { text: 'Rust HINATA 库', link: '/integration/rustlib/' }
           ]
         },
       { text: '购买 & 售后', link: '/purchase_contact' }

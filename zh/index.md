@@ -8,7 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始（完整说明书）
-      link: ./quickstart
+      link: ./guide
+    - theme: brand
+      text: HINATA Go
+      link: ./go/
     - theme: brand
       text: 固件更新
       link: ./update/

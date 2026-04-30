@@ -45,7 +45,7 @@
 - 只有部分 Segatools 支持读取 **非 `Amusement IC` 的 `Bandai Namco Passport`、`BANA PASSPORT` 卡片**，如何辨别：
   - 卡片上没有 Amusement IC 标志  
   - 卡号为 **3 开头的 20 位数字**  
-  - 卡片背面为英文、韩文或中文
+  - 卡片背面为 英文、韩文或中文
 - 部分 Segatools 对包括 `Amusement IC` 在内的所有 [FeliCa](https://zh.wikipedia.org/wiki/FeliCa) 卡片支持不完整或实现存在问题  
 
 如果在刷 `Amusement IC`、`Hime` 等 FeliCa 卡片时，游戏中出现各种异常读卡问题，建议更换一份 Segatools，或直接改用 **SEGA 官方串口协议** 连接

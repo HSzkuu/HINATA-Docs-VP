@@ -1,14 +1,46 @@
 # Firmware Update
-If the card reader is working normally and stably, and you are not interested in new features, you do not need to update. If you encounter some problems, updating the firmware may solve them.
 
-## Update using HINATA Control Center
-**This feature is only available for HINATA & HINATA Lite firmware version 2025040400 and above.**  
-Only supports macOS, Linux (requires editing udev rules), ChromeOS.
+Updating firmware can provide new features and stability updates. We recommend keeping the firmware up to date.
 
-[Update using HINATA Control Center](../hcc/index.md#firmware-update)
+## Update Using HINATA Go
 
-## Update using the updater
-On Windows, you need to use HINATAUT to update the firmware. Windows 11 can run it directly. If you are on Windows 10, you may need to install [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) from the Microsoft Store to run it properly.
+::: warning
+**This update method only supports the following conditions:**
+- Firmware version **2025040400 or later**
+- Only supports **Android / macOS / Linux / ChromeOS**
+- Linux requires **udev rules to be configured in advance**
+:::
 
-* [Click to download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinataut-rs.exe)
-* [Click to download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinataut-rs.exe)
+Visit HINATA Go in a browser to update online:
+
+[Update using HINATA Go](/en/configuration)
+
+This method does not require downloading additional tools and is suitable for non-Windows users.
+
+## Update Using HINATA Client (Windows)
+
+On Windows, use the **HINATA Client** tool to update firmware.
+
+### Download HINATA Client
+
+<Links
+  :items="[
+    {
+      name: 'HINATA Client',
+      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
+      linkText: 'Download Now'
+    }
+  ]"
+/>
+
+### Getting Started
+
+After extraction, the following files should be present:
+
+![hinata-client-files](../game-setting/sega/hinata-client/assets/hinata-client-files.png)
+
+Double-click `hinata_client.exe` to open HINATA Client.
+
+### Firmware Update
+
+Click firmware update in the sidebar to enter the firmware update page and perform the update.
