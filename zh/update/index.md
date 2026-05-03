@@ -11,11 +11,11 @@
 - Linux 需要 **提前配置 udev 规则**
 :::
 
-通过浏览器访问 HINATA Go 即可进行在线更新：
+通过浏览器访问 HINATA Go 或使用 Android 版 HINATA Go 即可进行更新：
 
 [使用 HINATA Go 进行更新](/configuration)
 
-该方式无需下载额外工具，适合非 Windows 用户。
+该方式在PC上无需下载额外工具，适合非 Windows 用户。
 
 ## 使用 HINATA Client 更新（Windows）
 
