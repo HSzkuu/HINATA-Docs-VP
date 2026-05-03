@@ -13,8 +13,8 @@ hero:
       text: HINATA Go
       link: ./go/
     - theme: brand
-      text: 固件更新
-      link: ./update/
+      text: 管理读卡器
+      link: ./configuration
     - theme: brand
       text: 下载中心
       link: ./downloads
@@ -32,7 +32,7 @@ features:
   - title: 三社游戏支持 & 全自动切换
     details: |
       支持 SEGA、KONAMI、BANDAI NAMCO 三家主流街机游戏<br>根据游戏类型与协议自动切换，无需手动配置
-  - title: GUI 控制面板 & 固件更新
+  - title: 设备管理 & 固件更新
     details: |
       Web GUI 控制中心，可视化调整灯光与 CardIO 设置<br>支持卡片读写、PN532 直通模式等扩展功能<br>固件不定期更新，以支持新功能与兼容性改进
   - title: 售后服务

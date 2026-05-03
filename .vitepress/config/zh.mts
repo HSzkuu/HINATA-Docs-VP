@@ -82,12 +82,12 @@ export const zh = defineConfig({
             }
           ]
         },
-        { text: '更改配置', link: '/configuration' },
         {
-            text: '固件更新',
-            collapsed: true,
+            text: '设备管理',
+            collapsed: false,
             items: [
-              { text: '更新方法', link: '/update/' },
+              { text: '管理 HINATA 读卡器', link: '/configuration' },
+              { text: '固件更新', link: '/update/' },
               { text: '更新日志', link: '/update/changelog' }
             ]
         },
