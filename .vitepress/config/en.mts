@@ -82,13 +82,13 @@ export const en = defineConfig({
             },
           ]
         },
-        { text: 'Change Configuration', link: '/en/configuration' },
         {
-            text: 'Firmware Update',
-            collapsed: true,
+            text: 'Device Management',
+            collapsed: false,
             items: [
-              { text: 'Update Instructions', link: '/en/update/' },
-              { text: 'Changelog', link: '/en/update/CHANGELOG' }
+              { text: 'Manage HINATA Card Reader', link: '/en/configuration' },
+              { text: 'Firmware Update', link: '/en/update/' },
+              { text: 'Changelog', link: '/en/update/changelog' }
             ]
         },
         { text: 'Ecosystem',

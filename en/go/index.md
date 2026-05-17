@@ -16,6 +16,17 @@ HINATA Go is a mobile application that turns your phone into a multifunctional a
 
 HINATA Go can also connect to a HINATA card reader for [HINATA card reader configuration and firmware updates](/en/configuration).
 
+## OpenSource
+<Links
+  :items="[
+    {
+      name: 'Github',
+      link: 'https://github.com/Project-HINATA/hinata_go',
+      linkText: 'Project-HINATA/hinata_go'
+    }
+  ]"
+/>
+
 ## Web Version
 
 <Links
