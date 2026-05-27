@@ -13,3 +13,9 @@ HINATA has access to the powerful PN532 and Rust ecosystems, making it easy to u
 <HCard title="🦀 libhinata-rs" link="rustlib/" cols="1">
   A Rust library for communicating with HINATA and HINATA Lite.
 </HCard>
+
+## HID Communication Protocol
+
+<HCard title="📡 HID Communication Protocol" link="hid-protocol/" cols="1">
+  Low-level HID protocol reference for the HINATA reader: device discovery, frame format, command set, and the subscription/dispatch model.
+</HCard>

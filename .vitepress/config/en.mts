@@ -95,7 +95,8 @@ export const en = defineConfig({
           collapsed: true,
           items: [
             { text: 'PN532 Passthrough Ecosystem', link: '/en/integration/pn532/' },
-            { text: 'Rust HINATA Library', link: '/en/integration/rustlib/' }
+            { text: 'Rust HINATA Library', link: '/en/integration/rustlib/' },
+            { text: 'HID Communication Protocol', link: '/en/integration/hid-protocol/' }
           ]
         },
       { text: 'Purchase & Support', link: '/en/purchase_contact' }
