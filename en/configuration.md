@@ -55,11 +55,11 @@ Use a data cable to connect your device to the HINATA card reader so that HINATA
 
 After connecting, tap this bar at the bottom of the screen to enter the details page:
 
-![hinata-device](go/features/assets/hinata-device.jpg)
+![hinata-device](assets/hinata-device.jpg)
 
 The details page is shown below. You can change settings, update firmware, or check the HINATA card reader status here.
 
-![hinata-configuration](go/features/assets/hinata-configuration.jpg)
+![hinata-configuration](assets/hinata-configuration.jpg)
 
 ## Update Firmware using HINATA Client
 

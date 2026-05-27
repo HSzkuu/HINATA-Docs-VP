@@ -95,7 +95,8 @@ export const zh = defineConfig({
           collapsed: true,
           items: [
             { text: 'PN532 直通生态', link: '/integration/pn532/' },
-            { text: 'Rust HINATA 库', link: '/integration/rustlib/' }
+            { text: 'Rust HINATA 库', link: '/integration/rustlib/' },
+            { text: 'HID 通信协议', link: '/integration/hid-protocol/' }
           ]
         },
       { text: '购买 & 售后', link: '/purchase_contact' }
