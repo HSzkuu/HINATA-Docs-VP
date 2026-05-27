@@ -1,5 +1,9 @@
 # HID 通信协议
 
+::: warning 由 AI 生成
+本页内容由 AI 基于 [hinata-rs](https://github.com/Project-HINATA/hinata-rs) 与 [hinata_go](https://github.com/nerimoe/hinata_go) 源码整理生成，可能存在偏差或遗漏，欢迎对照源码与实测结果提交修正。
+:::
+
 > 本页描述 HINATA 读卡器的 HID 层通信协议、设备发现、帧结构、命令字与订阅/分发模型，适用于希望自行实现上位机或对接的开发者。
 
 参考实现：
@@ -9,7 +13,6 @@
 
 两套实现的协议层完全一致，差异仅在底层 HID 通道的封装。
 
----
 
 ## 1. 设备识别
 
@@ -45,7 +48,6 @@ ATTRS{manufacturer}=="NERI", MODE="0666"
 <usb-device vendor-id="63522" />   <!-- 0xF822 -->
 ```
 
----
 
 ## 2. HID I/O 模型
 
@@ -124,7 +126,6 @@ HINATA 主协议（`0x01` ReportID 通道）**没有任何包级别的序列号 
 
 PN532 包装命令使用 `SpecificNotOn(4, 0)`（用于过滤掉 PN532 的 ACK 帧 `00 00 FF 00 FF 00`，等待真正的应答帧）。
 
----
 
 ## 3. 固件层命令包（HINATA 自有协议）
 
@@ -178,7 +179,6 @@ GetStorage(idleR):  01 D1 03         → resp: 02 D1 <value>
 EnterBootloader:    01 F0
 ```
 
----
 
 ## 4. PN532 透传（CMD = `0xE2`）
 
@@ -303,7 +303,6 @@ InListPassiveTarget(brty=0, max=1)：
 01 E2  00 00 FF 04 FC D4 4A 01 00 E1 00
 ```
 
----
 
 ## 5. Sega 协议透传（CMD = `0xE0`，仅 Sega 模式机种）
 
@@ -367,7 +366,6 @@ res[7] = cardNum
 
 整体打包成 HINATA 主帧：`01 E0 05 00 01 40 00`
 
----
 
 ## 6. PN532 错误码（响应首字节）
 
@@ -384,7 +382,6 @@ res[7] = cardNum
 0x2D Overcurrent       0x2E NoNad
 ```
 
----
 
 ## 7. 连接 / 收发完整流程
 
@@ -456,7 +453,6 @@ fn pn532_frame(cmd: u8, data: &[u8]) -> Vec<u8> {
 }
 ```
 
----
 
 ## 8. 速查总结
 
