@@ -1,4 +1,4 @@
-# Connect to Arcade Games as a Card Reader
+# Card Reader Mode (Sender Mode)
 
 ## SEGA Game Configuration
 

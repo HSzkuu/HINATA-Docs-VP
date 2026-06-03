@@ -2,7 +2,7 @@
 
 If you need to change card reader settings, check device status, or update firmware, start here.
 
-Most card reader management operations will be completed via **HINATA Go**. HINATA Go itself is an app used for card reading, card management, and remote swiping; when it runs on platforms that support connecting to a physical card reader, it can also directly connect to the HINATA reader to change device settings.
+Most card reader management operations will be completed via **HINATA Go**. HINATA Go is a multi-platform NFC card tool that supports card information viewing (Normal Mode) and card reader mode (Sender Mode); when it runs on platforms that support connecting to a physical card reader, it can directly connect to the HINATA reader to change device settings.
 
 On Windows, card reader settings can still be modified through the HINATA Go web version; however, firmware updates require the use of **HINATA Client**.
 
@@ -29,23 +29,14 @@ If you are just using the card reader to play games, you usually do not need to 
 
 ## Connect to Card Reader using HINATA Go
 
-### Web Version
-
-<Links
-  :items="[
-    {
-      name: 'HINATA Go',
-      link: 'https://go.neri.moe',
-      linkText: 'Click to visit'
-    }
-  ]"
-/>
-
-### App Download
-
-| iOS | Android |
-| --- | ------- |
-| [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/app/id6760301105) | [**APK Download**](https://github.com/nerimoe/hinata_go/releases) |
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
+  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
+  </a>
+  <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" />
+  </a>
+</div>
 
 ## Connect the Card Reader
 

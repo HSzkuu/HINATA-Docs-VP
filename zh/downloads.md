@@ -16,23 +16,17 @@
 
 ## HINATA Go
 
-### 网页版
-
-<Links
-  :items="[
-    {
-      name: 'HINATA Go',
-      link: 'https://go.neri.moe',
-      linkText: '点击访问'
-    }
-  ]"
-/>
-
-### 下载
-
-| iOS | Android |
-| --- | ------- |
-| [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/app/id6760301105) | [**APK 下载**](https://github.com/nerimoe/hinata_go/releases) |
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
+  <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;" />
+  </a>
+  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
+  </a>
+  <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" />
+  </a>
+</div>
 
 ## SEGA 游戏使用的文件及链接
 

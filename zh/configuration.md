@@ -2,7 +2,7 @@
 
 如果你需要修改读卡器设置、查看设备状态或更新固件，请从这里开始。
 
-大多数读卡器管理操作会通过 **HINATA Go** 完成。HINATA Go 本身是一款用于读卡、卡片管理和远程刷卡的应用；当它运行在支持连接实体读卡器的平台上时，也可以直接连接 HINATA 读卡器并修改设备设置。
+大多数读卡器管理操作会通过 **HINATA Go** 完成。HINATA Go 是一款支持卡片信息查看（Normal 模式）与读卡器模式（Sender 模式）的 NFC 卡片工具；当它运行在支持连接实体读卡器的平台上时，可以直接连接 HINATA 读卡器并修改设备设置。
 
 在 Windows 上，读卡器设置仍可通过 HINATA Go 网页版修改；但固件更新需要使用 **HINATA Client**。
 
@@ -29,29 +29,14 @@
 
 ## 使用 HINATA Go 连接读卡器
 
-### 网页版
-
-<Links
-  :items="[
-    {
-      name: 'HINATA Go',
-      link: 'https://go.neri.moe',
-      linkText: '点击访问'
-    }
-  ]"
-/>
-
-### Android 版
-
-<Links
-  :items="[
-    {
-      name: 'HINATA Go Android',
-      link: 'https://github.com/nerimoe/hinata_go/releases',
-      linkText: 'APK 下载'
-    }
-  ]"
-/>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
+  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
+  </a>
+  <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" />
+  </a>
+</div>
 
 ## 连接读卡器
 

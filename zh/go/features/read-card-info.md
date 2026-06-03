@@ -1,12 +1,18 @@
-# 读取卡片信息
+# 卡片信息查看 (Normal 模式)
 
-## 可读取卡片类型
+## 支持的卡片类型
 
+### 交通卡
+* [**日本交通系卡片 (Suica, PASMO 等)**](#suica-pasmo-等)
+* [**交通联合 (China T-Union)**](#交通联合-china-t-union)
+
+### 街机游戏卡
 * [**Amusement IC**](#amusement-ic)
 * [**旧版 Aime**](#旧版-aime-大部分兼容卡)
 * [**Bandai Namco Passport**](#bandai-namco-passport-bana-passport)
 * **E-Amusement Pass**
 * **FeliCa**
+* **ISO15693**
 
 ## 如何读取
 
@@ -28,6 +34,19 @@
 
 
 ## 读取信息
+
+### Suica / PASMO 等
+
+读取日本交通系卡片时，可查看：
+* 余额 (JPY)
+* 历史交易流水：包括交易类型（乘车、消费、充值等）、交易日期、交易金额，并可依托内置的日本铁路车站数据库自动解析乘降车站名称。
+
+### 交通联合 (China T-Union)
+
+读取交通联合卡时，可查看：
+* 卡号
+* 余额 (CNY)
+* 历史交易记录：展示最近的扣款与充值历史。
 
 ### Amusement IC
 

@@ -1,12 +1,18 @@
-# Read Card Information
+# Card Information Viewer (Normal Mode)
 
-## Readable Card Types
+## Supported Card Types
 
+### Transit Cards
+* [**Japanese Transit Cards (Suica, PASMO, etc.)**](#suica-pasmo-etc)
+* [**China T-Union**](#china-t-union)
+
+### Arcade/Amusement Cards
 * [**Amusement IC**](#amusement-ic)
 * [**Legacy Aime**](#legacy-aime-most-aime-compatible-cards)
 * [**Bandai Namco Passport**](#bandai-namco-passport-bana-passport)
 * **E-Amusement Pass**
 * **FeliCa**
+* **ISO15693**
 
 ## How to Read
 
@@ -27,6 +33,19 @@ After swiping the card, slide down to see two buttons. Click the save button on 
 ![save-card](assets/save-card.jpg)
 
 ## Read Information
+
+### Suica / PASMO etc.
+
+When reading Japanese transit cards, you can view:
+* Balance (in JPY)
+* Transaction History: includes transaction type (ride, shopping, adjustment, top-up, etc.), date, amount, and entry/exit station names (automatically resolved via the built-in Japanese station database).
+
+### China T-Union
+
+When reading China T-Union cards, you can view:
+* Card number
+* Balance (in CNY)
+* Transaction History: displays recent top-ups and deductions.
 
 ### Amusement IC
 

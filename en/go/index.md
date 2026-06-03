@@ -12,9 +12,11 @@
 
 ## What is HINATA Go?
 
-HINATA Go is a mobile application that turns your phone into a multifunctional arcade game card reader. Used together with the HINATA AimeIO service, it supports reading multiple game card types such as Amusement IC, legacy Aime, and Bandai Namco Passport, and can perform card swipes through NFC or a connected HINATA card reader. The app lets users connect their phones to arcade games such as SEGA or KONAMI titles as remote card readers, and also provides card management features for saving, organizing, and using cards. HINATA Go supports multiple platforms and is designed to provide arcade game players with convenient card management and gameplay experience.
-
-HINATA Go can also connect to a HINATA card reader for [HINATA card reader configuration and firmware updates](/en/configuration).
+HINATA Go is a multi-platform NFC card tool that supports card information viewing (Normal Mode) and card reader mode (Sender Mode):
+* **Card Information Viewer (Normal Mode)**: Scan cards via the built-in NFC or a connected HINATA Card Reader to check balances, transaction histories, and detailed card info for transit cards (Japanese transit cards, China T-Union) and various arcade/amusement cards.
+* **Card Reader Mode (Sender Mode)**: Configure and select a game instance to automatically send swiped card numbers to target games, supporting SEGA games (AimeIO), Konami games (SpiceAPI), and more.
+* **Card Management**: Organize your cards using folders, keep track of swipe history, and import or export card data.
+* **Hardware Management**: Connect to a physical HINATA card reader to [configure settings and perform OTA firmware updates](/en/configuration).
 
 ## OpenSource
 <Links
@@ -27,23 +29,19 @@ HINATA Go can also connect to a HINATA card reader for [HINATA card reader confi
   ]"
 />
 
-## Web Version
+## Downloads & Access
 
-<Links
-  :items="[
-    {
-      name: 'HINATA Go',
-      link: 'https://go.neri.moe',
-      linkText: 'Click to Visit'
-    }
-  ]"
-/>
-
-## Download
-
-| iOS | Android |
-| --- | ------- |
-| [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/app/id6760301105) | [**APK Download**](https://github.com/nerimoe/hinata_go/releases) |
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
+  <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;" />
+  </a>
+  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
+  </a>
+  <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" />
+  </a>
+</div>
 
 ## Interface
 
@@ -56,7 +54,7 @@ As shown in the figure, after installing and opening the application, the UI int
 <Links
   :items="[
     {
-      name: 'Read Card Information',
+      name: 'Card Information Viewer (Normal Mode)',
       link: 'features/read-card-info',
     }
   ]"
@@ -64,7 +62,7 @@ As shown in the figure, after installing and opening the application, the UI int
 <Links
   :items="[
     {
-      name: 'Connect to Arcade Games as a Card Reader',
+      name: 'Card Reader Mode (Sender Mode)',
       link: 'features/game-connection',
     }
   ]"
