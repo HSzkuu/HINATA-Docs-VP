@@ -12,9 +12,9 @@
 
 ## What is HINATA Go?
 
-HINATA Go is a multi-platform NFC card tool that supports card information viewing (Normal Mode) and card reader mode (Sender Mode):
-* **Card Information Viewer (Normal Mode)**: Scan cards via the built-in NFC or a connected HINATA Card Reader to check balances, transaction histories, and detailed card info for transit cards (Japanese transit cards, China T-Union) and various arcade/amusement cards.
-* **Card Reader Mode (Sender Mode)**: Configure and select a game instance to automatically send swiped card numbers to target games, supporting SEGA games (AimeIO), Konami games (SpiceAPI), and more.
+HINATA Go is a multi-platform NFC card tool that supports card information viewing and card reader emulation:
+* **Card Information Viewer**: Scan cards via the built-in NFC or a connected HINATA Card Reader to check balances and transaction histories for transit cards (Japanese transit cards, China T-Union), or retrieve Access Codes and card data for various arcade/amusement cards.
+* **Card Reader Mode**: Configure and select a game instance to automatically send swiped card numbers to target games, supporting SEGA games (AimeIO), Konami games (SpiceAPI), and more.
 * **Card Management**: Organize your cards using folders, keep track of swipe history, and import or export card data.
 * **Hardware Management**: Connect to a physical HINATA card reader to [configure settings and perform OTA firmware updates](/en/configuration).
 
@@ -54,7 +54,7 @@ As shown in the figure, after installing and opening the application, the UI int
 <Links
   :items="[
     {
-      name: 'Card Information Viewer (Normal Mode)',
+      name: 'Card Information Viewer',
       link: 'features/read-card-info',
     }
   ]"
@@ -62,7 +62,7 @@ As shown in the figure, after installing and opening the application, the UI int
 <Links
   :items="[
     {
-      name: 'Card Reader Mode (Sender Mode)',
+      name: 'Card Reader Mode',
       link: 'features/game-connection',
     }
   ]"

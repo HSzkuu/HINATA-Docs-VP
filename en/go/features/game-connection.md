@@ -1,4 +1,4 @@
-# Card Reader Mode (Sender Mode)
+# Card Reader Mode
 
 ## SEGA Game Configuration
 
@@ -32,11 +32,11 @@
 2. Find the SpiceAPI configuration, set the port, and leave the password blank.
 3. Add an Instance in HINATA Go and set the URL to `<Your_IP_Address>:<Spice_Listening_Port>`, for example `192.168.0.114:1145`. Do not include `http://`.
 
-## Send Card Swipe
+## Send Card Number to Game
 
 ### Normal Mode
 
-After scanning a card, slide down to see two buttons. Tap the send button on the right and select the instance to send the card swipe.
+After scanning a card in **Normal Mode** (Card Information Viewer screen), scroll down to find two buttons. Tap the **Send** button on the right, and select the target instance to send the card number to the game.
 
 ![save-send](assets/save-send.jpg)
 
@@ -44,6 +44,6 @@ After scanning a card, slide down to see two buttons. Tap the send button on the
 
 ### Sender Mode
 
-Select the instance first, then use the device's NFC to scan the card. It will be sent automatically after scanning.
+Switch to the **Sender Mode** tab in HINATA Go, and select the active game instance. In this mode, scanning a card via the device's built-in NFC, QR/barcode scan, or a connected external HINATA card reader will send the card number automatically and in real time to the selected instance without any manual steps.
 
 ![sender-mode](assets/sender-mode.jpg)

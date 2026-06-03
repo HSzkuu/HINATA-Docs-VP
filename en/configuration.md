@@ -2,7 +2,7 @@
 
 If you need to change card reader settings, check device status, or update firmware, start here.
 
-Most card reader management operations will be completed via **HINATA Go**. HINATA Go is a multi-platform NFC card tool that supports card information viewing (Normal Mode) and card reader mode (Sender Mode); when it runs on platforms that support connecting to a physical card reader, it can directly connect to the HINATA reader to change device settings.
+Most card reader management operations will be completed via **HINATA Go**. HINATA Go is a multi-platform NFC card tool that supports card information viewing and card reader emulation; when it runs on platforms that support connecting to a physical card reader, it can directly connect to the HINATA reader to change device settings.
 
 On Windows, card reader settings can still be modified through the HINATA Go web version; however, firmware updates require the use of **HINATA Client**.
 
@@ -18,11 +18,11 @@ On Windows, card reader settings can still be modified through the HINATA Go web
 If you just want to modify the card reader settings or check the device status, please use the **HINATA Go Web Version** or **HINATA Go App**.
 
 - Windows / macOS / Linux / ChromeOS can use the HINATA Go web version
-- Android / iOS can use the HINATA Go App
+- Android can use the HINATA Go App
 
 If you want to update the firmware, you need to choose the method based on your current device:
 
-- Android / iOS / macOS / Linux / ChromeOS can update using HINATA Go
+- Android / macOS / Linux / ChromeOS can update using HINATA Go
 - Windows needs to update using HINATA Client
 
 If you are just using the card reader to play games, you usually do not need to open these tools every time; you only need to open them during first use, when changing settings, updating firmware, or troubleshooting issues.

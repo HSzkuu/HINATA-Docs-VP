@@ -1,18 +1,20 @@
-# 卡片信息查看 (Normal 模式)
+# 卡片信息查看
 
 ## 支持的卡片类型
 
 ### 交通卡
-* [**日本交通系卡片 (Suica, PASMO 等)**](#suica-pasmo-等)
-* [**交通联合 (China T-Union)**](#交通联合-china-t-union)
+* [**日本交通系卡片 (Suica, PASMO 等)**](#suica-pasmo-等)：查看卡片余额、最近 20 条交易记录（包括交易类型、日期、金额、以及基于内置数据库解析的乘降车站名称）。
+* [**交通联合 (China T-Union)**](#交通联合-china-t-union)：查看卡号、余额及最近 10 条刷卡记录。
 
 ### 街机游戏卡
-* [**Amusement IC**](#amusement-ic)
-* [**旧版 Aime**](#旧版-aime-大部分兼容卡)
-* [**Bandai Namco Passport**](#bandai-namco-passport-bana-passport)
-* **E-Amusement Pass**
-* **FeliCa**
-* **ISO15693**
+* [**Amusement IC**](#amusement-ic)：Access Code, Konami 游戏内卡号，生产厂商等
+* [**旧式 Aime 或兼容卡**](#旧式-aime-或兼容卡)：Access Code, 游戏内合法性等
+* [**旧式 Banapass 或兼容卡**](#旧式-banapass-或兼容卡)：Access Code
+* **旧式 E-Amusement Pass**：Konami 游戏内卡号
+
+### 其他卡片
+* **任意 FeliCa 卡片**：IDm, PMm, SystemCodes, Konami 游戏内卡号 等
+* **任意 ISO15693 卡片**：Konami 游戏内卡号
 
 ## 如何读取
 
@@ -52,10 +54,10 @@
 
 ![card-info-aic](assets/card-info-aic.png)
 
-### 旧版 Aime / 大部分兼容卡
+### 旧式 Aime 或兼容卡
 
 ![card-info-m1aime](assets/card-info-m1aime.png)
 
-### Bandai Namco Passport / BANA PASSPORT
+### 旧式 Banapass 或兼容卡
 
 ![card-info-bana](assets/card-info-bana.png)
