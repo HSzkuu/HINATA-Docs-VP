@@ -5,8 +5,7 @@
 - [Official SEGA Serial Protocol](serial/index.md)
 - [AimeIO (Based on Segatools)](aimeio/index.md)
 
-Both methods have their pros and cons.
-In the current **firmware version 2025040400**, it is more recommended to use the **Official SEGA Serial Protocol**.
+Both methods have their pros and cons. If you have no special requirements, please choose `AimeIO mode`.
 
 Before starting the configuration, please make sure you have prepared a **game environment that can run normally with network connectivity**.
 

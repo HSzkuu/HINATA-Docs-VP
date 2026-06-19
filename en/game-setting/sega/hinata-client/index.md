@@ -29,6 +29,10 @@ Double-click `hinata_client.exe` to open HINATA Client.
    ![hinata-client-folders-select](assets/hinata-client-folders-select.png)
 
 2. Follow the prompt to select the working mode. Selecting a mode will display its pros and cons, along with [Optional Advanced Settings](advanced.md).
+   
+   If you have no special requirements, please choose `AimeIO mode` to ensure connection stability.
+   
+   When using `AimeIO mode`, if you are not using `fufubot_segatools`, please check `Deploy supported segatools`. Otherwise, you will not be able to scan Banapass-compatible cards starting with card number `3`, including `Legacy Banapass` and `Hikari IC`.
 
    ![hinata-client-mode-select](assets/hinata-client-mode-select.png)
 

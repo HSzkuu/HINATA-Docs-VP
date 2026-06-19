@@ -46,6 +46,8 @@ It should be in the same directory as `amdaemon.exe`, `inject.exe`, and `segatoo
 - [Download (International)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll)
 - [Download (Mainland China)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll)
 
+If you are not using `fufubot_segatools`, you need to download supported segatools from [Project-HINATA/segatools-banafix](https://github.com/Project-HINATA/segatools-banafix/releases) and replace the corresponding file (`xxxhook.dll`) in the game directory. Otherwise, you will not be able to scan Banapass-compatible cards starting with card number `3`, including `Legacy Banapass` and `Hikari IC`.
+
 ### 2. Modify segatools.ini
 
 ```ini
