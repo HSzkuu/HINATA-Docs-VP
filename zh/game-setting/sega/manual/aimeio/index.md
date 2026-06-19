@@ -45,6 +45,8 @@
 - [点击下载(国际)](https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll)
 - [点击下载(中国大陆)](https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll)
 
+如果你使用的不是 `fufubot_segatools`，那么需要从 [Project-HINATA/segatools-banafix](https://github.com/Project-HINATA/segatools-banafix/releases) 下载受支持的 segatools并替换游戏内对应文件(`xxxhook.dll`)，否则无法扫描 `旧版Banapass`以及`Hikari IC`在内的，卡号以`3`开头的 Banapass 兼容卡
+
 ### 2. 修改 segatools.ini
 
 ```ini

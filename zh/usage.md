@@ -10,13 +10,14 @@ HINATA 有多种使用方式，不单单是游戏读卡器
 
 ![scan-card-by-hinata](go/features/assets/scan-card-by-hinata.png)
 
-## 测试读卡器
+## (重要) 测试读卡器
 
-为了之后的使用，请在正式使用之前**先测试一下读卡器**
+为了之后的使用，请**务必**在正式使用之前**先测试一下读卡器**
 
 1. 打开 [HINATA Go](go/index.md)
 2. 在 HINATA Go 中连接好读卡器，并刷卡以查看设备是否异常
 3. 如未出现异常，我们的使用就可以开始了
+4. 如果你使用 `HINATA Lite` ，请看下面的特别说明
 
 ::: tip 关于 HINATA Lite 天线方面的说明
 由于 HINATA Lite 使用现成的射频天线模块，在部分需要卡片紧贴读卡器的使用场景中，可能无法获得最佳读取效果。

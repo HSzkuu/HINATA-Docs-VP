@@ -28,7 +28,11 @@
 
    ![hinata-client-folders-select](assets/hinata-client-folders-select.png)
 
-2. 根据提示选择工作模式，选中对应模式后会有优缺点说明与 [可选的高级设置](advanced.md)
+2. 根据提示选择工作模式，选中对应模式后会有优缺点说明与 [可选的高级设置](advanced.md)。
+   
+   如果没有特殊需求请选择 `AimeIO 方式`，可以确保你的连接稳定性
+   
+   使用 `AimeIO 方式`时如果你使用的不是 `fufubot_segatools`，请勾选 `部署受支持的segatools`，否则无法扫描 `旧版Banapass`以及`Hikari IC`在内的，卡号以`3`开头的 Banapass 兼容卡
 
    ![hinata-client-mode-select](assets/hinata-client-mode-select.png)
 
