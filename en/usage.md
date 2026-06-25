@@ -23,6 +23,15 @@ For future use, please **make sure** to test the card reader before using it for
 Since HINATA Lite uses an off-the-shelf RF antenna module, it may not be a perfect match for the current use case of placing cards directly on the reader. The optimal reading position for some cards is not when they are placed right against the reader, but rather a few centimeters higher. If you encounter very unstable issues when scanning some compatible cards, please first go to [HINATA Go](go/index.md) to test the card reading stability, then appropriately raise the card a few centimeters when swiping in-game or use a non-metallic object of appropriate thickness as a cushion. Alternatively, you can use a copper foil sticker and apply a piece to the area on the back of the HINATA Lite that glows red. The specific size is recommended to be tested on the webpage. **HINATA Lite units shipped after July 20, 2025, will come with a copper foil sticker of a suitable size.**
 :::
 
+## (Optional) Write Aime Access Code to the Provided Blank Card
+
+> [!NOTE]
+> This step is only applicable to the blank card included with the Standard Edition.
+
+The blank card needs to have an Access Code written to it before it can be used in SEGA games. If you already have an `Aime` card, `Bandai Namco Passport` card, `BANA PASSPORT` card, or `Amusement IC` card, and do not plan to use the provided blank card, you can skip this step.
+
+For instructions on writing, please refer to: [HINATA Control Center - Card Reading and Writing](/en/hcc/index.md#card-reading-and-writing).
+
 ## Usage Methods
 
 <HCard title="🕹️ Connect HINATA to Games" link="game-setting/" cols="1">

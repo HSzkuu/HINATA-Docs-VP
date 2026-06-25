@@ -1,5 +1,11 @@
 # HINATA Control Center
 
+::: tip Note
+Most features of the web Control Center (such as card reader settings, firmware updates, etc.) have been replaced by **HINATA Go**.
+
+Currently, this page is **only used for card writing (writing blank cards)**. To modify other settings or update firmware on supported platforms, please use [HINATA Go](/en/go/index.md).
+:::
+
 ## Introduction
 The HINATA Control Center is used to control the various settings of HINATA and for writing cards.
 

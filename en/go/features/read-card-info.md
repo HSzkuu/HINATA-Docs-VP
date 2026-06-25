@@ -58,5 +58,5 @@ When reading China T-Union cards, you can view:
 ![card-info-m1aime](assets/card-info-m1aime.png)
 
 ### Legacy Banapass or Compatible Cards
-
+ 
 ![card-info-bana](assets/card-info-bana.png)

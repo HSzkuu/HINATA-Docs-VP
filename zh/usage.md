@@ -29,6 +29,15 @@ HINATA 有多种使用方式，不单单是游戏读卡器
 **2025 年 7 月 20 日之后发货的 HINATA Lite 将附赠一片尺寸合适的铜箔贴纸。**
 :::
 
+## (可选) 为赠送的白卡写入 Aime 卡号
+
+> [!NOTE]
+> 此步骤仅适用于标准版附赠的空白卡。
+
+白卡需要写入卡号后方可在 SEGA 游戏中使用。如果你已经拥有 `Aime` 卡、`Bandai Namco Passport` 卡、`BANA PASSPORT` 卡或 `Amusement IC`（四社通）卡片，并且不打算使用赠送的白卡，可以直接跳过该步骤。
+
+写入方式请参考：[HINATA 控制中心 - 卡片读写](/hcc/index.md#卡片读写)。
+
 ## 使用方式
 
 <HCard title="🕹️ 将 HINATA 连接到游戏" link="game-setting/" cols="1">

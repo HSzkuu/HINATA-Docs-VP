@@ -59,5 +59,5 @@
 ![card-info-m1aime](assets/card-info-m1aime.png)
 
 ### 旧式 Banapass 或兼容卡
-
+ 
 ![card-info-bana](assets/card-info-bana.png)
