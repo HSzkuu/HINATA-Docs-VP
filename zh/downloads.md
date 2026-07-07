@@ -5,10 +5,16 @@
 ## HINATA Client
 
 <Links
+  :grid="2"
   :items="[
     {
-      name: 'HINATA Client',
-      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
+      name: 'HINATA Client 中国大陆下载',
+      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/releases/latest/download/hinata_client-win-setup.exe',
+      linkText: '立即下载'
+    },
+    {
+      name: 'HINATA Client 国际下载',
+      link: 'https://github.com/nerimoe/hinata_client-pub/releases/latest/download/hinata_client-win-setup.exe',
       linkText: '立即下载'
     }
   ]"
@@ -18,13 +24,13 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
   <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;" />
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;" class="no-zoom" />
   </a>
   <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
+    <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" class="no-zoom" />
   </a>
   <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" />
+    <img src="/assets/open-on-web.svg" alt="Launch App on Web Browser" style="height: 40px;" class="no-zoom" />
   </a>
 </div>
 

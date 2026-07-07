@@ -36,7 +36,7 @@ export default {
     const route = useRoute();
     const initZoom = () => {
       // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
-      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+      mediumZoom('.main img:not(.no-zoom)', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为非no-zoom类图像启用此功能
     };
     onMounted(() => {
       initZoom();
