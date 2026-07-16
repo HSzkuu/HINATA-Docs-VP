@@ -4,6 +4,8 @@ Here you can find all the download links and web tools included in this document
 
 ## HINATA Client
 
+HINATA Client is a Windows desktop tool that helps deploy HINATA AimeIO or serial configurations quickly. See [Configure SEGA Games Using HINATA Client](/en/game-setting/sega/hinata-client/) for detailed instructions.
+
 <Links
   :grid="2"
   :items="[
@@ -22,6 +24,8 @@ Here you can find all the download links and web tools included in this document
 
 ## HINATA Go
 
+HINATA Go is a cross-platform NFC card tool for viewing and managing cards, using card reader mode, and managing HINATA devices. See [HINATA Go documentation](/en/go/) for details.
+
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
   <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">
     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;" class="no-zoom" />
@@ -37,6 +41,8 @@ Here you can find all the download links and web tools included in this document
 ## Files and Links for SEGA Games
 
 ### AimeIO DLL
+
+The HINATA AimeIO DLL lets compatible SEGA games use a HINATA card reader through Segatools. See the [AimeIO configuration guide](/en/game-setting/sega/manual/aimeio/) for details.
 
 <Links
   :grid="2"
@@ -56,7 +62,23 @@ Here you can find all the download links and web tools included in this document
   ]"
 />
 
+### Supported Segatools (banafix)
+
+If you are not using `fufubot_segatools`, download supported Segatools here to support some Banapass-compatible cards. See the [AimeIO configuration guide](/en/game-setting/sega/manual/aimeio/) for usage instructions.
+
+<Links
+  :items="[
+    {
+      name: 'Project-HINATA/segatools-banafix',
+      link: 'https://github.com/Project-HINATA/segatools-banafix/releases',
+      linkText: 'Open Releases'
+    }
+  ]"
+/>
+
 ### Remote Card Swiping Service Webpage
+
+AimeIO Sender works with the AimeIO extension to swipe remotely by entering an Access Code on the webpage. See [AimeIO Extension Features](/en/game-setting/sega/manual/aimeio/extension) for details.
 
 <Links
   :items="[
@@ -72,6 +94,8 @@ Here you can find all the download links and web tools included in this document
 
 ### CardIO
 
+`cardio.dll` is used in Bandai Namco game environments that support the CardIO protocol, primarily Taiko no Tatsujin. See the [Bandai Namco game configuration guide](/en/game-setting/bandai-namco/) for details.
+
 <Links
   :items="[
     {
@@ -84,12 +108,13 @@ Here you can find all the download links and web tools included in this document
 
 ## libhinata-rs
 
+libhinata-rs is a Rust library for communicating with HINATA and HINATA Lite. See the [libhinata-rs usage guide](/en/integration/rustlib/) for details.
+
 <Links
   :items="[
     {
       name: 'libhinata-rs Repository',
       link: 'https://github.com/nerimoe/hinata-rs',
-      desc: 'A Rust library for communicating with HINATA and HINATA Lite',
       linkText: 'Click to Visit'
     }
   ]"
