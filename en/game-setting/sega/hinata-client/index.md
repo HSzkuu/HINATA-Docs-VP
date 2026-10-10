@@ -6,7 +6,7 @@
   :items="[
     {
       name: 'HINATA Client',
-      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/raw/refs/tags/stable/release.zip',
+      link: 'https://gh-proxy.org/https://github.com/nerimoe/hinata_client-pub/releases/latest/download/hinata_client-win-setup.exe',
       linkText: 'Download Now'
     }
   ]"
