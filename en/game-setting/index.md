@@ -23,5 +23,5 @@
 ## Bandai Namco Games
 
 <HCard title="Connect Bandai Namco Games" link="bandai-namco/" cols="1">
-  Connect Bandai Namco games using the native protocol or the CardIO protocol.
+  Connect Bandai Namco games using the native protocol, or use the HINATA plugin for Taiko no Tatsujin.
 </HCard>

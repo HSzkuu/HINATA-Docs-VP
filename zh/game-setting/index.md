@@ -23,5 +23,5 @@
 ## Bandai Namco 游戏
 
 <HCard title="连接 Bandai Namco 游戏" link="bandai-namco/" cols="1">
-  使用 原生协议 或 CardIO 协议 连接 Bandai Namco 游戏
+  使用原生协议连接 Bandai Namco 游戏，或使用 HINATA 插件连接《太鼓之达人》
 </HCard>

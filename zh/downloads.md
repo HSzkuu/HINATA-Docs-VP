@@ -98,15 +98,21 @@ AimeIO Sender 用于配合 AimeIO 扩展功能，通过网页输入 Access Code 
 
 ## Bandai Namco 游戏使用的文件
 
-### CardIO
+### HINATA 插件（太鼓之达人）
 
-`cardio.dll` 用于支持 CardIO 协议的 Bandai Namco 游戏环境，目前主要用于《太鼓之达人》。详细配置请参阅[Bandai Namco 游戏配置说明](/game-setting/bandai-namco/)。
+《太鼓之达人》使用与 SEGA AimeIO 相同的 64 位 `hinata.dll`，由 TAL 加载。详细的插件放置位置及 `hinata.ini` 配置请参阅[Bandai Namco 游戏配置说明](/game-setting/bandai-namco/)。
 
 <Links
+  :grid="2"
   :items="[
     {
-      name: 'cardio.dll',
-      link: 'https://github.com/AkaiiKitsune/tal-cardreader/releases/download/0.1.0/cardio.dll',
+      name: 'hinata.dll 中国大陆下载',
+      link: 'https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll',
+      linkText: '立即下载'
+    },
+    {
+      name: 'hinata.dll 国际下载',
+      link: 'https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll',
       linkText: '立即下载'
     }
   ]"

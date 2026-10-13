@@ -95,15 +95,21 @@ AimeIO Sender works with the AimeIO extension to swipe remotely by entering an A
 
 ## Files for Bandai Namco Games
 
-### CardIO
+### HINATA Plugin (Taiko no Tatsujin)
 
-`cardio.dll` is used in Bandai Namco game environments that support the CardIO protocol, primarily Taiko no Tatsujin. See the [Bandai Namco game configuration guide](/en/game-setting/bandai-namco/) for details.
+Taiko no Tatsujin uses the same 64-bit `hinata.dll` as SEGA AimeIO, loaded through TAL. See the [Bandai Namco game configuration guide](/en/game-setting/bandai-namco/) for the plugin location and `hinata.ini` settings.
 
 <Links
+  :grid="2"
   :items="[
     {
-      name: 'cardio.dll',
-      link: 'https://github.com/AkaiiKitsune/tal-cardreader/releases/download/0.1.0/cardio.dll',
+      name: 'hinata.dll Mainland China Download',
+      link: 'https://gitee.com/nerimoe/hinata-pub/raw/master/hinata.dll',
+      linkText: 'Download Now'
+    },
+    {
+      name: 'hinata.dll Global Download',
+      link: 'https://github.com/nerimoe/hinata-neo-pub/raw/refs/heads/master/hinata.dll',
       linkText: 'Download Now'
     }
   ]"
