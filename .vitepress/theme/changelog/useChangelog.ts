@@ -27,7 +27,9 @@ function start() {
   started = true
   seen.value = readSeen()
   mounted.value = true
-  fetch(feedUrl)
+  // Revalidate every visit: the zone's browser cache TTL can stretch the
+  // feed's own max-age to hours.
+  fetch(feedUrl, { cache: 'no-cache' })
     .then((response) => (response.ok ? response.json() : null))
     .then((live: Feed | null) => {
       if (live && Array.isArray(live.entries) && live.entries.length) feed.value = live
