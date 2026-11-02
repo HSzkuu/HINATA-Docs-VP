@@ -1,0 +1,13 @@
+name = "hinata-changelog"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# Serve the feed from your own domain, for example:
+# routes = [{ pattern = "changelog.neri.moe", custom_domain = true }]
+
+[vars]
+# Comma-separated origins allowed to read the feed, or "*".
+ALLOWED_ORIGINS = "*"
+
+# The GitHub token is a secret:
+#   npx wrangler secret put GITHUB_TOKEN

@@ -6,6 +6,7 @@ import { en } from './en.mjs'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
+  srcExclude: ['workers/**'],
   vite: { 
     optimizeDeps: {
       exclude: [ 

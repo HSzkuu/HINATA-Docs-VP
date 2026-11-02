@@ -7,11 +7,21 @@ export const en = defineConfig({
 
   themeConfig: {
     nav: [
+      { text: 'What\'s New<span class="whats-new-dot" aria-hidden="true"></span>', link: '/en/whats-new' },
       { text: 'Download Center', link: '/en/downloads' },
+      { text: 'Purchase & Support', link: '/en/purchase_contact' },
+      {
+        text: 'Videos',
+        items: [
+          { text: 'Introduction Video', link: 'https://www.bilibili.com/video/BV1Gi421i7ej/' },
+          { text: 'Video Manual', link: 'https://www.bilibili.com/video/BV1VQCUYyEGA/' }
+        ]
+      },
       { text: 'QQ Group', link: 'https://qm.qq.com/q/uKIsTeNXyw' }
     ],
 
     sidebar: [
+      { text: "What's New", link: '/en/whats-new' },
       {
         text: 'Quick Start',
         collapsed: false,
@@ -89,8 +99,7 @@ export const en = defineConfig({
             collapsed: false,
             items: [
               { text: 'Manage HINATA Card Reader', link: '/en/configuration' },
-              { text: 'Firmware Update', link: '/en/update/' },
-              { text: 'Changelog', link: '/en/update/changelog' }
+              { text: 'Firmware Update', link: '/en/update/' }
             ]
         },
         { text: 'Ecosystem',

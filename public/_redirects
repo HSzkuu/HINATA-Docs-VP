@@ -4,3 +4,5 @@
 /hcc /go/features/write-card 301
 /en/hcc/* /en/go/features/write-card 301
 /en/hcc /en/go/features/write-card 301
+/update/changelog /whats-new 301
+/en/update/changelog /en/whats-new 301

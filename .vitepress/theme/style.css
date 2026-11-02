@@ -146,3 +146,20 @@
 .medium-zoom-image {
   z-index: 9999 !important;/* 给的值是21，但是实测盖不住，直接999 */
 }
+/**
+ * What's New
+ * -------------------------------------------------------------------------- */
+
+.whats-new-dot {
+  display: none;
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  border-radius: 50%;
+  vertical-align: super;
+  background-color: var(--vp-c-danger-1);
+}
+
+html.whats-new-unseen .whats-new-dot {
+  display: inline-block;
+}

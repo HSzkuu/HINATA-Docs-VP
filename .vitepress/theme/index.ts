@@ -27,6 +27,9 @@ import type { EnhanceAppContext } from 'vitepress'
 import { BoxCube, Card, Links, Pill } from '@theojs/lumen'
 import NCard from './components/NCard.vue'
 import HCard from './components/HCard.vue'
+import WhatsNewCard from './components/WhatsNewCard.vue'
+import WhatsNewHome from './components/WhatsNewHome.vue'
+import WhatsNewTimeline from './components/WhatsNewTimeline.vue'
 
 export default {
   extends: DefaultTheme,
@@ -74,6 +77,8 @@ export default {
       'layout-top': () => [ 
         h(NolebaseHighlightTargetedHeading), 
       ],
+      'layout-bottom': () => h(WhatsNewCard),
+      'home-features-before': () => h(WhatsNewHome),
     })
   },
   enhanceApp({ app, router, siteData }) {
@@ -83,5 +88,6 @@ export default {
     app.component('BoxCube', BoxCube) 
     app.component('NCard', NCard)
     app.component('HCard', HCard)
+    app.component('WhatsNewTimeline', WhatsNewTimeline)
   }
 } satisfies Theme

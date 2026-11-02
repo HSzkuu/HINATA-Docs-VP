@@ -7,11 +7,21 @@ export const zh = defineConfig({
 
   themeConfig: {
     nav: [
+      { text: '更新动态<span class="whats-new-dot" aria-hidden="true"></span>', link: '/whats-new' },
       { text: '下载中心', link: '/downloads' },
+      { text: '购买 & 售后', link: '/purchase_contact' },
+      {
+        text: '视频',
+        items: [
+          { text: '介绍视频', link: 'https://www.bilibili.com/video/BV1Gi421i7ej/' },
+          { text: '视频说明书', link: 'https://www.bilibili.com/video/BV1VQCUYyEGA/' }
+        ]
+      },
       { text: 'QQ 群', link: 'https://qm.qq.com/q/uKIsTeNXyw' }
     ],
 
     sidebar: [
+      { text: '更新动态', link: '/whats-new' },
       {
         text: '快速开始',
         collapsed: false,
@@ -89,8 +99,7 @@ export const zh = defineConfig({
             collapsed: false,
             items: [
               { text: '管理 HINATA 读卡器', link: '/configuration' },
-              { text: '固件更新', link: '/update/' },
-              { text: '更新日志', link: '/update/changelog' }
+              { text: '固件更新', link: '/update/' }
             ]
         },
         { text: '生态',

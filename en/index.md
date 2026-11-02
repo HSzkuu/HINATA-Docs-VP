@@ -7,35 +7,29 @@ hero:
   tagline: "General-purpose multifunctional arcade game card reader"
   actions:
     - theme: brand
-      text: Quick Start (Full Manual)
+      text: Quick Start
       link: ./guide
-    - theme: brand
-      text: HINATA Go
-      link: ./go/
-    - theme: brand
-      text: Firmware Update
-      link: ./update/
-    - theme: brand
+    - theme: alt
       text: Download Center
       link: ./downloads
-    - theme: brand
-      text: Purchase & Support
-      link: ./purchase_contact
     - theme: alt
-      text: Introduction Video
-      link: https://www.bilibili.com/video/BV1Gi421i7ej/
-    - theme: alt
-      text: Video Manual
-      link: https://www.bilibili.com/video/BV1VQCUYyEGA/
+      text: HINATA Go
+      link: ./go/
 
 features:
   - title: Three-vendor Game Support & Fully Automatic Switching
     details: |
       Supports mainstream arcade games from SEGA, KONAMI, and BANDAI NAMCO<br>Automatically switches by game type and protocol without manual configuration
+    link: ./game-setting/
+    linkText: Set up your games
   - title: Device Management & Firmware Update
     details: |
       Manage devices and CardIO settings visually via HINATA Go and HINATA Client<br>Supports card management, card writing, PN532 passthrough mode, and more<br>Firmware is updated from time to time for new features and compatibility improvements
+    link: ./configuration
+    linkText: Manage your reader
   - title: Support Service
     details: |
       Replacement-only service within one year for non-human damage<br>QQ group and private-message support are available for centralized issue handling
+    link: ./purchase_contact
+    linkText: Purchase & Support
 ---
