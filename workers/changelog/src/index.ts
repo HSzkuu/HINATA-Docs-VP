@@ -74,9 +74,13 @@ async function fetchChangelog(repo: string, token: string | undefined): Promise<
     'User-Agent': 'hinata-changelog-worker',
     'X-GitHub-Api-Version': '2022-11-28',
   }
-  // Without a token the public repositories still load.
-  if (token) headers.Authorization = `Bearer ${token}`
-  const response = await fetch(`https://api.github.com/repos/${repo}/contents/CHANGELOG.md`, { headers })
+  const url = `https://api.github.com/repos/${repo}/contents/CHANGELOG.md`
+  let response = await fetch(url, { headers: token ? { ...headers, Authorization: `Bearer ${token}` } : headers })
+  // A fine-grained token covers the repositories of one owner only, so a
+  // public repository of another owner is read without it.
+  if (token && [401, 403, 404].includes(response.status)) {
+    response = await fetch(url, { headers })
+  }
   if (!response.ok) throw new Error(`GitHub answered ${response.status}`)
   return response.text()
 }
