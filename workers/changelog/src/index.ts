@@ -77,9 +77,13 @@ async function fetchChangelog(repo: string, token: string | undefined): Promise<
   const url = `https://api.github.com/repos/${repo}/contents/CHANGELOG.md`
   let response = await fetch(url, { headers: token ? { ...headers, Authorization: `Bearer ${token}` } : headers })
   // A fine-grained token covers the repositories of one owner only, so a
-  // public repository of another owner is read without it.
-  if (token && [401, 403, 404].includes(response.status)) {
-    response = await fetch(url, { headers })
+  // public repository of another owner is read from raw.githubusercontent.com,
+  // which, unlike the unauthenticated API, is not rate limited per shared
+  // Cloudflare IP.
+  if (!response.ok && [401, 403, 404].includes(response.status)) {
+    response = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/CHANGELOG.md`, {
+      headers: { 'User-Agent': headers['User-Agent'] },
+    })
   }
   if (!response.ok) throw new Error(`GitHub answered ${response.status}`)
   return response.text()
