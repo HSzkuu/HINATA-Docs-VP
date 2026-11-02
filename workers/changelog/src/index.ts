@@ -10,7 +10,7 @@
 import { mergeEntries, parseChangelog, projects, type Feed, type FeedEntry } from '../../../changelog/feed'
 
 interface Env {
-  GITHUB_TOKEN: string
+  GITHUB_TOKEN?: string
   ALLOWED_ORIGINS?: string
 }
 
@@ -68,15 +68,15 @@ async function buildFeed(env: Env): Promise<Feed> {
   return { generatedAt: new Date().toISOString(), entries: mergeEntries(results), errors }
 }
 
-async function fetchChangelog(repo: string, token: string): Promise<string> {
-  const response = await fetch(`https://api.github.com/repos/${repo}/contents/CHANGELOG.md`, {
-    headers: {
-      Accept: 'application/vnd.github.raw+json',
-      Authorization: `Bearer ${token}`,
-      'User-Agent': 'hinata-changelog-worker',
-      'X-GitHub-Api-Version': '2022-11-28',
-    },
-  })
+async function fetchChangelog(repo: string, token: string | undefined): Promise<string> {
+  const headers: Record<string, string> = {
+    Accept: 'application/vnd.github.raw+json',
+    'User-Agent': 'hinata-changelog-worker',
+    'X-GitHub-Api-Version': '2022-11-28',
+  }
+  // Without a token the public repositories still load.
+  if (token) headers.Authorization = `Bearer ${token}`
+  const response = await fetch(`https://api.github.com/repos/${repo}/contents/CHANGELOG.md`, { headers })
   if (!response.ok) throw new Error(`GitHub answered ${response.status}`)
   return response.text()
 }
