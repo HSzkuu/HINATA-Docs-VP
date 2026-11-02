@@ -13,7 +13,7 @@
 * **Legacy E-Amusement Pass**：Konami in-game card number
 
 ### Other Cards
-* **Any FeliCa Card**：IDm, PMm, SystemCodes, Konami in-game card number, etc.
+* **Any FeliCa Card**：IDm, PMm, SystemCodes, Konami in-game card number, etc. Every block that reads without encryption is also saved and can be viewed under [Raw data](#raw-data)
 * **Any ISO15693 Card**：Konami in-game card number
 
 ## How to Read
@@ -60,3 +60,13 @@ When reading China T-Union cards, you can view:
 ### Legacy Banapass or Compatible Cards
  
 ![card-info-bana](assets/card-info-bana.png)
+
+## Raw Data
+
+After reading any FeliCa card, its details page shows a **Raw data** entry. It lists every block saved from that read, grouped by service (16 bytes each). Tap a block to copy it, or use the copy-all action in the top bar.
+
+* Only blocks that read without encryption are read and saved; anything that needs authentication is not included.
+* If the card leaves the reader mid-read, the blocks read so far are still kept, and the entry is marked **Not fully read**.
+* The blocks are saved with the card, so you can inspect them offline later, and card emulation uses them.
+
+On some readers a FeliCa card shows its basic information first and the remaining blocks come afterwards; the screen then shows "Reading extended info, please do not move the card", so keep the card in place.

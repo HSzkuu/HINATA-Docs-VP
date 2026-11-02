@@ -24,7 +24,7 @@ HINATA Client is a Windows desktop tool that helps deploy HINATA AimeIO or seria
 
 ## HINATA Go
 
-HINATA Go is a cross-platform NFC card tool for viewing and managing cards, using card reader mode, and managing HINATA devices. See [HINATA Go documentation](/en/go/) for details.
+HINATA Go is a cross-platform NFC card tool for viewing and managing cards, writing to cards, emulating cards, using card reader mode, and managing HINATA devices. See [HINATA Go documentation](/en/go/) for details.
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
   <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">

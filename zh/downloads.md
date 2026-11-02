@@ -27,7 +27,7 @@ HINATA Client 是用于 Windows 的桌面工具，可以帮助你快速部署 HI
 
 ## HINATA Go
 
-HINATA Go 是一款多平台 NFC 卡片工具，支持卡片信息查看、卡片管理、读卡器模式以及 HINATA 设备管理。详细功能请参阅[HINATA Go 使用说明](/go/)。
+HINATA Go 是一款多平台 NFC 卡片工具，支持卡片信息查看、卡片管理、卡片写入、卡片模拟、读卡器模式以及 HINATA 设备管理。详细功能请参阅[HINATA Go 使用说明](/go/)。
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0;">
   <a href="https://apps.apple.com/app/id6760301105" target="_blank" rel="noopener noreferrer">

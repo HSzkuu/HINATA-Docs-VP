@@ -6,6 +6,7 @@ HINATA Go 是一款多平台的 NFC 卡片工具，支持卡片信息查看与�
 * **读卡器模式**：配置并选择游戏实例后，刷卡可自动将卡号发送至当前选中的实例，支持 SEGA 游戏（AimeIO）和 Konami 游戏（SpiceAPI）等。
 * **卡片管理**：提供本地卡包与文件夹管理功能，支持卡片保存、刷卡历史追溯以及数据的导入与导出。
 * **卡片写入**：支持向 MIFARE Classic 1K 白卡写入 Aime / Banapass 卡号，提供可再次写入与永久只读两种安全模式。
+* **卡片模拟**：连接 HINATA 读卡器后，可让读卡器模拟已保存的 NDEF 数据集、FeliCa 卡或 Amusement IC，供手机或其他读卡设备读取。
 * **外接读卡器管理**：连接实体 HINATA 读卡器后，可进行硬件设置修改及固件 OTA 升级： [管理 HINATA 读卡器](/configuration)
 
 ## 开源地址
@@ -72,6 +73,14 @@ HINATA Go 是一款多平台的 NFC 卡片工具，支持卡片信息查看与�
     {
       name: '写入卡片',
       link: 'features/write-card',
+    }
+  ]"
+/>
+<Links
+  :items="[
+    {
+      name: '模拟卡片',
+      link: 'features/emulate-card',
     }
   ]"
 />
