@@ -12,9 +12,9 @@
 
 ## What is HINATA Go?
 
-HINATA Go is a multi-platform NFC card tool that supports card information viewing and card reader emulation:
-* **Card Information Viewer**: Scan cards via the built-in NFC or a connected HINATA Card Reader to check balances and transaction histories for transit cards (Japanese transit cards, China T-Union), or retrieve Access Codes and card data for various arcade/amusement cards.
-* **Card Reader Mode**: Configure and select a game instance to automatically send swiped card numbers to target games, supporting SEGA games (AimeIO), Konami games (SpiceAPI), and more.
+HINATA Go is a multi-platform NFC card tool and wireless arcade card reader (works standalone with your phone, no physical reader required) that supports card information viewing and card reader emulation:
+* **Card Information Viewer**: Scan cards via built-in NFC or a connected HINATA Card Reader to check balances and transaction histories for transit cards (Japanese transit cards, China T-Union), or retrieve real Access Codes and card data for arcade/amusement cards. (Note: due to Apple CoreNFC restrictions, iOS cannot read MIFARE Classic / M1 cards such as legacy Aime or legacy Banapassport.)
+* **Card Reader Mode**: Configure and select a game instance to automatically send swiped card data to target games, supporting `segatools` (HINATA IO), `TAL` (HINATA IO), `spicetools` (SpiceAPI), and more.
 * **Card Management**: Organize your cards using folders, keep track of swipe history, and import or export card data.
 * **Card Writing**: Write Aime / Banapass Access Codes to MIFARE Classic 1K cards with rewritable or permanently read-only modes.
 * **Card Emulation**: With a HINATA reader connected, let the reader act as a saved NDEF dataset, FeliCa card, or Amusement IC for a phone or another reader.
@@ -40,7 +40,7 @@ HINATA Go is a multi-platform NFC card tool that supports card information viewi
   <a href="https://play.google.com/store/apps/details?id=moe.neri.hinatago&hl=zh" target="_blank" rel="noopener noreferrer">
     <img src="/assets/get-it-on-google-play.svg" alt="Get it on Google Play" style="height: 40px;" />
   </a>
-  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Project-HINATA/hinata_go/releases/latest" target="_blank" rel="noopener noreferrer">
     <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
   </a>
   <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">

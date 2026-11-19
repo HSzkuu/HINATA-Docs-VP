@@ -12,6 +12,10 @@
 * [**旧式 Banapass 或兼容卡**](#旧式-banapass-或兼容卡)：Access Code
 * **旧式 E-Amusement Pass**：Konami 游戏内卡号
 
+::: warning iOS 端读卡限制
+受限于苹果 CoreNFC 系统框架，**iPhone 无法读取 MIFARE Classic（M1 卡）**，包括旧式 Aime 卡、旧式 Banapass 卡以及使用 M1 芯片的兼容白卡。Amusement IC、交通卡、NESiCA 及其他 FeliCa / ISO15693 卡片可在 iOS 端正常读取；如需在 iPhone 上使用旧式 M1 卡号，可先通过 Android / 网页版扫入并导入卡包，或在「卡片」页手动添加 20 位 Access Code。
+:::
+
 ### 其他卡片
 * **任意 FeliCa 卡片**：IDm, PMm, SystemCodes, Konami 游戏内卡号 等；还会保存卡上所有无需加密即可读取的区块，可在[原始数据](#原始数据)中查看
 * **任意 ISO15693 卡片**：Konami 游戏内卡号

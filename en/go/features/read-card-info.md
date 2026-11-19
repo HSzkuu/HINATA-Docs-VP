@@ -12,6 +12,10 @@
 * [**Legacy Banapass or Compatible Cards**](#legacy-banapass-or-compatible-cards)：Read Access Code.
 * **Legacy E-Amusement Pass**：Konami in-game card number
 
+::: warning iOS NFC Limitation
+Due to Apple CoreNFC restrictions, **iPhones cannot read MIFARE Classic (M1) cards**, including legacy Aime, legacy Banapassport, and M1-based compatible cards. Amusement IC, transit cards, NESiCA, and other FeliCa / ISO15693 cards work normally on iOS. To use legacy M1 card numbers on an iPhone, scan them on Android/Web and import the wallet data, or manually add the 20-digit Access Code on the Cards tab.
+:::
+
 ### Other Cards
 * **Any FeliCa Card**：IDm, PMm, SystemCodes, Konami in-game card number, etc. Every block that reads without encryption is also saved and can be viewed under [Raw data](#raw-data)
 * **Any ISO15693 Card**：Konami in-game card number

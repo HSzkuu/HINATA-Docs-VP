@@ -6,6 +6,9 @@ import { en } from './en.mjs'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
+  sitemap: {
+    hostname: 'https://hinata.neri.moe',
+  },
   srcExclude: ['workers/**'],
   vite: { 
     optimizeDeps: {

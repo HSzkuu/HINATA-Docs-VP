@@ -1,9 +1,9 @@
 # HINATA Go 
 ## HINATA Go 是什么？
 
-HINATA Go 是一款多平台的 NFC 卡片工具，支持卡片信息查看与读卡器模拟，主要功能包括：
-* **卡片信息查看**：使用设备内置 NFC 或外接 HINATA 读卡器扫描卡片，查看交通卡（日本交通系、国内交通联合）的余额、历史记录，或获取各类街机游戏卡片的 Access Code 与卡片数据。
-* **读卡器模式**：配置并选择游戏实例后，刷卡可自动将卡号发送至当前选中的实例，支持 SEGA 游戏（AimeIO）和 Konami 游戏（SpiceAPI）等。
+HINATA Go 是一款多平台的 NFC 卡片工具与无线刷卡器（无需购买实体读卡器即可独立使用），支持卡片信息查看与读卡器模拟，主要功能包括：
+* **卡片信息查看**：使用设备内置 NFC 或外接 HINATA 读卡器扫描卡片，查看交通卡（日本交通系、国内交通联合）的余额、历史记录，或获取各类街机游戏卡片的真实 Access Code 与卡片数据（注：受苹果 CoreNFC 限制，iOS 设备无法读取 MIFARE Classic / M1 卡，如旧式 Aime、旧式 Banapass）。
+* **读卡器模式**：配置并选择游戏实例后，刷卡可自动将卡号发送至当前选中的实例，支持 `segatools`（HINATA IO）、`TAL`（HINATA IO）和 `spicetools`（SpiceAPI）等。
 * **卡片管理**：提供本地卡包与文件夹管理功能，支持卡片保存、刷卡历史追溯以及数据的导入与导出。
 * **卡片写入**：支持向 MIFARE Classic 1K 白卡写入 Aime / Banapass 卡号，提供可再次写入与永久只读两种安全模式。
 * **卡片模拟**：连接 HINATA 读卡器后，可让读卡器模拟已保存的 NDEF 数据集、FeliCa 卡或 Amusement IC，供手机或其他读卡设备读取。
@@ -29,7 +29,7 @@ HINATA Go 是一款多平台的 NFC 卡片工具，支持卡片信息查看与�
   <a href="https://play.google.com/store/apps/details?id=moe.neri.hinatago&hl=zh" target="_blank" rel="noopener noreferrer">
     <img src="/assets/get-it-on-google-play.svg" alt="Get it on Google Play" style="height: 40px;" />
   </a>
-  <a href="https://github.com/nerimoe/hinata_go/releases" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Project-HINATA/hinata_go/releases/latest" target="_blank" rel="noopener noreferrer">
     <img src="/assets/download-on-android.svg" alt="Download APK for Android" style="height: 40px;" />
   </a>
   <a href="https://go.neri.moe" target="_blank" rel="noopener noreferrer">
